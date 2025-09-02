@@ -38,12 +38,25 @@ function setTargets() {
   document.getElementById("book-source").target = "GitHub";
   
   let div = document.getElementById("main-nav").getElementsByTagName("nav")[0].getElementsByClassName("book-extra")[0];
-  createLink(div, "book-print", "manual-for-rstudio.pdf", "View printable book");
+  createLink(div, "book-print", "fundamentaalsed-loodusteadused-matemaatiliselt.pdf", "trükiteisend");
   let nameOfPresentation = "presentation";
   createLink(div, "presentation-" + nameOfPresentation, "qmd/" + nameOfPresentation + "/" + nameOfPresentation + ".html", "Presentation");
   createLink(div, "presentation-speaker-" + nameOfPresentation, "qmd/" + nameOfPresentation + "/" + nameOfPresentation + "-speaker.html", "Remote control");
 }
 
+/**
+ * This function translates texts on the page.
+ */
+function translate() {
+  document.getElementById("search").placeholder = "otsingusõne";
+  document.getElementsByTagName("nav")[0].getElementsByTagName("h2")[0].innerHTML = "Sisukord";
+  document.getElementById("book-repo").innerHTML = "terviklähtekood";
+  document.getElementById("toc").getElementsByTagName("h2")[0].innerHTML = "Siinsel lehel";
+  document.getElementById("book-source").innerHTML = "lehe lähtekood";
+  document.getElementById("book-edit").innerHTML = "lehe muutmine";
+}
+
 window.onload = function () {
   setTargets();
+  translate();
 };

@@ -1,1 +1,1 @@
-the manual for RStudio Server from a user's perspective
+the sources for the courses of math, physics and chemistry at the third level
