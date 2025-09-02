@@ -228,3 +228,10 @@ render_color <- function(color, text) {
 \lstlistoflistings
 
 # Introduction {-}
+
+```{r label="link-to-web", echo=FALSE}
+if (knitr::is_latex_output()) {
+  "[veebiteisend](http://fundamentaalsed-loodusteadused-matemaatiliselt.ons.ee)"
+}
+
+```
