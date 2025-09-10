@@ -3,7 +3,10 @@ new_session: false
 delete_merged_file: true
 rmd_files: [
   "index.Rmd",
+  "rmd/kokkulepe-8.Rmd",
+  "rmd/kokkulepe-9.Rmd",
   "rmd/hindamine.Rmd",
   "rmd/lähtetest.Rmd",
+  "rmd/tulemused.Rmd",
   "references.Rmd"
 ]

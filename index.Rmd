@@ -234,4 +234,35 @@ if (knitr::is_latex_output()) {
   "[veebiteisend](http://fundamentaalsed-loodusteadused-matemaatiliselt.ons.ee)"
 }
 
+names_8 <- c(
+	"Andrei Aksjonov",
+	"Arseni Badanin",
+	"Sergo Klišin",
+	"Ruvim Korepanov",
+	"Arina Lisogor",
+	"Olesja Makarova",
+	"Artjom Malinin",
+	"Maksim Mihhailov",
+	"Nikita Timakin"
+)
+
+names_9 <- c(
+	"Margus Evart",
+	"Mikaela Galperman",
+	"Valerija Korenkova",
+	"Dmitri Litvinenko",
+	"Margarita Mussijenko",
+	"Zahar Orikovi",
+	"Jekaterina Plotnikova",
+	"Veniamin Postolenko",
+	"Angelina Solovjova",
+	"Sofia Zhuravleva",
+	"Ivan Timakin",
+	"Evelina Tolli",
+	"Martin Tolli",
+	"Ilja Tsvek",
+	"Maia Tukkia",
+	"Arina Vatševskihh"
+)
+
 ```

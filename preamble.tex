@@ -85,7 +85,7 @@
 \usepackage{siunitx}
 \sisetup{
   input-decimal-markers = {.,},
-  output-decimal-marker = {.},
+  output-decimal-marker = {,},
   separate-uncertainty-units = repeat
 }
 % For "retain-explicit-decimal-marker"
@@ -133,10 +133,17 @@
 % for fill-in-the-gaps-tests
 \newlength{\blankwidth}
 \newcommand{\blank}[1]{%
-	\ifmmode\settowidth{\blankwidth}{\ensuremath{{#1}{#1}{#1}}}%
-	\else\settowidth{\blankwidth}{{#1}{#1}{#1}}%
-	\fi
-	\makebox[\blankwidth]{\dotfill}}
+  \begingroup
+  \setlength{\blankwidth}{0pt}%
+  \ifmmode
+    % mõõda praeguse matemaatikastiili järgi (display/text/script/scriptscript)
+    \settowidth{\blankwidth}{$\mathchoice{\displaystyle #1#1#1}{\textstyle #1#1#1}{\scriptstyle #1#1#1}{\scriptscriptstyle #1#1#1}$}%
+  \else
+    \settowidth{\blankwidth}{#1#1#1}%
+  \fi
+  \makebox[\blankwidth]{\dotfill}%
+  \endgroup
+}
 
 \usepackage{fontawesome5} % for hand pointers
 \usepackage{wasysym} % for form elements

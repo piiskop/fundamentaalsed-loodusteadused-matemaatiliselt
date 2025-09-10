@@ -1,0 +1,68 @@
+# Kokkulepe 9
+
+See kokkulepe siin on sõlmitud Sinimäe Põhikooli 2025. a alguse saanud üheksanda taseme õpilaste ning fundamentaalsete loodusteaduste ja matemaatika õpetaja vahel sisaldades järgmisi konsensuslikult kokku lepitud reegleid:
+
+1. Kui õpetaja räägib, kuulavad teised.
+
+2. Me ei sega õppetööd (ei tegele kõrvaliste tegevustega, ei jookse, ei kakle, ei kasuta pahasid sõnu).
+
+3. Telefon on lubatud ainult õpetaja loal.
+
+4. Kui on abi vaja, küsime õpilaselt või õpetajalt, kasutades vajadusel muid abivahendeid õpetaja loal.
+See reegel ei rakendu sisulise abi küsimisele kokkuvõtvas hindelises testis grupivälise küsitava suhtes.
+
+5. Kui õpilane soovib õpperuumist väljuda, võib ta seda teha, kui ta küsib selleks luba ja kui ta saab selle loa õpetajalt.
+
+6. Kui õpilane õppesessioonis magab ja see magamine pole seotud õppimisega, peab ta selgitama põhjuse ja otsima lahenduse, et see ei korduks.
+
+7. Keeleline reegel: õpetajaga räägime eesti keeles, omavahel võib suhelda vene keeles.
+
+8. Töötame gruppides või kasutame õppemänge vastavalt vajadusele ja kokkuleppele.
+
+9. Korra nädalas vaatame filmi või tegeleme muul viisil vaheldusrikka õppimisega.
+
+10. Kokkuvõtva hindelise testi sooritavad õpilased kahes kuni neljas grupis, tohtides arutada ainult grupisiseselt.
+
+11. Kui õpilane rikub reegleid, saab ta trahvipunkti; iga viie punkti eest kirjutab õpetaja märkuse Stuudiumisse.
+
+12. Kui nädala kestel ei lisandu ühtki trahvipunkti, saavad kõik õpilased Stuudiumisse kiituse.
+
+Kinnitan oma allkirjaga tabelis \@ref(tab:agreement-9) oma nime real, et kohustun vabatahtlikult täielikult järgima selle kokkuleppe kõiki reegleid.
+
+\renewcommand{\arraystretch}{1.5}
+
+```{r label="agreement-9", echo=FALSE}
+rows <- data.frame(
+  rep(
+    "\\blank{2025-09-05}",
+    17
+  ), # kuupäev
+  rep(
+    "\\blank{peacecop kalmer:}",
+    17
+  ) # allkiri
+)
+
+data_frame <- rows[1]
+for (row_identifier in 2:2) {
+  data_frame <- cbind(data_frame, rows[row_identifier])
+}
+
+colnames(data_frame) <- c("Kuupäev", "Allkiri")  
+
+rownames(data_frame) <- c(names_9, "peacecop kalmer:")
+
+librarian::shelf(c(
+  "dplyr",
+  "kableExtra"
+))
+
+table <- print_table(
+  table = data_frame,
+  caption = "Kokkuleppes osalejate kinnitused."
+) %>% landscape()
+
+table
+
+```
+\renewcommand{\arraystretch}{1}

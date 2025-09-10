@@ -1,17 +1,219 @@
 # Lähtetest
 
+<!-- ## Ülesanded -->
+
 ```{r label="tasks", echo=FALSE, results='asis'}
 librarian::shelf(c(
   "profvis"
 ))
 # profvis({
 goals <- list(
-  list(
+  list( # 1
     goal = "teab andmete liike ja andmete kogumise erinevaid meetodeid (mõõtmine, küsimustik)",
     level = 1
   ),
-  list(
+  list( # 2
     goal = "iseloomustab andmestikku aritmeetilise keskmise, mediaani, moodi, miinimumi, maksimumi ja ulatuse järgi",
+    level = 4
+  ),
+  list( # 3
+    goal = "loeb, mõistab ja selgitab andmeid tabelist, tulp-, sektor-, joon- ja punktdiagrammilt",
+    level = 4
+  ),
+  list( # 4
+    goal = "selgitab protsendi, promilli ja protsendipunkti mõiste tähendust",
+    level = 2
+  ),
+  list( # 5
+    goal = "teisendab protsendi kümnendmurruks ja harilikuks murruks ning vastupidi",
+    level = 3
+  ),
+  list( # 6
+    goal = "selgitab tõenäosuse tähendust, arvutab elulistel juhtudel sündmuse tõenäosuse (sh mündivise, täringu veeretamine, kaardimäng, loosimine)",
+    level = 3
+  ),
+  list( # 7
+    goal = "kasutab (igapäevaelu) ülesannete lahendamisel otstarbekat osamäära esitusviisi (protsent, harilik murd, kümnendmurd)",
+    level = 3
+  ),
+  list( # 8
+    goal = "kasutab protsentarvutusel erinevaid lahendusmeetodeid (ühikumeetod, võrre, skeem,
+algoritm)",
+    level = 3
+  ),
+  list( # 9
+    goal = "lahendab protsentarvutuse tüüpülesandeid (osa leidmine, terviku leidmine, osamäära
+leidmine, suuruse muutumine)",
+    level = 3
+  ),
+  list( # 10
+    goal = "moodustab reaalsetest andmetest sageduste ja suhteliste sageduste tabeli",
+    level = 3
+  ),
+  list( # 11
+    goal = "väljendab protsentides esitatud informatsiooni visuaalselt (graafikud, diagrammid) ja vastupidi",
+    level = 3
+  ),
+  list( # 12
+    goal = "kasutab protsentarvutust otsuse tegemiseks ja põhjendamiseks (nt laen, hoius, intress, maksud, investeerimine)",
+    level = 3
+  ),
+  list( # 13
+    goal = "ümardab ratsionaalarve etteantud järguni",
+    level = 3
+  ),
+  list( # 14
+    goal = "selgitab naturaalarvulise astendajaga astendamise tähendust (E)",
+    level = 2
+  ),
+  list( # 15
+    goal = "selgitab arvu ruutjuure tähendust",
+    level = 2
+  ),
+  list( # 16
+    goal = "leiab peast või taskuarvutil ruutjuure",
+    level = 3
+  ),
+  list( # 17
+    goal = "põhjendab ja kasutab astendamisreegleid (D, C)",
+    level = 4
+  ),
+  list( # 18
+    goal = "liidab, lahutab, korrutab, jagab ja astendab naturaalarvulise astendajaga ratsionaalarve peast,
+kirjalikult ja taskuarvutiga ning rakendab tehete järjekorda (B)",
+    level = 4
+  ),
+  list( # 19
+    goal = "lihtsustab kuni kolmetehtelisi täisavaldisi (D, C)",
+    level = 3
+  ),
+  list( # 20
+    goal = "korrastab üks- ja hulkliikmeid, liidab, lahutab ning korrutab üks- ja hulkliikmeid ning jagab
+üksliikmeid ja hulkliiget üksliikmega (E, D, C, B, A)",
+    level = 3
+  ),
+  list( # 21
+    goal = "üldistab harilike murdude arvutusreeglid algebralistele murdudele",
+    level = 5
+  ),
+  list( # 22
+    goal = "lihtsustab kahetehtelisi ratsionaalavaldisi (D, C)",
+    level = 3
+  ),
+  list( # 23
+    goal = "tegurdab hulkliikmeid (toob teguri sulgude ette, kasutab ja põhjendab ruutude vahe, summa
+ruudu ja vahe ruudu abivalemeid, tegurdab ruutkolmliiget)",
+    level = 4
+  ),
+  list( # 24
+    goal = "taandab ja laiendab algebralist murdu ning liidab, lahutab, korrutab ja jagab kaht algebralist
+murdu (D)",
+    level = 3
+  ),
+  list( # 25
+    goal = "teab põik- ja lähisnurkade mõisteid ja nende nurkade seoseid paralleelsete sirgete korral",
+    level = 1
+  ),
+  list( # 26
+    goal = "põhjendab ja kasutab sirgete paralleelsuse tunnuseid",
+    level = 4
+  ),
+  list( # 27
+    goal = "kirjeldab kujundite omadusi ning klassifitseerib kujundeid ühiste omaduste põhjal",
+    level = 2
+  ),
+  list( # 28
+    goal = "joonestab ja konstrueerib (käsitsi ja arvutiga) tasandilisi kujundeid (korrapärane hulknurk, kolmnurk, rööpkülik, trapets, ring) etteantud elementide järgi korrapärase hulknurga ja kolmnurga sise-ja ümberringjoone",
+    level = 3
+  ),
+  list( # 29
+    goal = "teab kesk- ja piirdenurga mõisteid ning nendevahelist seost",
+    level = 1
+  ),
+  list( # 30
+    goal = "teab ringjoone puutuja mõistet ja omadust",
+    level = 1
+  ),
+  list( # 31
+    goal = "visandab ruumilisi kujundeid (püstprisma, püramiid, silinder, koonus, kera)",
+    level = 3
+  ),
+  list( # 32
+    goal = "selgitab ja rakendab Pythagorase teoreemi",
+    level = 3
+  ),
+  list( # 33
+    goal = "leiab täisnurkse kolmnurga joonelemendid (sh kasutades trigonomeetrilisi seoseid)",
+    level = 3
+  ),
+  list( # 34
+    goal = "nimetab võrrandi põhiomadusi (D)",
+    level = 1
+  ),
+  list( # 35
+    goal = "mõistab ja tunneb ära võrdelise ja pöördvõrdelise seose (nt liikumisel teepikkus, aeg, kiirus) (E)",
+    level = 2
+  ),
+  list( # 36
+    goal = "selgitab eluliste näidete põhjal võrdelise, lineaarse ja pöördvõrdelise sõltuvuse tähendust",
+    level = 2
+  ),
+  list( # 37
+    goal = "lahendab lineaar- ja võrdekujulisi võrrandeid ning lineaarvõrrandisüsteeme kasutades
+võrrandi põhiomadusi (sh graafiliselt ning arvutiprogrammide abil) (C, B)",
+    level = 3
+  ),
+  list( # 38
+    goal = "lahendab täielikke ja mittetäielikke ruutvõrrandeid",
+    level = 3
+  ),
+  list( # 39
+    goal = "koostab ja lahendab tekstülesandeid, mis lahenduvad võrrandi või võrrandisüsteemi abil (sh
+võrdelise jaotamise ülesandeid)",
+    level = 6
+  ),
+  list( # 40
+    goal = "selgitab ruutfunktsiooni nullkohtade ja haripunkti tähendust ja omavahelist seost, leiab need valemist ning jooniselt",
+    level = 3
+  ),
+  list( # 41
+    goal = "joonestab etteantud funktsiooni graafiku (sirge, hüperbooli, parabooli) (nii käsitsi kui ka arvutiprogrammiga) ning loeb graafikult funktsiooni ja argumendi väärtusi",
+    level = 3
+  ),
+  list( # 42
+    goal = "selgitab arvutiga tehtud dünaamilisi jooniseid kasutades funktsiooni graafiku asendi ja kuju sõltuvust funktsiooni avaldises olevatest kordajatest (ruutfunktsiooni korral ainult ruutliikme kordajast ja vabaliikmest)",
+    level = 4
+  ),
+  list( # 43
+    goal = "lahendab geomeetrilise sisuga probleemülesandeid (sh kasutades korrapärase hulknurga omadusi, Thalese teoreemi)",
+    level = 3
+  ),
+  list( # 44
+    goal = "kasutab probleemülesannete lahendamiseks hulknurkade sarnasust (nt maa-alade plaanistamine)",
+    level = 4
+  ),
+  list( # 45
+    goal = "arvutab tasandiliste kujundite (korrapärane hulknurk, kolmnurk, rööpkülik, romb, trapets, ring) joonelemendid, ümbermõõdu, pindala",
+    level = 3
+  ),
+  list( # 46
+    goal = "arvutab ruumiliste kujundite (püstprisma, püramiid, silinder, koonus, kera) joonelemendid, pindala ja ruumala",
+    level = 3
+  ),
+  list( # 47
+    goal = "selgitab oma algebra- ja geomeetriateadmiste elulisi rakendusvõimalusi",
+    level = 2
+  ),
+  list( # 48
+    goal = "teab kolmnurga ja trapetsi kesklõigu mõistet ning nende omadusi",
+    level = 1
+  ),
+  list( # 49
+    goal = "arvutab arvu 10 negatiivse täisarvulise astendajaga astme väärtuse",
+    level = 4
+  ),
+  list( # 50
+    goal = "kirjutab suuri ja väikseid arve standardkujul",
     level = 4
   )
 )
@@ -92,7 +294,437 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli ühtlasema tasemega?"),
   list(goal = 2, level = 4, task = "Kahe rühma kontrolltöö punktisummad olid:\\leavevmode\\
 - rühm A: 6, 7, 7, 8, 9,\\leavevmode\\
 - rühm B: 3, 5, 7, 9, 11.\\leavevmode\\
-Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?")
+Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
+  list(goal = 3, level = 1, task = "Mis on tulpdiagramm?"),
+  list(goal = 3, level = 1, task = "Mis on sektordiagramm?"),
+  list(goal = 3, level = 1, task = "Mis on joondiagramm?"),
+  list(goal = 3, level = 1, task = "Mis on punktdiagramm?"),
+  list(goal = 3, level = 3, task = "Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Vaata sektordiagrammi joonist \\@ref(fig:tasks-sector-diagram) ja märgi, kui palju on metsamaad:\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] $\\qty{80}{\\percent}$.
+    \\item[\\Square] $\\qty{55}{\\percent}$.
+    \\item[\\Square] $\\qty{47}{\\percent}$.
+    \\item[\\Square] $\\qty{22}{\\percent}$.
+  \\end{itemize}"),
+  list(goal = 3, level = 3, task = "Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Vaata sektordiagrammi joonist \\@ref(fig:tasks-sector-diagram) ja märgi, kui palju on karjamaad:\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] $\\qty{34}{\\percent}$.
+    \\item[\\Square] $\\qty{15}{\\percent}$.
+    \\item[\\Square] $\\qty{17}{\\percent}$.
+    \\item[\\Square] $\\qty{6}{\\percent}$.
+  \\end{itemize}"),
+  list(goal = 3, level = 3, task = "Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Vaata sektordiagrammi joonist \\@ref(fig:tasks-sector-diagram) ja märgi, kui palju on elamumaad:\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] $\\qty{9}{\\percent}$.
+    \\item[\\Square] $\\qty{5}{\\percent}$.
+    \\item[\\Square] $\\qty{2}{\\percent}$.
+  \\end{itemize}"),
+  list(goal = 3, level = 3, task = "Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Vaata sektordiagrammi joonist \\@ref(fig:tasks-sector-diagram) ja märgi, kui palju on põllumaad:\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] $\\qty{25}{\\percent}$.
+    \\item[\\Square] $\\qty{10}{\\percent}$.
+  \\end{itemize}"),
+  list(goal = 3, level = 4, task = "Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Kirjuta sektordiagrammile joonisel \\@ref(fig:tasks-sector-diagram) erinevate maatükkide suurused protsentides!"),
+  list(goal = 5, level = 3, task = "Märgi kõik arvud, millega on võrdne \\num{0,4}:\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] $\\qty{40}{\\percent}$.
+    \\item[\\Square] $\\frac{1}{25}$.
+    \\item[\\Square] $\\frac{2}{5}$.
+    \\item[\\Square] $\\frac{4}{10}$.
+    \\item[\\Square] $\\frac{1}{5}$.
+  \\end{itemize}"),
+  list(goal = 5, level = 3, task = "Märgi kõik arvud, millega on võrdne \\num{0,75}:\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] $\\qty{75}{\\percent}$.
+    \\item[\\Square] $\\frac{3}{4}$.
+    \\item[\\Square] $\\frac{1}{3}$.
+  \\end{itemize}"),
+  list(goal = 8, level = 3, task = "Et leida \\qty{10}{\\percent} arvust, jagan arvu:\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] $\\num{10}$'ga.
+    \\item[\\Square] $\\num{5}$'ga.
+  \\end{itemize}"),
+  list(goal = 8, level = 3, task = "Et leida veerand arvust, jagan arvu:\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] $\\num{25}$'ga.
+    \\item[\\Square] $\\num{50}$'ga.
+    \\item[\\Square] $\\num{15}$'ga.
+    \\item[\\Square] $\\num{4}$'ga.
+  \\end{itemize}"),
+  list(goal = 8, level = 3, task = "Et leida \\qty{3}{\\percent} arvust, korrutan arvu:\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] $\\num{33}$'ga.
+    \\item[\\Square] $\\num{1,5}$'ga.
+    \\item[\\Square] $\\num{3,3333}$'ga.
+    \\item[\\Square] $\\num{0,03}$'ga.
+  \\end{itemize}"),
+  list(goal = 9, level = 3, task = "Mari ostis \\num{3} eurot maksva jäätise, ta kasutas selleks \\qty{15}{\\percent} oma taskuvaluutat. Kui palju oli Maril taskuvaluutat?\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] $\\num{0,21}\\, €$.
+    \\item[\\Square] $\\num{2,5}\\, €$.
+    \\item[\\Square] $\\num{2,55}\\, €$.
+    \\item[\\Square] $\\num{20}\\, €$.
+  \\end{itemize}"),
+  list(goal = 9, level = 3, task = "Sügisel maksis \\qty{1}{\\kilo\\g} kartuleid \\num{30} senti ja kevadel \\num{40} senti. Mitme protsendi võrra tõusis kartuli \\qty{1}{\\kg} hind?\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] $\\num{10}$.
+    \\item[\\Square] $\\num{33}\\frac{1}{3}$.
+  \\end{itemize}"),
+  list(goal = 12, level = 5, task = "Raamatu *Eesti reisijuht* hind enne allahindlust oli $\\num{20}\\, \\epsilon$. Kauba hinna muutus on esitatud pildil \\@ref(fig:tasks-discount-book). Marial oli \\num{10} eurot. Kas Maria saab selle raamatu osta?\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] Maria saab osta, sest \\qty{59}{\\percent} kahekümnest eurost on vähem kui $\\num{10}$ eurot.
+    \\item[\\Square] Maria ei saa osta, sest \\qty{41}{\\percent} kahekümnest eurost on rohkem kui $\\num{10}$ eurot.
+    \\item[\\Square] Maria saab osta, sest \\qty{41}{\\percent} kahekümnest eurost on vähem kui $\\num{10}$ eurot.
+    \\item[\\Square] Maria ei saa osta, sest \\qty{59}{\\percent} kahekümnest eurost on rohkem kui $\\num{10}$ eurot.
+  \\end{itemize}"),
+  list(
+    goal = 17,
+    level = 4,
+    task = "Milline väide on tõene?
+  \\begin{itemize}
+    \\item[\\Square] $x^2 \\cdot x^3 = x^6$.
+    \\item[\\Square] $x^2 \\cdot x^4 = x^6$.
+  \\end{itemize}"),
+  list(
+    goal = 17,
+    level = 4,
+    task = "Milline väide on tõene?
+  \\begin{itemize}
+    \\item[\\Square] $b^{10}:b^5=b^2$.
+    \\item[\\Square] $b^{10}:b^8=b^2$.
+  \\end{itemize}"),
+  list(
+    goal = 17,
+    level = 4,
+    task = "$(5^{\\blank{2}})^4 = 5^8.$"),
+  list(
+    goal = 18,
+    level = 4,
+    task = "$-(-4)^0=$
+    \\begin{itemize}
+      \\item{\\Circle} 4.
+      \\item{\\Circle} -4.
+      \\item{\\Circle} -1.
+      \\item{\\Circle} 1.
+    \\end{itemize}"
+  ),
+  list(
+    goal = 20,
+    level = 3,
+    task = "Vali alljärgnevatest avaldistest üksliikme $4x^2 \\cdot (-xy) \\cdot (-y)$ normaalkuju:
+    \\begin{itemize}
+      \\item[\\Circle] $4x^3y^2.$
+      \\item[\\Circle] $4x^2y^2.$
+      \\item[\\Circle] $-4x^3y^2.$
+      \\item[\\Circle] $-4x^2y^2.$
+    \\end{itemize}"
+  ),
+  list(
+    goal = 20,
+    level = 3,
+    task = "$2(a-b)-(3a+b)=$
+    \\begin{itemize}
+      \\item[Square] $1a-1b.$
+      \\item[Square] $-1a-3b.$
+    \\end{itemize}"
+  ),
+  list(goal = 22, level = 3, task = "$-6 + 13+6-20-7=$\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] \\num{-14}.
+    \\item[\\Square] \\num{-13}.
+    \\item[\\Square] \\num{-2}.
+  \\end{itemize}"),
+  list(goal = 22, level = 3, task = "$\\frac{1}{3}-0,5=$\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] $-\\frac{1}{6}$.
+    \\item[\\Square] \\num{-0,2}.
+    \\item[\\Square] \\num{0,2}.
+    \\item[\\Square] $\\frac{1}{6}$.
+  \\end{itemize}"),
+  list(goal = 25, level = 1, task = "Joonisel \\@ref(fig:tasks-lines-angles) on näidatud kahe sirge lõikamisel kolmanda sirgega tekkinud nurgad. Uuri joonist ja täida lüngad:\\leavevmode\\
+    Nurgad \\qty{113}{\\degree} ja $\\alpha$ on \\blank{lähisnurgad}.\\leavevmode\\
+    Nurk $\\alpha=\\blank{84}\\unit{\\degree}$.\\leavevmode\\
+    Nurgad \\qty{113}{\\degree} ja $\\beta$ on \\blank{põiknurgad}.\\leavevmode\\
+    Nurk $\\alpha=\\blank{96}\\unit{\\degree}$.
+  "),
+  list(goal = 26, level = 4, task = "Kui kaks sirget $s$ ja $t$ on paralleelsed, siis\\leavevmode\\
+  \\begin{itemize}
+    \\item[\\Square] nende lõikamisel kolmanda sirgega $u$ tekivad võrdsed tippnurgad.
+    \\item[\\Square] nende lõikamisel kolmanda sirgega $u$ tekivad võrdsed põiknurgad.
+  \\end{itemize}
+  Vastav joonis on
+  \\begin{itemize}
+    \\item[\\Square] @ref(fig:tasks-lines-top-angles).
+    \\item[\\Square] @ref(fig:tasks-lines-close-angles).
+    \\item[\\Square] @ref(fig:tasks-lines-skewed-angles).
+    \\item[\\Square] @ref(fig:tasks-lines-side-angles).
+  \\end{itemize}"),
+  list(goal = 26, level = 4, task = "
+  \\begin{itemize}
+    \\item[\\Square] Kui kahe sirge $s$ ja $t$ lõikamisel kolmanda sirgega $u$ tekkivate kõrvunurkade summa on \\qty{180}{\\degree},
+    \\item[\\Square] Kui kahe sirge $s$ ja $t$ lõikamisel kolmanda sirgega $u$ tekkivate lähisnurkade summa on \\qty{180}{\\degree},
+  \\end{itemize}
+  siis on kaks sirget $s$ ja $t$ paralleelsed ja vastav joonis on
+  \\begin{itemize}
+    \\item[\\Square] @ref(fig:tasks-lines-top-angles).
+    \\item[\\Square] @ref(fig:tasks-lines-close-angles).
+    \\item[\\Square] @ref(fig:tasks-lines-skewed-angles).
+    \\item[\\Square] @ref(fig:tasks-lines-side-angles).
+  \\end{itemize}"),
+  list(
+    goal = 34,
+    level = 1,
+    task = "Vali võrrandiga $x-5=9$ samaväärne võrrand:
+  \\begin{itemize}
+    \\item[\\Circle] $2x-10=19$.
+    \\item[\\Circle] $x+5=14$.
+    \\item[\\Circle] $x=-9+5$.
+    \\item[\\Circle] $x=5+9$.
+  \\end{itemize}"),
+  list(
+    goal = 34,
+    level = 1,
+    task = "Vai võrrandiga $\\frac{2}{x} = \\frac{7}{3}$ samaväärne võrrand:
+  \\begin{itemize}
+    \\item[\\Circle] $\\frac{3}{x} = \\frac{2}{7}$.
+    \\item[\\Circle] $\\frac{x}{3} = \\frac{7}{2}$.
+    \\item[\\Circle] $2x=7 \\cdot 3$.
+    \\item[\\Circle] $2 \\cdot 3=7x$.
+  \\end{itemize}"),
+  list(
+    goal = 37,
+    level = 3,
+    task = "On antud võrrand $5x+7=x-1$. Milline arv on selle võrrandi lahendiks?
+  \\begin{itemize}
+    \\item[\\Circle] \\num{2}.
+    \\item[\\Circle] \\num{-2}.
+    \\item[\\Circle] \\num{-3}.
+    \\item[\\Circle] \\num{-1}.
+  \\end{itemize}"),
+  list(
+    goal = 37,
+    level = 3,
+    task = "Täida lünk nii, et võrrandi lahend oleks $x=1$:\\leavevmode\\
+    $2x+4=\\blank{7}-x$."
+  ),
+  list(
+    goal = 37,
+    level = 3,
+    task = "Võrrandi $\\frac{5x-2}{5}=x+1$ lahendamisel korrutatakse võrrandi mõlemat poolt arvuga 5:
+    $$\\frac{5x-2}{5}=x+1|\\cdot 5.$$
+    Millise võrrandi saad? Kirjuta lünkadesse sobivad arvud:
+    $$\\blank{5}x-\\blank{2}=\\blank{5}x+5$$.
+    Milline allpool olevatest lausetest esitab saadud võrrandi lahendit?
+  \\begin{itemize}
+    \\item[\\Circle] Võrrandil lahendid puuduvad.
+    \\item[\\Circle] Võrrandi lahend on $x=0$.
+    \\item[\\Circle] Võrrandi lahend on $x=7$.
+    \\item[\\Circle] Võrrandil on lõpmata palju lahendeid..
+  \\end{itemize}"),
+  list(
+    goal = 37,
+    level = 3,
+    task = "Lahenda võrrand $0,5x+4=5$! Võrrandi lahend on
+  \\begin{itemize}
+    \\item[\\Square] $2$.
+    \\item[\\Square] $2x$.
+  \\end{itemize}"),
+  list(
+    goal = 37,
+    level = 3,
+    task = "Lahenda võrrand $7-3y=10$! Võrrandi lahend on
+  \\begin{itemize}
+    \\item[\\Square] $1y$.
+    \\item[\\Square] $1x$.
+    \\item[\\Square] $-1$.
+  \\end{itemize}"),
+  list(
+    goal = 39,
+    level = 6,
+    task = "Loe teksti ja koosta tekstile vastav võrrand:\\leavevmode\\
+    Kolm sõpra Markus, Tõnis ja Karl kulutasid poes taskuvaluutat. Markusel jäi pärast poes käiku valuutat alles \\num{4,5} euro võrra vähem kui Karlil. Karlil jäi valuutat alles kaks korda rohkem kui Tõnisel. Kokku jäi poistel raha alles \\num{49,5} eurot.\\leavevmode\\
+    Koosta võrrand, mis näitab, kui palju valuutat jäi kokku sõpradel alles peale poes käiku, kui Karlil alles jäänud valuuta hulka esitab arv $x$:
+    $$\\underbrace{\\blank{x-4,5}}_\\text{Markus}+\\underbrace{x}_\\text{Karl}+\\underbrace{\\blank{\\frac{x}{4}}}_\\text{Tõnis}=49,5.$$
+    Lahenda saadud võrrand ning kirjuta välja võrrandi lahend!\\leavevmode\\
+    Võrrandi lahend on $x=\\blank{24}$."
+  ),
+  list(
+    goal = 41,
+    level = 3,
+    task = "Uuri tabelit \\@ref(tab:tasks-tables-x-y) ja otsusta, milline võrdus esitab seost muutujate $x$ ja $y$ vahel:
+    \\begin{itemize}
+      \\item[\\Circle] $y=-12x.$
+      \\item[\\Circle] $y=-\\frac{12}{x}.$
+      \\item[\\Circle] $y=\\frac{12}{x}.$
+      \\item[\\Circle] $y=12x.$
+    \\end{itemize}
+    Millises punktis lõikab funktsiooni $y=-2x-5$ graafik $y$-telge?\\leavevmode\\
+    Funktsiooni graafik lõikab $y$-telge punktis (\\blank{0}; \\blank{-5})."
+  ),
+  list(
+    goal = 41,
+    level = 3,
+    task = "Millist seost esitab valem $y=-2x-5$?
+    \\begin{itemize}
+      \\item[\\Circle] Lineaarset seost ehk lineaarfunktsiooni.
+      \\item[\\Circle] Võrdelist seost.
+      \\item[\\Circle] Pöördvõrdelist seost.
+      \\item[\\Circle] Ei esita ühtegi seost..
+    \\end{itemize}"
+  ),
+  list(
+    goal = 42,
+    level = 4,
+    task = "Lineaarfunktsioonide $y=ax-3$ ja $y=4x+3$ graafikud on paralleelsed, kui lineaarliikme kordaja $a=$
+    \\begin{itemize}
+      \\item[\\Square] 3.
+      \\item[\\Square] 4.
+    \\end{itemize}"
+  ),
+  list(
+    goal = 42,
+    level = 4,
+    task = "Joonisel \\@ref(fig:tasks-figures-linear-graphs) on kahe funktsiooni graafikud. Sinine graafik esindab funktsiooni
+    \\begin{itemize}
+      \\item[\\Square] $y=-2x+2$.
+      \\item[\\Square] $y=2x-2$.
+      \\item[\\Square] $y=-2x$.
+      \\item[\\Square] $y=-0,5x$.
+    \\end{itemize}
+    Oranž graafik esindab funktsiooni
+    \\begin{itemize}
+      \\item[\\Square] $y=-2x+2$.
+      \\item[\\Square] $y=2x-2$.
+      \\item[\\Square] $y=-2x$.
+      \\item[\\Square] $y=-0,5x$.
+    \\end{itemize}"
+  ),
+  list(goal = 45, level = 3, task = "Joonisel \\@ref(fig:tasks-triangle-gravitational-center) on kolmnurk $KLM$. Selle kolmnurga raskuskeset märgib joonisel punkt $O$. Joonesta kolmnurgale mediaanid tippudest $M$ ja $L$!\\leavevmode\\
+       Kolmnurga mediaanide lõikepunkt jaotab mediaanid kaheks osaks: küljepoolseks ja tipupoolseks osaks. Küljele $KM$ tõmmatud mediaanist tipupoolne osa on \\qty{18}{\\centi\\m} pikkune. Arvuta mediaani kogupikkus!\\leavevmode\\
+       Küljele $KM$ tõmmatud mediaani pikkus on \\blank{27}\\unit{\\centi\\m}."
+  ),
+  list(
+    goal = 45,
+    level = 3,
+    task = "Joonisel \\@ref(fig:tasks-trapecoid-height-triangle) kujutatud kujund koosneb trapetsist $ABDE$ ja kolmnurgast $BCD$. Joonesta trapetsile punktist $A$ kõrgus!\\leavevmode\\
+    Arvuta kujundi pindala!\\leavevmode\\
+    Trapetsi pikem alus on \\blank{7} pikkusühikut.\\leavevmode\\
+    Trapetsi pindala on \\blank{21} pindalaühikut.\\leavevmode\\
+    Kujundi $ABCD$ pindala on \\blank{31,5} pindalaühikut."
+  ),
+  list(
+    goal = 45,
+    level = 3,
+    task = "Vaata joonist \\@ref(fig:tasks-figures-multiangle) ja vali õige valikvastus!\\leavevmode\\
+    Joonisel on
+    \\begin{itemize}
+      \\item[Square] korrapärane kuusnurk
+      \\item[Square] korrapärane viissnurk
+      \\item[Square] mittekorrapärane kuusnurk
+      \\item[Square] mittekorrapärane viissnurk
+    \\end{itemize}
+    $ABCDE$.
+    Joonesta viisnurgale diagonaalid punktist $A$.
+    Viisnurga sisenurkade summa arvutatakse avaldise $(\\blank{n-2}) \\cdot 180 \\degree$ abil."
+  ),
+  list(
+    goal = 45,
+    level = 3,
+    task = "Joonisel \\@ref(fig:tasks-figures-parallelogram) on rööpkülik $KLMN$.\\leavevmode\\
+    Rööpküliku külje $KN$ pikkus on \\blank{3}\\,\\unit{\\centi\\m} ja nurga $N$ suurus on
+    \\begin{itemize}
+      \\item[\\Square] 140\\unit{\\degree}.
+      \\item[\\Square] 50\\unit{\\degree}.
+    \\end{itemize}
+    Joonesta rööpkülikule punktist $N$ kõrgus!\\leavevmode\\
+    Kui kujundi kõrgus on $h=\\qty{2,4}{\\centi\\m}$, siis kujundi pindala $S=$
+    \\begin{itemize}
+      \\item[\\Square] 12
+      \\item[\\Square] 9,8
+      \\item[\\Square] 4,8
+    \\end{itemize}
+    \\unit{\\square\\centi\\m}."
+  ),
+  list(
+    goal = 45,
+    level = 3,
+    task = "Joonisel \\@ref(fig:tasks-figures-rhombus) on romb $ABCD$.\\leavevmode\\
+    Uuri joonist ja märgista, kui väide on tõene:
+    \\begin{itemize}
+      \\item[\\Square] Romb on korrapärane nelinurk.
+      \\item[\\Square] Rombi diagonaalid poolitavad teineteist.
+      \\item[\\Square] Rombi diagonaalid on risti.
+    \\end{itemize}"
+  ),
+  list(
+    goal = 45,
+    level = 3,
+    task = "Rombi diagonaalide pikkused on \\qty{2}{\\deci\\m} ja \\qty{8}{\\deci\\m}.\\leavevmode
+    Rombi pindala on
+    \\begin{itemize}
+      \\item[\\Square] 6
+      \\item[\\Square] 8
+    \\end{itemize}
+    \\unit{\\deci\\m}."
+  ),
+  list(
+    goal = 46,
+    level = 3,
+    task = "Pealt lahtise risttahukakujulise anuma ruudukujulise põhja ühe serva pikkus on \\qty{5}{\\centi\\m}. Anuma kõrgus on \\qty{8}{\\deci\\m}. Mitu liitrit vett mahutab see anum?
+    \\begin{itemize}
+      \\item[\\Circle] 40
+      \\item[\\Circle] 0,2
+      \\item[\\Circle] 2
+      \\item[\\Circle] 0,4
+    \\end{itemize}
+    \\unit{\\liter}."
+  ),
+  list(goal = 48, level = 1, task = "Joonisel \\@ref(fig:tasks-triangle-central-line) on kolmnurk $ABC$, millesse on joonestatud lõik $a$. Uuri joonist ning vali õiged väited valikvastuste seast lõigu $a$ kohta ja täida lünk:\\leavevmode\\
+       Lõik $a$ on kolmnurga $ABC$\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Circle] kesklõik.
+      \\item[\\Circle] keskristsirge.
+      \\item[\\Circle] küljepoolitaja.
+      \\item[\\Circle] mediaan.
+    \\end{itemize}
+    Lõik $a$ on kolmnurga\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Circle] küljega $BC$ risti.
+      \\item[\\Circle] küljega $AC$ \\qty{30}{\\degree} nurga all.
+      \\item[\\Circle] küljega $AB$ paralleelne.
+      \\item[\\Circle] küljega $AB$ lõikuv.
+    \\end{itemize}
+    Lõigu $a$ pikkus on \\blank{3} pikkusühikut.
+    "),
+  list(goal = 48, level = 1, task = "Kolmnurga külgede pikkused on \\qty{4}{\\centi\\m}, \\qty{6}{\\centi\\m} ja \\qty{7}{\\centi\\m}. Arvuta kolmnurga kesklõikudest moodustatud kolmnurga ümbermõõt!\\leavevmode\\
+       Kesklõikudest moodustunud komnurga ümbermõõt on $P=\\blank{\\num{8,5}}\\unit{\\centi\\m}$."),
+  list(
+    goal = 48,
+    level = 1,
+    task = "Joonisel \\@ref(fig:tasks-trapecoid-central-line) on olemas trapetsi kõikide külgede pikkused ja kõikid ekülgede keskpunktid.\\leavevmode\\
+    Joonesta trapetsi kesklõik!\\leavevmode\\
+    Arvuta kesklõigu pikkus! Kirjuta lünkadesse vastavad arvud!\\leavevmode\\
+    $K=\\frac{\\blank{\\qty{5,1}{\\centi\\m}} + \\blank{\\qty{8,9}{\\centi\\m}}}{2}=\\blank{7}\\unit{\\centi\\m}$."
+  ),
+  list(
+    goal = 48,
+    level = 1,
+    task = "Joonisel \\@ref(fig:tasks-trapecoid-diagonal) on trapetsikujuline maatükk, mille pikem alus on \\qty{1000}{\\m}. Mööda trapetsikujulise maatüki kesklõiku jookseb kuivenduskraav. Naabrite majad paiknevad trapetsi tippudes nii, et kõige lühem jalgtee naabrini läheb mööda trapetsi diagonaali. Kuivenduskraav ja jalgtee lõikuvad nii, et lühem osa kuivenduskraavist on \\qty{300}{\\m} (vaata joonist). Veel on teada, et maatüki kahe paralleelse külje vaheline kaugus on \\qty{450}{\\m}.\\leavevmode\\
+    Täida lüngad järgnevates lausetes:\\leavevmode\\
+    Kuivenduskraavi pikkus on $k=300+\\blank{500}=\\blank{800}\\,(\\unit{\\m})$.\\leavevmode\\
+    Maatüki lühema aluse pikkus on \\blank{600}\\unit{\\m}.\\leavevmode\\
+    Maatüki pindala on \\blank{36}\\unit{\\hectare}."
+  ),
+  list(
+    goal = 50,
+    level = 4,
+    task = "$0,0001=10^{\\blank{-4}}.$"
+  ),
+  list(
+    goal = 50,
+    level = 4,
+    task = "$100000=10^{\\blank{4}}.$"
+  )
 )
 
 # Putting together all the tasks
@@ -230,7 +862,7 @@ for (index_of_pupil in 1:number_of_pupils) {
     # levels_in_use <- unique(x = tasks_of_goal$level)
     # number_of_levels_in_use <- length(levels_in_use)
 
-    for (index_of_levels in 1:5) {
+    for (index_of_levels in 1:6) {
       tasks_goal_level <- subset(arranged_sampled_tasks, index_of_levels == `level` & goals_in_use[index] == `goal`)
       number_of_tasks_goal_level <- nrow(tasks_goal_level)
       if (number_of_tasks_goal_level > 0) {
@@ -263,69 +895,69 @@ for (index_of_pupil in 1:number_of_pupils) {
 
 ```{r label="tasks-many-per-pupil", echo=FALSE, results='asis'}
 # profvis({
-
-for (index_of_pupil in 1:number_of_pupils) {
-  cat(paste("### Test: ", index_of_pupil, ". õpilane\n\n", sep = ""))
-
-  for (index in 1:number_of_goals_in_use) {
-    # print(" index_goals_in_use ")
-    # print(index)
-    # print(" lõpp index_goals_in_use ")
-    cat(paste(
-      "**\\color[hsb]{0.",
-      goals[[goals_in_use[index]]]$level - 1,
-      ", 1, .75}{Õpiväljund:}** Õpilane ",
-      goals[[goals_in_use[index]]]$goal,
-      ".\n\n", 
-      sep = ""
-    ))
-    
-    # tasks_of_goal <- subset(chosen_tasks, goals_in_use[index] == `goal`)
-    # levels_in_use <- unique(x = tasks_of_goal$level)
-    # number_of_levels_in_use <- length(levels_in_use)
-
-    for (index_of_levels in 1:5) {
-      tasks_goal_level <- subset(arranged_sampled_tasks, index_of_levels == `level` & goals_in_use[index] == `goal`)
-      number_of_tasks_goal_level <- nrow(tasks_goal_level)
-      if (number_of_tasks_goal_level > 1) {
-        
-        cat(
-          "**",
-          index_of_levels,
-          ". taseme ülesanded:**\n\n",
-          sep = ""
-        )
-      
-        # cat(tasks_goal_level[index_of_pupil %% number_of_tasks_goal_level + 1, ]$task, "\n\n", sep = "")
-      } else if (number_of_tasks_goal_level > 0) {
-        
-        cat(
-          "**",
-          index_of_levels,
-          ". taseme ülesanne:** ",
-          sep = ""
-        )
-        
-      }
-      
-      if (number_of_tasks_goal_level > 0) {
-        max_number_of_tasks <- 8 - 1
-        # cat("\\begin{enumerate}[label=\\alph*.]\n")
-        for (index_of_task_goal_level in 0:max_number_of_tasks) {
-          cat(index_of_pupil, "-", index, "-", index_of_levels, "-", index_of_task_goal_level, ". ", tasks_goal_level[(index_of_pupil + index_of_task_goal_level) %% number_of_tasks_goal_level + 1, ]$task, "\n\n", sep = "")
-        }
-        # cat("\\end{enumerate}\n")
-      }
-
-      # tasks_at_level <- subset(
-      #   tasks_of_goal,
-      #   levels_in_use[index_of_levels] == `level`
-      # )
-    }
-
-  }
-
-}
+# 
+# for (index_of_pupil in 1:number_of_pupils) {
+#   cat(paste("### Test: ", index_of_pupil, ". õpilane\n\n", sep = ""))
+# 
+#   for (index in 1:number_of_goals_in_use) {
+#     # print(" index_goals_in_use ")
+#     # print(index)
+#     # print(" lõpp index_goals_in_use ")
+#     cat(paste(
+#       "**\\color[hsb]{0.",
+#       goals[[goals_in_use[index]]]$level - 1,
+#       ", 1, .75}{Õpiväljund:}** Õpilane ",
+#       goals[[goals_in_use[index]]]$goal,
+#       ".\n\n", 
+#       sep = ""
+#     ))
+#     
+#     # tasks_of_goal <- subset(chosen_tasks, goals_in_use[index] == `goal`)
+#     # levels_in_use <- unique(x = tasks_of_goal$level)
+#     # number_of_levels_in_use <- length(levels_in_use)
+# 
+#     for (index_of_levels in 1:5) {
+#       tasks_goal_level <- subset(arranged_sampled_tasks, index_of_levels == `level` & goals_in_use[index] == `goal`)
+#       number_of_tasks_goal_level <- nrow(tasks_goal_level)
+#       if (number_of_tasks_goal_level > 1) {
+#         
+#         cat(
+#           "**",
+#           index_of_levels,
+#           ". taseme ülesanded:**\n\n",
+#           sep = ""
+#         )
+#       
+#         # cat(tasks_goal_level[index_of_pupil %% number_of_tasks_goal_level + 1, ]$task, "\n\n", sep = "")
+#       } else if (number_of_tasks_goal_level > 0) {
+#         
+#         cat(
+#           "**",
+#           index_of_levels,
+#           ". taseme ülesanne:** ",
+#           sep = ""
+#         )
+#         
+#       }
+#       
+#       if (number_of_tasks_goal_level > 0) {
+#         max_number_of_tasks <- 8 - 1
+#         # cat("\\begin{enumerate}[label=\\alph*.]\n")
+#         for (index_of_task_goal_level in 0:max_number_of_tasks) {
+#           cat(index_of_pupil, "-", index, "-", index_of_levels, "-", index_of_task_goal_level, ". ", tasks_goal_level[(index_of_pupil + index_of_task_goal_level) %% number_of_tasks_goal_level + 1, ]$task, "\n\n", sep = "")
+#         }
+#         # cat("\\end{enumerate}\n")
+#       }
+# 
+#       # tasks_at_level <- subset(
+#       #   tasks_of_goal,
+#       #   levels_in_use[index_of_levels] == `level`
+#       # )
+#     }
+# 
+#   }
+# 
+# }
 # })
 # current_pupil <- 1
 # 
@@ -377,3 +1009,121 @@ for (index_of_pupil in 1:number_of_pupils) {
 
 ```
 
+## Tabelid
+
+```{r label="tasks-tables-x-y", echo=FALSE}
+rownames <- c("x", "y"
+              )
+data <- data.frame(
+  c( # 1
+  	-4, # x
+  	3 # y
+  ),
+  c( # 2
+  	2, # x
+  	-6 # y
+  ),
+  c( # 3
+  	3, # x
+  	-4 # y
+  )
+)
+
+data_frame <- data[1]
+for (data_identifier in 2:3) {
+  data_frame <- cbind(data_frame, data[data_identifier])
+}
+
+colnames(data_frame) <- seq(from=1, to=ncol(data_frame))
+rownames(data_frame) <- rownames
+
+table <- print_table(
+  table = data_frame,
+  caption = "Muutujate $x$ ja $y$ väärtused."
+)
+
+table
+
+```
+
+## Joonised
+
+```{r label = "tasks-sector-diagram", echo=FALSE, fig.cap = "Roosioksa talu pererahva maade jaotus."}
+include_external_graphics("rmd/sektor1.png")
+
+```
+
+```{r label = "tasks-discount-book", echo=FALSE, fig.cap = "Allahinnatud raamat."}
+include_external_graphics("rmd/reisijuht.png")
+
+```
+
+```{r label = "tasks-lines-angles", echo=FALSE, fig.cap = "Kahe sirge lõikamisel kolmandaga nurgad."}
+include_external_graphics("rmd/Def2.png")
+
+```
+
+```{r label = "tasks-lines-side-angles", echo=FALSE, fig.cap = "Kahe sirge lõikamisel kolmandaga kõrvunurgad."}
+include_external_graphics("rmd/joon2.png")
+
+```
+
+```{r label = "tasks-lines-top-angles", echo=FALSE, fig.cap = "Kahe sirge lõikamisel kolmandaga tippnurgad."}
+include_external_graphics("rmd/joon4.png")
+
+```
+
+```{r label = "tasks-lines-skewed-angles", echo=FALSE, fig.cap = "Kahe sirge lõikamisel kolmandaga põiknurgad."}
+include_external_graphics("rmd/joon1.png")
+
+```
+
+```{r label = "tasks-lines-close-angles", echo=FALSE, fig.cap = "Kahe sirge lõikamisel kolmandaga lähisnurgad."}
+include_external_graphics("rmd/joon3.png")
+
+```
+
+```{r label = "tasks-triangle-central-line", echo=FALSE, fig.cap = "Kolmnurga teatud lisajoon."}
+include_external_graphics("rmd/DEF3.png")
+
+```
+
+```{r label = "tasks-triangle-gravitational-center", echo=FALSE, fig.cap = "Kolmnurga raskuskese."}
+include_external_graphics("rmd/DEF5.png")
+
+```
+
+```{r label = "tasks-trapecoid-height-triangle", echo=FALSE, fig.cap = "Kolmnurgast ja trapetsist moodustuv kujund."}
+include_external_graphics("rmd/trapets.png")
+
+```
+
+```{r label = "tasks-trapecoid-central-line", echo=FALSE, fig.cap = "Trapets kesklõiguta."}
+include_external_graphics("rmd/trapets_DEF8.png")
+
+```
+
+```{r label = "tasks-trapecoid-diagonal", echo=FALSE, fig.cap = "Trapets diagonaaliga."}
+include_external_graphics("rmd/DEF9.png")
+
+```
+
+```{r label = "tasks-figures-linear-graphs", echo=FALSE, fig.cap = "Lineaarsed graafikud."}
+include_external_graphics("rmd/fun6_joonis.png")
+
+```
+
+```{r label = "tasks-figures-multiangle", echo=FALSE, fig.cap = "Mitme nurgaga kujund."}
+include_external_graphics("rmd/hlkn1_joonis.png")
+
+```
+
+```{r label = "tasks-figures-parallelogram", echo=FALSE, fig.cap = "Rööpkülik."}
+include_external_graphics("rmd/hlkn3_joonis.png")
+
+```
+
+```{r label = "tasks-figures-rhombus", echo=FALSE, fig.cap = "Romb."}
+include_external_graphics("rmd/hlkn5_joonis.png")
+
+```

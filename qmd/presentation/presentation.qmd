@@ -4,9 +4,9 @@ author:
 bibliography: presentation.bib
 csl: ../../apa-numeric-superscript-brackets.csl
 title: |
-    | Individual experiences with
-    | chlorine dioxide solution
-    | (CDS)
+    | Fundamentaalsed
+    | loodusteadused
+    | matemaatiliselt
 output-file: presentation.html
 format:
   revealjs:
@@ -18,7 +18,7 @@ format:
 
 ---
 
-## *Quarto*
+## Reeglite ettepanekud
 
 ```{r label="preamble"}
 #' This function displays external graphics by making the appropriate conversion aforehead.
@@ -44,55 +44,111 @@ include_external_graphics = function(path) {
 
 ```
 
-- does not link between files,
-- every presentation is separate,
-- looks so much better than *bookdown*-presentations.
+1. Ole üksi või kahekesi või kolmekesi rühmas!
+2. Mõtle ja kui oled rühmas, arutage omavahel, millised kokkulepped võiksid meil olla, et oleks tõhus õppida.
+3. Kirjuta(ge) oma ettepanekud üles!
 
-What version of *Quarto* do I have[@how]?
+## Reeglite arutelu ja kehtestamine
 
-```
-quarto check
+1. Igast rühmast öeldakse ühekaupa üks reegli ettepanek.
 
-```
+2. Arutame igat ettepanekut ühekaupa konsensuseni või kõrvalejätmiseni.
 
-## Setup
+3. Otsustame, kas kehtestame selle reegli.
 
-1. For every presentation a subfolder inside the subfolder *qmd*.
+4. Kui kehtestame reegli, märgin selle üles.
 
-2. Link to the presentation in *js.js*:
+5. Reeglite komplekti suhtes räägime läbi ja otsustame sanktsiooni(d) ja boonuse(d), mille märgin ka üles.
 
-```
-  let nameOfPresentation = "<name-of-presentation>";
-  createLink(div, "presentation-" + nameOfPresentation, nameOfPresentation + ".html", "<The title of the presentation>");
+6. Reeglite komplekti allkirjastame kõik lepinguks ja igaüks saab oma eksemplari.
 
-```
+## Reeglid kaheksandal tasemel 1
 
-## Preparing for remote controlling
+1. Kui õppepäeval on meil vähemalt kaks õppesessiooni järjest, mängime valikvastustega küsimustega õppemängu 15 minutit.
 
-1. Cloning *multiplex* [@a2023_multiplex].
+2. Vahel vaatame õppeteemaga seotud filmi.
 
-2.  In the *multiplex*'s folder:
+3. Kokkuvõtva hinde testi sooritamisel on lubatud arutada kaasõpilasega ja kasutada oma vihikut, muudes hindelistes testides mitte.
 
-    ```
-    npm install reveal-multiplex
-    
-    ```
-    
-3.  Creating the service:
+4. Tunnis on lubatud süüa ja juua, kui see ei häiri, välja arvatud juhul, kui häirimine on osa õppeprotsessist.
 
-    ```
-    sudo emacs /etc/systemd/system/multiplex.service
-    
-    ```
-    
-4.  Starting the server:
+5. Kalkulaatori kasutamine on lubatud ainult õpetaja loal ja ainult eraldiseisva kalkulaatori kujul (mitte nutitelefonis).
 
-    ```
-    sudo systemctl start multiplex.service
-    
-    ```
+## Reeglid kaheksandal tasemel 2
 
-5. Directing traffic to port 1948 into the server machine.
+6. Kui õpilane lõpetab kokkuvõtva hinde testi enne testi sooritamiseks ettenähtud aja lõppu, võib ta ülejäänud aja kasutada nutitelefoniga, tingimusel et see ei sega teisi.
+
+7. Kui õpilane tunnis magab, peab ta põhjendama, miks see juhtus, ja leidma lahenduse, et see ei korduks.
+
+8. Kui õpilane rikub korduvalt mõnda reeglit *1*–*7*, peab ta sooritama koheselt 10-minutilise hindelise testi õpitava õpiväljundi kohta.
+
+## Reeglid üheksandal tasemel 1
+
+1. Kui õpetaja räägib, kuulavad teised.
+
+2. Me ei sega õppetööd (ei tegele kõrvaliste tegevustega, ei jookse, ei kakle, ei kasuta pahasid sõnu).
+
+3. Telefon on lubatud ainult õpetaja loal.
+
+4. Kui on abi vaja, küsime õpilaselt või õpetajalt, kasutades vajadusel muid abivahendeid õpetaja loal.
+See reegel ei rakendu sisulise abi küsimisele kokkuvõtvas hindelises testis grupivälise küsitava suhtes.
+
+5. Kui õpilane soovib õpperuumist väljuda, võib ta seda teha, kui ta küsib selleks luba ja kui ta saab selle loa õpetajalt.
+
+## Reeglid üheksandal tasemel 2
+
+6. Kui õpilane õppesessioonis magab ja see magamine pole seotud õppimisega, peab ta selgitama põhjuse ja otsima lahenduse, et see ei korduks.
+
+7. Keeleline reegel: õpetajaga räägime eesti keeles, omavahel võib suhelda vene keeles.
+
+8. Töötame gruppides või kasutame õppemänge vastavalt vajadusele ja kokkuleppele.
+
+9. Korra nädalas vaatame filmi või tegeleme muul viisil vaheldusrikka õppimisega.
+
+10. Kokkuvõtva hindelise testi sooritavad õpilased kahes kuni neljas grupis, tohtides arutada ainult grupisiseselt.
+
+## Reeglid üheksandal tasemel: tagamine
+
+11. Kui õpilane rikub reegleid, saab ta trahvipunkti; iga viie punkti eest kirjutab õpetaja märkuse Stuudiumisse.
+
+12. Kui nädala kestel ei lisandu ühtki trahvipunkti, saavad kõik õpilased Stuudiumisse kiituse.
+
+## Hindamine: lähtetest
+
+1. Lähtetest, et me teaksime, mida sa oskad, tead, mäletad.
+
+2. Lähtetesti tulemuste põhjal individuaalne õpijärg.
+
+## Õppeprotsess
+
+Sama järjega õpilased õpivad koos sammhaaval iga õpiväljundi suunas täites kõik oma lüngad teadmistes-oskustes:
+
+1. Selgitan teooriat.
+
+2. Väikese variatsiooniga harjutusülesanded.
+
+3. Suure variatsiooniga harjutusülesanded.
+
+4. Võimalusel testime teooriat praktiliselt.
+
+5. Sulandsortimine.
+
+Keelatud on kõik abivahendid, välja arvatud need, mis on minu poolt ekstra lubatud.
+
+## Hindamine: sulandsortimine
+
+1. Kaks õpilast, kel harjutusülesanded sooritatud, lahendavad üheaegselt sama ülesannet.
+
+2. Õpilane, kes esitab mulle õige lahendi esimesena, saab maksimaalse hinde selle õpiväljundi saavutatuse kohta. Moodustub kahene edetabel.
+
+3. Võrreldakse kõiki moodustunud edetabeleid omavahel samamoodi paarikaupa võisteldes, kuni meil on selle õpiväljundi kohta lõplik edetabel.
+
+4. Edetabeli viimane õpilane saab eritoetust, edetabeli esimestelt on mõistlik nõu küsida.
+
+## Hindamine: kokkuvõttev hindamine
+
+- Iga trimestri lõpus on kokkuvõttev hindamine testiga, milles on ülesanded läbisegi või komplekssena ainult nende õpiväljundite kohta, mille kohta õpilasel juba on hinne.
+- Igal õpiväljundil ja vastaval hindel on kaal vastavalt Bloomi taksonoomiale.
 
 ## Remote controlling
 
