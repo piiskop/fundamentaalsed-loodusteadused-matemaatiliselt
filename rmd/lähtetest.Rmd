@@ -215,6 +215,10 @@ võrdelise jaotamise ülesandeid)",
   list( # 50
     goal = "kirjutab suuri ja väikseid arve standardkujul",
     level = 4
+  ),
+  list( # 51
+    goal = "eristab hüpoteesi, eeldust, väidet ja tõestust, selgitab mõne teoreemi tõestuskäiku, vajaduse korral tuletab lihtsamaid valemeid",
+    level = 4
   )
 )
 
@@ -441,11 +445,39 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
     \\item[\\Square] \\num{0,2}.
     \\item[\\Square] $\\frac{1}{6}$.
   \\end{itemize}"),
-  list(goal = 25, level = 1, task = "Joonisel \\@ref(fig:tasks-lines-angles) on näidatud kahe sirge lõikamisel kolmanda sirgega tekkinud nurgad. Uuri joonist ja täida lüngad:\\leavevmode\\
-    Nurgad \\qty{113}{\\degree} ja $\\alpha$ on \\blank{lähisnurgad}.\\leavevmode\\
-    Nurk $\\alpha=\\blank{84}\\unit{\\degree}$.\\leavevmode\\
-    Nurgad \\qty{113}{\\degree} ja $\\beta$ on \\blank{põiknurgad}.\\leavevmode\\
-    Nurk $\\alpha=\\blank{96}\\unit{\\degree}$.
+  list(goal = 25, level = 1, task = "Joonisel \\@ref(fig:tasks-lines-angles) on näidatud kahe sirge lõikamisel kolmanda sirgega tekkinud nurgad.\\leavevmode\\
+    Nurgad \\qty{113}{\\degree} ja $\\alpha$ on\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Square] lähisnurgad.
+      \\item[\\Square] põiknurgad.
+      \\item[\\Square] kõrvunurgad.
+      \\item[\\Square] tippnurgad.
+      \\item[\\Square] sirgnurgad.
+      \\item[\\Square] \\qty{113}{\\degree}.
+    \\end{itemize}
+    Nurk $\\alpha=$\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Square] \\qty{84}{\\degree}.
+      \\item[\\Square] \\qty{113}{\\degree}.
+      \\item[\\Square] \\qty{163}{\\degree}.
+      \\item[\\Square] \\qty{67}{\\degree}.
+    \\end{itemize}
+    Nurgad \\qty{113}{\\degree} ja $\\beta$ on\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Square] lähisnurgad.
+      \\item[\\Square] põiknurgad.
+      \\item[\\Square] kõrvunurgad.
+      \\item[\\Square] tippnurgad.
+      \\item[\\Square] vastasnurgad.
+      \\item[\\Square] \\qty{67}{\\degree}.
+    \\end{itemize}
+    Nurk $\\beta=$\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Square] \\qty{96}{\\degree}.
+      \\item[\\Square] \\qty{67}{\\degree}.
+      \\item[\\Square] \\qty{113}{\\degree}.
+      \\item[\\Square] \\qty{84}{\\degree}.
+    \\end{itemize}
   "),
   list(goal = 26, level = 4, task = "Kui kaks sirget $s$ ja $t$ on paralleelsed, siis\\leavevmode\\
   \\begin{itemize}
@@ -601,16 +633,37 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
   ),
   list(goal = 45, level = 3, task = "Joonisel \\@ref(fig:tasks-triangle-gravitational-center) on kolmnurk $KLM$. Selle kolmnurga raskuskeset märgib joonisel punkt $O$. Joonesta kolmnurgale mediaanid tippudest $M$ ja $L$!\\leavevmode\\
        Kolmnurga mediaanide lõikepunkt jaotab mediaanid kaheks osaks: küljepoolseks ja tipupoolseks osaks. Küljele $KM$ tõmmatud mediaanist tipupoolne osa on \\qty{18}{\\centi\\m} pikkune. Arvuta mediaani kogupikkus!\\leavevmode\\
-       Küljele $KM$ tõmmatud mediaani pikkus on \\blank{27}\\unit{\\centi\\m}."
+       Küljele $KM$ tõmmatud mediaani pikkus on\\leavevmode\\
+       \\begin{itemize}
+        \\item[\\Square] \\qty{27}{\\centi\\m}.
+        \\item[\\Square] \\qty{3,2}{\\centi\\m}.
+      \\end{itemize}
+       "
   ),
   list(
     goal = 45,
     level = 3,
     task = "Joonisel \\@ref(fig:tasks-trapecoid-height-triangle) kujutatud kujund koosneb trapetsist $ABDE$ ja kolmnurgast $BCD$. Joonesta trapetsile punktist $A$ kõrgus!\\leavevmode\\
     Arvuta kujundi pindala!\\leavevmode\\
-    Trapetsi pikem alus on \\blank{7} pikkusühikut.\\leavevmode\\
-    Trapetsi pindala on \\blank{21} pindalaühikut.\\leavevmode\\
-    Kujundi $ABCD$ pindala on \\blank{31,5} pindalaühikut."
+    Trapetsi pikem alus on\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Square] \\num{7}\\ensuremath{\\thinspace}pikkusühikut.
+      \\item[\\Square] \\num{5,1}\\ensuremath{\\thinspace}pikkusühikut.
+      \\item[\\Square] \\num{8}\\ensuremath{\\thinspace}pikkusühikut.
+    \\end{itemize}
+    Trapetsi pindala on\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Square] \\num{16,5}\\ensuremath{\\thinspace}pindalaühikut.
+      \\item[\\Square] \\num{28}\\ensuremath{\\thinspace}pindalaühikut.
+      \\item[\\Square] \\unit{\\centi\\m}\\ensuremath{\\thinspace}pindalaühikut.
+    \\end{itemize}
+    Kujundi $ABCD$ pindala on\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Square] \\num{27}\\ensuremath{\\thinspace}pindalaühikut.
+      \\item[\\Square] \\num{40}\\ensuremath{\\thinspace}pindalaühikut.
+      \\item[\\Square] \\unit{\\centi\\m}\\ensuremath{\\thinspace}pindalaühikut.
+    \\end{itemize}
+    "
   ),
   list(
     goal = 45,
@@ -686,6 +739,7 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
       \\item[\\Circle] keskristsirge.
       \\item[\\Circle] küljepoolitaja.
       \\item[\\Circle] mediaan.
+      \\item[\\Circle] on võrdhaarne.
     \\end{itemize}
     Lõik $a$ on kolmnurga\\leavevmode\\
     \\begin{itemize}
@@ -693,37 +747,87 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
       \\item[\\Circle] küljega $AC$ \\qty{30}{\\degree} nurga all.
       \\item[\\Circle] küljega $AB$ paralleelne.
       \\item[\\Circle] küljega $AB$ lõikuv.
+      \\item[\\Circle] kõrgus.
+      \\item[\\Circle] mediaan.
     \\end{itemize}
-    Lõigu $a$ pikkus on \\blank{3} pikkusühikut.
+    Lõigu $a$ pikkus on\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Square] 3\\ensuremath{\\thinspace}pikkusühikut.
+      \\item[\\Square] $\\qty{2}{\\centi\\m}-\\qty{20}{\\milli\\m}$\\ensuremath{\\thinspace}pikkusühikut.
+    \\end{itemize}
     "),
   list(goal = 48, level = 1, task = "Kolmnurga külgede pikkused on \\qty{4}{\\centi\\m}, \\qty{6}{\\centi\\m} ja \\qty{7}{\\centi\\m}. Arvuta kolmnurga kesklõikudest moodustatud kolmnurga ümbermõõt!\\leavevmode\\
-       Kesklõikudest moodustunud komnurga ümbermõõt on $P=\\blank{\\num{8,5}}\\unit{\\centi\\m}$."),
+       Kesklõikudest moodustunud komnurga ümbermõõt on $P=$\\leavevmode\\
+       \\begin{itemize}
+        \\item[\\Square] \\qty{8,5}{\\centi\\m}.
+        \\item[\\Square] \\qty{17}{\\centi\\m}.
+      \\end{itemize}
+       "),
   list(
     goal = 48,
     level = 1,
     task = "Joonisel \\@ref(fig:tasks-trapecoid-central-line) on olemas trapetsi kõikide külgede pikkused ja kõikid ekülgede keskpunktid.\\leavevmode\\
     Joonesta trapetsi kesklõik!\\leavevmode\\
-    Arvuta kesklõigu pikkus! Kirjuta lünkadesse vastavad arvud!\\leavevmode\\
-    $K=\\frac{\\blank{\\qty{5,1}{\\centi\\m}} + \\blank{\\qty{8,9}{\\centi\\m}}}{2}=\\blank{7}\\unit{\\centi\\m}$."
+    Arvuta kesklõigu $K$ pikkus! Märgista, kui väide on õige!\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Square] $K=\\frac{\\qty{5,1}{\\centi\\m} + \\qty{8,9}{\\centi\\m}}{2}=\\qty{7}{\\centi\\m}$.
+      \\item[\\Square] $K=\\frac{\\qty{3,4}{\\centi\\m} + \\qty{3,6}{\\centi\\m}}{2}=\\qty{3,5}{\\centi\\m}$.
+    \\end{itemize}
+    "
   ),
   list(
     goal = 48,
     level = 1,
     task = "Joonisel \\@ref(fig:tasks-trapecoid-diagonal) on trapetsikujuline maatükk, mille pikem alus on \\qty{1000}{\\m}. Mööda trapetsikujulise maatüki kesklõiku jookseb kuivenduskraav. Naabrite majad paiknevad trapetsi tippudes nii, et kõige lühem jalgtee naabrini läheb mööda trapetsi diagonaali. Kuivenduskraav ja jalgtee lõikuvad nii, et lühem osa kuivenduskraavist on \\qty{300}{\\m} (vaata joonist). Veel on teada, et maatüki kahe paralleelse külje vaheline kaugus on \\qty{450}{\\m}.\\leavevmode\\
-    Täida lüngad järgnevates lausetes:\\leavevmode\\
-    Kuivenduskraavi pikkus on $k=300+\\blank{500}=\\blank{800}\\,(\\unit{\\m})$.\\leavevmode\\
-    Maatüki lühema aluse pikkus on \\blank{600}\\unit{\\m}.\\leavevmode\\
-    Maatüki pindala on \\blank{36}\\unit{\\hectare}."
+    Märgista, kui väide on õige:\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Square] Kuivenduskraavi pikkus on $k=300+\\num{500}=\\num{800}\\ensuremath{\\thinspace}(\\unit{\\m})$.
+      \\item[\\Square] Maatüki lühema aluse pikkus on \\qty{600}{\\m}.
+      \\item[\\Square] Maatüki pindala on \\qty{36}{\\hectare}.
+      \\item[\\Square] Kuivenduskraavi pikkus on $k=300+\\num{1000}=\\num{1300}\\ensuremath{\\thinspace}(\\unit{\\m})$.
+      \\item[\\Square] Maatüki lühema aluse pikkus on \\qty{220}{\\m}.
+      \\item[\\Square] Kuivenduskraavi pikkus on $k=300+\\num{450}=\\num{750}\\ensuremath{\\thinspace}(\\unit{\\m})$.
+      \\item[\\Square] Maatüki lühema aluse pikkus on \\qty{1000}{\\m}.
+      \\item[\\Square] Maatüki pindala on \\qty{18}{\\hectare}.
+      \\item[\\Square] Maatüki lühema aluse pikkus on \\qty{100}{\\m}.
+      \\item[\\Square] Maatüki pindala on \\qty{1500}{\\hectare}.
+    \\end{itemize}
+    "
   ),
   list(
     goal = 50,
     level = 4,
-    task = "$0,0001=10^{\\blank{-4}}.$"
+    task = "$\\num{0.0001}=10^{\\blank{-4}}.$"
   ),
   list(
     goal = 50,
     level = 4,
     task = "$100000=10^{\\blank{4}}.$"
+  ),
+  list(
+    goal = 51,
+    level = 4,
+    task = "Rööpkülikuks nimetatakse nelinurka, mille
+    \\begin{itemize}
+      \\item[\\Square] nurgad on võrdse suurusega.
+      \\item[\\Square] küljed on võrdse pikkusega.
+      \\item[\\Square] vastasnurgad on võrdsed.
+      \\item[\\Square] vastasküljed on paralleelsed.
+    \\end{itemize}
+    Teoreemi sõnastuses teoreemi eeldus algab sõnaga
+    \\begin{itemize}
+      \\item[\\Circle] ja
+      \\item[\\Circle] kui
+      \\item[\\Circle] ei
+      \\item[\\Circle] siis
+    \\end{itemize}
+     ja teoreemi väide algab sõnaga
+   \\begin{itemize}
+      \\item[\\Circle] ja.
+      \\item[\\Circle] kui.
+      \\item[\\Circle] ei.
+      \\item[\\Circle] siis.
+    \\end{itemize}"
   )
 )
 
