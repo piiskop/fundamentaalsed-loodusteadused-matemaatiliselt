@@ -60,9 +60,9 @@
 
 28.
 
-29.
+29. teab kesk- ja piirdenurga mõisteid ning nendevahelist seost.
 
-30.
+30. teab ringjoone puutuja mõistet ja omadust.
 
 31.
 
@@ -916,8 +916,8 @@ c( # 28
 ),
 c( # 29
 	NA, # Margus Evart
-	NA, # Mikaela Galperman
-	NA, # Valerija Korenkova
+	1, # Mikaela Galperman
+	1, # Valerija Korenkova
 	NA, # Dmitri Litvinenko
 	NA, # Margarita Mussijenko
 	NA, # Zahar Orikovi
@@ -937,7 +937,7 @@ c( # 30
 	NA, # Mikaela Galperman
 	NA, # Valerija Korenkova
 	NA, # Dmitri Litvinenko
-	NA, # Margarita Mussijenko
+	1, # Margarita Mussijenko
 	NA, # Zahar Orikovi
 	NA, # Jekaterina Plotnikova
 	NA, # Veniamin Postolenko
@@ -947,7 +947,7 @@ c( # 30
 	NA, # Evelina Tolli
 	NA, # Martin Tolli
 	NA, # Ilja Tsvek
-	NA, # Maia Tukkia
+	1, # Maia Tukkia
 	NA # Arina Vatševskihh
 ),
 c( # 31
@@ -1330,13 +1330,15 @@ c( # 51
 )
 )
 
-data_frame <- classes_9_grades[9]
-for (target_identifier in 10:25) {
+data_frame <- classes_9_grades[12]
+for (target_identifier in 13:25) {
   data_frame <- cbind(data_frame, classes_9_grades[target_identifier])
 }
-data_frame <- cbind(data_frame, classes_9_grades[51]
-                    )
-colnames(data_frame) <- c(targets[9:25], targets[51])
+data_frame <- cbind(data_frame, classes_9_grades[29])
+data_frame <- cbind(data_frame, classes_9_grades[30])
+data_frame <- cbind(data_frame, classes_9_grades[51])
+
+colnames(data_frame) <- c(targets[12:25], targets[29:30], targets[51])
 
 rownames(data_frame) <- names_9
 table <- print_table(

@@ -504,6 +504,43 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
     \\item[\\Square] @ref(fig:tasks-lines-side-angles).
   \\end{itemize}"),
   list(
+    goal=28,
+    level=3,
+    task="Märgi joonisele \\@ref(fig:tasks-figures-triangles-circles), kus on kolmnurga küljepoolitajad, nurgapoolitajad, külgede keskristsirged, punkt $C$ siseringjoone keskpunktina, ümberringjoone keskpunktina, mediaanide lõikepunktina!"
+  ),
+  list(
+    goal=29,
+    level=1,
+    task="Joonisel \\@ref(fig:tasks-figures-circle-central-border-angle) on ringjoon keskpunktiga $O$.\\leavevmode\\
+    $\\angle CAB$ on\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Circle] kesk-
+      \\item[\\Circle] piirde-
+      \\item[\\Circle] täis-
+      \\item[\\Circle] sirg-
+    \\end{itemize}
+    nurk.\\leavevmode\\
+    Kui $\\angle CAB=\\ang{30}$, siis $\\angle COB=\\blank{\\ang{60}}$."
+  ),
+  list(
+    goal=29,
+    level=1,
+    task="Joonisel \\@ref(fig:tasks-figures-circle-central-2-border-angle) on ringjoon, mille keskpunkt asetseb punktis $C$.\\leavevmode\\
+    Arvuta nurkade $KNL$ ja $KML$ suurus, kui $\\angle KCL=\\ang{28}$.\\leavevmode\\
+    $\\angle KNL=\\blank{\\ang{14}}, \\angle KML=\\blank{\\ang{14}}$."
+  ),
+  list(
+    goal=30,
+    level=1,
+    task="Joonisel \\@ref(fig:tasks-figures-circle-tangent) on ringjoonele keskpunktiga $C$ joonestatud kaks puutujat $LK$ ja $LM$. Märgista iga õige väide!\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Square] Joonisel on lõigud $KL$ ja $LM$ erineva pikkusega.
+      \\item[\\Square] Kolmnurgad $KLC$ ja $LMC$ on täisnurksed.
+      \\item[\\Square] Nelinurga $KLMC$ sisenurkade summa on \\ang{360}.
+      \\item[\\Square] Kui $\\angle MCK=\\ang{130}$, siis $\\angle KLM=\\ang{65}$.
+    \\end{itemize}"
+  ),
+  list(
     goal = 34,
     level = 1,
     task = "Vali võrrandiga $x-5=9$ samaväärne võrrand:
@@ -631,6 +668,66 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
       \\item[\\Square] $y=-0,5x$.
     \\end{itemize}"
   ),
+  list(
+    goal=44,
+    level=4,
+    task="Kaks kolmnurka on sarnased, kui
+    \\begin{itemize}
+      \\item[\\Square] ühe kolmnurga kaks külge on võrdelised teise kolmnurga kahe küljega.
+      \\item[\\Square] ühe kolmnurga kaks nurka on võrdsed teise kolmnurga kahe nurgaga.
+      \\item[\\Square] mõlemad kolmnurgad on võrdkülgsed.
+      \\item[\\Square] ühe kolmnurga üks nurk on võrdne teise kolmurga ühe nurgaga ja nende nurkade lähisküljed on võrdelised.
+    \\end{itemize}"
+  ),
+  list(
+    goal=44,
+    level=4,
+    task="Võrdhaarses kolmnurgas $ABC$ on $DE \\parallel AB$, $CD=\\qty{6}{\\centi\\m}$, $EB=\\qty{9}{\\centi\\m}$ ja $AB=\\qty{20}{\\centi\\m} (joonis \\@ref(fig:tasks-figures-similar-triangles).
+    $$\\frac{6}{15}=\\frac{DE}{\\blank{AB}}.$$
+    Lõigu $DE$ pikkus on \\blank{8}\\ensuremath{\\thinspace}\\unit{\\centi\\m}."
+  ),
+  list(
+    goal=44,
+    level=4,
+    task="Joonisel \\@ref(fig:tasks-figures-similar-triangles-2) on kolmurgad $ABC$ ja $DFE$ sarnased. Millised tunnuse järgi on kolmurgad sarnased?
+    \\begin{itemize}
+      \\item[\\Circle] Nurk, külg, nurk.
+      \\item[\\Circle] Külg, nurk, külg.
+      \\item[\\Circle] Nurk, nurk.
+      \\item[\\Circle] Külg, külg, külg.
+    \\end{itemize}
+    Arvuta sarnasustegur $k$ ja lõigu $EF$ pikkus!
+    $$k=\\blank{\\frac{2}{3}}; EF=\\blank{6}\\ensuremath{\\thinspace}\\unit{\\centi\\m}.$$"
+  ),
+  list(
+    goal=44,
+    level=4,
+    task="Sarnaste hulknurkadega ümbermõõtude suhe võrdub
+    \\begin{itemize}
+      \\item[\\Circle] alati kahega.
+      \\item[\\Circle] alati ühega.
+      \\item[\\Circle] sarnasusteguriga.
+      \\item[\\Circle] sarnasusteguri ruuduga.
+    \\end{itemize}
+    Kahe sarnase hulknurga ümbermõõdud on \\qty{10}{\\deci\\m} ja \\qty{20}{\\deci\\m}. Kuidas suhtuvad nende hulknurkade pindalad?\\leavevmode\\
+    Hulknurkade pindalade suhe võrdub
+    \\begin{itemize}
+      \\item[\\Square] \\num{4}'ga.
+      \\item[\\Square] $\\frac{1}{4}$'ga.
+      \\item[\\Square] \\qty{30}{\\deci\\m}'ga.
+    \\end{itemize}"
+  ),
+  list(
+    goal=44,
+    level=4,
+    task="Joonisel \\@ref(fig:tasks-figures-land-piece) on nelinurkse maatüki plaan plaanimõõduga 1 : 500. Selle maatüki $ABCD$ ümbermõõt plaanil on \\qty{25}{\\centi\\m} ja pindala \\qty{40}{\\square\\centi\\m}. Arvuta maatüki tegelik ümbermõõt meetrites $P$ ja pindala ruutmeetrites $S$:
+    \\begin{itemize}
+      \\item[\\Square] $P=25 \\times 1:3=\\blank{12500}$\\ensuremath{\\thinspace}$(\\unit{\\m})$.
+      \\item[\\Square] $P=25 \\times 500=\\blank{12500}$\\ensuremath{\\thinspace}$(\\unit{\\m})$.
+      \\item[\\Square] $S=40 \\times \\blank{250000}=\\num{45}$\\ensuremath{\\thinspace}$(\\unit{\\m\\squared})$.
+      \\item[\\Square] $S=40 \\times \\blank{250000}=\\num{10000000}$\\ensuremath{\\thinspace}$(\\unit{\\m\\squared})$.
+    \\end{itemize}"
+  ),
   list(goal = 45, level = 3, task = "Joonisel \\@ref(fig:tasks-triangle-gravitational-center) on kolmnurk $KLM$. Selle kolmnurga raskuskeset märgib joonisel punkt $O$. Joonesta kolmnurgale mediaanid tippudest $M$ ja $L$!\\leavevmode\\
        Kolmnurga mediaanide lõikepunkt jaotab mediaanid kaheks osaks: küljepoolseks ja tipupoolseks osaks. Küljele $KM$ tõmmatud mediaanist tipupoolne osa on \\qty{18}{\\centi\\m} pikkune. Arvuta mediaani kogupikkus!\\leavevmode\\
        Küljele $KM$ tõmmatud mediaani pikkus on\\leavevmode\\
@@ -671,10 +768,10 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
     task = "Vaata joonist \\@ref(fig:tasks-figures-multiangle) ja vali õige valikvastus!\\leavevmode\\
     Joonisel on
     \\begin{itemize}
-      \\item[Square] korrapärane kuusnurk
-      \\item[Square] korrapärane viissnurk
-      \\item[Square] mittekorrapärane kuusnurk
-      \\item[Square] mittekorrapärane viissnurk
+      \\item[\\Square] korrapärane kuusnurk
+      \\item[\\Square] korrapärane viissnurk
+      \\item[\\Square] mittekorrapärane kuusnurk
+      \\item[\\Square] mittekorrapärane viissnurk
     \\end{itemize}
     $ABCDE$.
     Joonesta viisnurgale diagonaalid punktist $A$.
@@ -693,8 +790,8 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
     Kui kujundi kõrgus on $h=\\qty{2,4}{\\centi\\m}$, siis kujundi pindala $S=$
     \\begin{itemize}
       \\item[\\Square] 12
-      \\item[\\Square] 9,8
-      \\item[\\Square] 4,8
+      \\item[\\Square] \\num{9,8}
+      \\item[\\Square] \\num{4,8}
     \\end{itemize}
     \\unit{\\square\\centi\\m}."
   ),
@@ -712,13 +809,41 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
   list(
     goal = 45,
     level = 3,
-    task = "Rombi diagonaalide pikkused on \\qty{2}{\\deci\\m} ja \\qty{8}{\\deci\\m}.\\leavevmode
+    task = "Rombi diagonaalide pikkused on \\qty{2}{\\deci\\m} ja \\qty{8}{\\deci\\m}.\\leavevmode\\
     Rombi pindala on
     \\begin{itemize}
       \\item[\\Square] 6
       \\item[\\Square] 8
     \\end{itemize}
     \\unit{\\deci\\m}."
+  ),
+  list(
+    goal=45,
+    level=3,
+    task="Mõõtmisel saadi, et korrapärase kuusnurga $ABCDEF$ ühe külje pikkus on ligikaudu \\qty{4}{\\deci\\m} ja apoteem on ligikaudu \\qty{3,5}{\\deci\\m} (joonis \\@ref(fig:tasks-figures-multiangle-equilateral)).\\leavevmode\\
+    Lõigu $AB$ ligikaudne pikkus on
+    \\begin{itemize}
+      \\item[\\Square] \\qty{4}{\\deci\\m}.
+      \\item[\\Square] \\qty{0,8}{\\deci\\m}.
+    \\end{itemize}
+    Lõigu $OH$ ligikaudne pikkus on
+    \\begin{itemize}
+      \\item[\\Square] \\qty{3,5}{\\deci\\m}.
+      \\item[\\Square] \\qty{1,2}{\\deci\\m}.
+    \\end{itemize}
+    Kuusnurga $ABCDEF$ ligikaudne ümbermõõt on
+    \\begin{itemize}
+      \\item[\\Square] \\qty{24}{\\deci\\m}.
+      \\item[\\Square] \\qty{3,6}{\\deci\\m}.
+    \\end{itemize}
+    Kolmnurga $ABO$ ligikaudne pindala on \\blank{\\num{7}}\\ensuremath{\\thinspace}\\unit{\\square\\deci\\m}.
+    Kuusnurga $ABCDEF$ ligikaudne pindala on
+    \\begin{itemize}
+      \\item[\\Square] \\qty{42}{\\deci\\m}.
+      \\item[\\Square] \\qty{12}{\\deci\\m}.
+      \\item[\\Square] \\qty{0,936}{\\deci\\m}.
+    \\end{itemize}
+    "
   ),
   list(
     goal = 46,
@@ -1229,5 +1354,45 @@ include_external_graphics("rmd/hlkn3_joonis.png")
 
 ```{r label = "tasks-figures-rhombus", echo=FALSE, fig.cap = "Romb."}
 include_external_graphics("rmd/hlkn5_joonis.png")
+
+```
+
+```{r label = "tasks-figures-circle-central-border-angle", echo=FALSE, fig.cap = "Sisenurkadega ring."}
+include_external_graphics("rmd/RJKH1.png")
+
+```
+
+```{r label = "tasks-figures-circle-central-2-border-angle", echo=FALSE, fig.cap = "Kaks nurka ringjoonelt."}
+include_external_graphics("rmd/RJKH2.png")
+
+```
+
+```{r label = "tasks-figures-circle-tangent", echo=FALSE, fig.cap = "Ring puutujatega."}
+include_external_graphics("rmd/RJK3_uus.png")
+
+```
+
+```{r label = "tasks-figures-triangles-circles", echo=FALSE, fig.cap = "Kolmnurgad sisejoontega."}
+include_external_graphics("rmd/RJK4.png")
+
+```
+
+```{r label = "tasks-figures-multiangle-equilateral", echo=FALSE, fig.cap = "Hulknurk."}
+include_external_graphics("rmd/RJKH5.png")
+
+```
+
+```{r label = "tasks-figures-similar-triangles", echo=FALSE, fig.cap = "Sarnased kolmnurgad."}
+include_external_graphics("rmd/KSAR2_uus.png")
+
+```
+
+```{r label = "tasks-figures-similar-triangles-2", echo=FALSE, fig.cap = "Kaks sarnast kolmnurka."}
+include_external_graphics("rmd/KSA3.png")
+
+```
+
+```{r label = "tasks-figures-land-piece", echo=FALSE, fig.cap = "Maatükk."}
+include_external_graphics("rmd/KSA5_2.png")
 
 ```
