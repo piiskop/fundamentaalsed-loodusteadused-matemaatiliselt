@@ -432,6 +432,19 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
       \\item[Square] $-1a-3b.$
     \\end{itemize}"
   ),
+  list(
+    goal=20,
+    level=3,
+    task="Avaldist $2x+3y-3x-5y$ nimetatakse
+    \\begin{itemize}
+      \\item[\\Square] $-x-2y$.
+      \\item[\\Square] hulkliikmeks.
+      \\item[\\Square] võrduseks.
+      \\item[\\Square] võrrandiks.
+      \\item[\\Square] üksliikmeks.
+    \\end{itemize}
+    $2x+3y-3x-5y=\\blank{-}x-2{y}.$"
+  ),
   list(goal = 22, level = 3, task = "$-6 + 13+6-20-7=$\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] \\num{-14}.
@@ -445,6 +458,58 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
     \\item[\\Square] \\num{0,2}.
     \\item[\\Square] $\\frac{1}{6}$.
   \\end{itemize}"),
+  list(
+    goal=23,
+    level=4,
+    task="$m^2-n^2=$
+    \\begin{itemize}
+      \\item[\\Circle] $n^2-m^2$.
+      \\item[\\Circle] $(m-n)(n^2+mn+m^2)$.
+      \\item[\\Circle] $(m+n)(m-n)$.
+      \\item[\\Circle] $m^2+2mn+n^2$.
+      \\item[\\Circle] $m^2+mn+n^2$.
+      \\item[\\Circle] $m^2+n^2-2mn$.
+    \\end{itemize}"
+  ),
+  list(
+    goal=23,
+    level=4,
+    task="$(n-m)(m+n)=$
+    \\begin{itemize}
+      \\item[\\Circle] $n^2-m^2$.
+      \\item[\\Circle] $(m-n)(n^2+mn+m^2)$.
+      \\item[\\Circle] $(m+n)(m-n)$.
+      \\item[\\Circle] $m^2+2mn+n^2$.
+      \\item[\\Circle] $m^2+mn+n^2$.
+      \\item[\\Circle] $m^2+n^2-2mn$.
+    \\end{itemize}"
+  ),
+  list(
+    goal=23,
+    level=4,
+    task="$(m-n)^2=$
+    \\begin{itemize}
+      \\item[\\Circle] $n^2-m^2$.
+      \\item[\\Circle] $(m-n)(n^2+mn+m^2)$.
+      \\item[\\Circle] $(m+n)(m-n)$.
+      \\item[\\Circle] $m^2+2mn+n^2$.
+      \\item[\\Circle] $m^2+mn+n^2$.
+      \\item[\\Circle] $m^2+n^2-2mn$.
+    \\end{itemize}"
+  ),
+  list(
+    goal=23,
+    level=4,
+    task="$(m+n)(m+n)=$
+    \\begin{itemize}
+      \\item[\\Circle] $n^2-m^2$.
+      \\item[\\Circle] $(m-n)(n^2+mn+m^2)$.
+      \\item[\\Circle] $(m+n)(m-n)$.
+      \\item[\\Circle] $m^2+2mn+n^2$.
+      \\item[\\Circle] $m^2+mn+n^2$.
+      \\item[\\Circle] $m^2+n^2-2mn$.
+    \\end{itemize}"
+  ),
   list(goal = 25, level = 1, task = "Joonisel \\@ref(fig:tasks-lines-angles) on näidatud kahe sirge lõikamisel kolmanda sirgega tekkinud nurgad.\\leavevmode\\
     Nurgad \\qty{113}{\\degree} ja $\\alpha$ on\\leavevmode\\
     \\begin{itemize}

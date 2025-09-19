@@ -8,5 +8,6 @@ rmd_files: [
   "rmd/hindamine.Rmd",
   "rmd/lähtetest.Rmd",
   "rmd/tulemused.Rmd",
+  "rmd/voltimine.Rmd",
   "references.Rmd"
 ]
