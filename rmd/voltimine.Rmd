@@ -4,9 +4,15 @@
 
 Voltimises tuleb olla võimalikult täpne, sest vähekegi vale volt võib mõjutada, et pärast ei saa kujundit kokku.
 
+Kõige rohkem aega kulub *Intersecting Tetrahedra* (joonis \@ref(fig:folding-intersecting-tetrahedra)) valmistamiseks. Kui seda üksi teha, kulub mitu tundi. Tegevused saab siiski jagada mitme inimese vahel ja neid üheaegselt sooritada.
+
+```{r label = "folding-intersecting-tetrahedra", echo=FALSE, fig.cap = "Lõikuvad tetraeedrid."}
+include_external_graphics("rmd/IMG_20250919_023924.jpg")
+
+```
+
 Pärast voltimist panevad õpilased kõik vahendid sinna tagasi, kust nad need võtsid.
 
 Iga valmis kujundi peale tuleb kaheksandal tasemel märkida ka selle kujundi ruumala ja välispindala, üheksandal tasemel, millega on ajalooliselt seda kujundit seostatud ja näide keemilisest ühendist, milles aatomid paiknevad omavahel nagu selle kujundi tipud.
 
 Kaheksanda taseme õpilased panevad oma kujundid akna kõrvale riiulile, üheksanda taseme õpilased tõmbekapi kõrvale kapi peale.
-
