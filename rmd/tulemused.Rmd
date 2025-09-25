@@ -905,19 +905,19 @@ c( # 22
 	NA # Arina Vatševskihh
 ),
 c( # 23
-	NA, # Margus Evart
+	1, # Margus Evart
 	NA, # Mikaela Galperman
 	NA, # Valerija Korenkova
 	NA, # Dmitri Litvinenko
 	NA, # Margarita Mussijenko
 	NA, # Zahar Orikovi
 	NA, # Jekaterina Plotnikova
-	NA, # Veniamin Postolenko
-	NA, # Angelina Solovjova
+	1, # Veniamin Postolenko
+	1, # Angelina Solovjova
 	NA, # Sofia Zhuravleva
-	NA, # Ivan Timakin
-	NA, # Evelina Tolli
-	NA, # Martin Tolli
+	1, # Ivan Timakin
+	1, # Evelina Tolli
+	1, # Martin Tolli
 	NA, # Ilja Tsvek
 	NA, # Maia Tukkia
 	NA # Arina Vatševskihh

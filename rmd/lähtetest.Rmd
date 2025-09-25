@@ -445,6 +445,18 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
     \\end{itemize}
     $2x+3y-3x-5y=\\blank{-}x-2{y}.$"
   ),
+  list(
+    goal=20,
+    level=3,
+    task="$$\\begin{cases}
+x = -1 \\\\
+y = -2
+\\end{cases} \\rightarrow 2x^2 y+3xy+5y=$$
+    \\begin{itemize}
+      \\item[\\Square] -8.
+      \\item[\\Square] 2.
+    \\end{itemize}"
+  ),
   list(goal = 22, level = 3, task = "$-6 + 13+6-20-7=$\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] \\num{-14}.
@@ -492,6 +504,7 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
       \\item[\\Circle] $n^2-m^2$.
       \\item[\\Circle] $(m-n)(n^2+mn+m^2)$.
       \\item[\\Circle] $(m+n)(m-n)$.
+      \\item[\\Circle] $(m-n)(m-n)$.
       \\item[\\Circle] $m^2+2mn+n^2$.
       \\item[\\Circle] $m^2+mn+n^2$.
       \\item[\\Circle] $m^2+n^2-2mn$.
