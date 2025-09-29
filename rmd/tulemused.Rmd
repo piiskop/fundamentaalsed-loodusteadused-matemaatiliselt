@@ -48,7 +48,8 @@
 
 22.
 
-23.
+23. tegurdab hulkliikmeid (toob teguri sulgude ette, kasutab ja põhjendab ruutude vahe, summa
+ruudu ja vahe ruudu abivalemeid, tegurdab ruutkolmliiget).
 
 24.
 
@@ -76,17 +77,19 @@
 
 36.
 
-37.
+37. lahendab lineaar- ja võrdekujulisi võrrandeid ning lineaarvõrrandisüsteeme kasutades
+võrrandi põhiomadusi (sh graafiliselt ning arvutiprogrammide abil).
 
 38.
 
-39.
+39. koostab ja lahendab tekstülesandeid, mis lahenduvad võrrandi või võrrandisüsteemi abil (sh
+võrdelise jaotamise ülesandeid).
 
 40.
 
 41.
 
-42.
+42. selgitab arvutiga tehtud dünaamilisi jooniseid kasutades funktsiooni graafiku asendi ja kuju sõltuvust funktsiooni avaldises olevatest kordajatest (ruutfunktsiooni korral ainult ruutliikme kordajast ja vabaliikmest).
 
 43.
 
@@ -905,19 +908,19 @@ c( # 22
 	NA # Arina Vatševskihh
 ),
 c( # 23
-	1, # Margus Evart
+	NA, # Margus Evart
 	NA, # Mikaela Galperman
 	NA, # Valerija Korenkova
 	NA, # Dmitri Litvinenko
 	NA, # Margarita Mussijenko
 	NA, # Zahar Orikovi
 	NA, # Jekaterina Plotnikova
-	1, # Veniamin Postolenko
-	1, # Angelina Solovjova
+	NA, # Veniamin Postolenko
+	NA, # Angelina Solovjova
 	NA, # Sofia Zhuravleva
-	1, # Ivan Timakin
-	1, # Evelina Tolli
-	1, # Martin Tolli
+	NA, # Ivan Timakin
+	NA, # Evelina Tolli
+	NA, # Martin Tolli
 	NA, # Ilja Tsvek
 	NA, # Maia Tukkia
 	NA # Arina Vatševskihh
@@ -1161,7 +1164,7 @@ c( # 37
 	NA, # Mikaela Galperman
 	NA, # Valerija Korenkova
 	NA, # Dmitri Litvinenko
-	NA, # Margarita Mussijenko
+	1, # Margarita Mussijenko
 	NA, # Zahar Orikovi
 	NA, # Jekaterina Plotnikova
 	NA, # Veniamin Postolenko
@@ -1171,7 +1174,7 @@ c( # 37
 	NA, # Evelina Tolli
 	NA, # Martin Tolli
 	NA, # Ilja Tsvek
-	NA, # Maia Tukkia
+	1, # Maia Tukkia
 	NA # Arina Vatševskihh
 ),
 c( # 38
@@ -1197,7 +1200,7 @@ c( # 39
 	NA, # Mikaela Galperman
 	NA, # Valerija Korenkova
 	NA, # Dmitri Litvinenko
-	NA, # Margarita Mussijenko
+	1, # Margarita Mussijenko
 	NA, # Zahar Orikovi
 	NA, # Jekaterina Plotnikova
 	NA, # Veniamin Postolenko
@@ -1207,7 +1210,7 @@ c( # 39
 	NA, # Evelina Tolli
 	NA, # Martin Tolli
 	NA, # Ilja Tsvek
-	NA, # Maia Tukkia
+	1, # Maia Tukkia
 	NA # Arina Vatševskihh
 ),
 c( # 40
@@ -1428,15 +1431,21 @@ c( # 51
 )
 )
 
-data_frame <- classes_9_grades[12]
-for (target_identifier in 13:25) {
-  data_frame <- cbind(data_frame, classes_9_grades[target_identifier])
-}
-data_frame <- cbind(data_frame, classes_9_grades[29])
-data_frame <- cbind(data_frame, classes_9_grades[30])
-data_frame <- cbind(data_frame, classes_9_grades[51])
+included_goals <- c(
+  25,
+  29,
+  30,
+  37,
+  39,
+  51
+)
 
-colnames(data_frame) <- c(targets[12:25], targets[29:30], targets[51])
+data_frame <- classes_9_grades[13]
+for (goal_identifier in included_goals) {
+  data_frame <- cbind(data_frame, classes_9_grades[goal_identifier])
+}
+
+colnames(data_frame) <- c(13, included_goals)
 
 rownames(data_frame) <- names_9
 table <- print_table(
