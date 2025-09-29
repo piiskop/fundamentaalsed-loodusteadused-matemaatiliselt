@@ -7,3 +7,5 @@ Hindan iga õpiväljundi saavutatust õppeprotsessi käigus kohapeal.
 Kokkuvõttev hindamine toimub iga trimestri lõpus testiga, milles on õpilasele ülesanded vaid õpiväljundite kohta, mida ta on seni saavutanud.
 
 Iga õpiväljund on määratud tasemega Bloomi taksonoomia järgi ning kõik hinded kaalutakse selle tasemega.
+
+Kuna oluline osa õppimist toimub harjutuslehtede abil, mille järgimine ja alleshoidmine on abiks edasises õppimises, siis, kui sul on alles kõik talle antud harjutuslehed ja sa näitad need ette kokkuvõtvaks hindamiseks, on su kokkuvõtlik hinne ühe võrra suurem.
