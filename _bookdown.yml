@@ -11,5 +11,7 @@ rmd_files: [
   "rmd/keemia/keemia-lähtetest.Rmd",
   "rmd/keemia/keemia-tulemused.Rmd",
   "rmd/voltimine.Rmd",
+  "rmd/cansat.Rmd",
+  "rmd/rakett.Rmd",
   "references.Rmd"
 ]

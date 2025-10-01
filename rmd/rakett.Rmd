@@ -1,0 +1,75 @@
+# Raketi eksperiment
+
+Valmista minu juhendamisel paberrakett ja mine spordisaali seda testima! Teosta kaheksa lendu ja iga kord loenda, mitu jalalaba täispikkust mahub otse lennu stardikohast maandumiskohani ning kirjuta tabelisse \@ref(tab:rocket-flights) leheküljel `r render_pageref(reference="tab:rocket-flights")`.
+
+```{r label="rocket-flights", echo=FALSE}
+length_of_flight <- c(
+  "\\blank{Margarita}",
+  "\\blank{Margarita}",
+  "\\blank{Margarita}",
+  "\\blank{Margarita}",
+  "\\blank{Margarita}",
+  "\\blank{Margarita}",
+  "\\blank{Margarita}",
+  "\\blank{Margarita}"
+)
+
+length_of_flight_ordered <- c(
+  "\\blank{Margarita}",
+  "\\blank{Margarita}",
+  "\\blank{Margarita}",
+  "\\blank{Margarita}",
+  "\\blank{Margarita}",
+  "\\blank{Margarita}",
+  "\\blank{Margarita}",
+  "\\blank{Margarita}"
+)
+
+data_frame_of_flights <- data.frame(
+  length_of_flight,
+  length_of_flight_ordered
+)
+
+colnames(data_frame_of_flights) <- c(
+  "Mitu jalalaba täispikkust mahub stardi ja finiši vahele?",
+  "Reastatult jalalabade täispikkused"
+)
+
+rownames(data_frame_of_flights) <- c(1:8)
+
+print_table(
+  table <- data_frame_of_flights,
+  caption <- "Lendude pikkused."
+) %>%
+  column_spec(1, width="18em")
+
+```
+
+\clearpage
+
+Pärast lendude teostamist ja raporteerimist teostan arvutused lennupikkuste kohta jalalabade täispikkustes:
+
+Aritmeetiline keskmine: \blank{99}.
+
+Mediaan: \blank{99}.
+
+Mood: \blank{99}.
+
+Miinimum: \blank{99}.
+
+Maksimum: \blank{99}.
+
+Ulatus: \blank{99}.
+
+Mitu protsenti erineb mediaan aritmeetilisest keskmisest? \blank{\qty{999}{\percent}}.
+
+Mitu promilli erineb mediaan aritmeetilisest keskmisest? \blank{\qty{999}{\percent}}.
+
+Mitu protsendipunkti erineb mediaan aritmeetilisest keskmisest? \blank{\qty{999}{\percent}}.
+
+Kui suur on tõenäosus, et järgmine lend oleks viimasest lennust pikem? \blank{0,999}.
+
+Järgnevalt kanna andmed mitmeotstarbelisse arvutisse ja teosta samad arvutused esmalt aadressil https://rdrr.io/snippets/ vastavalt minu juhendamisele!
+
+Seejärel kanna andmed arvutisse kasutades tabelarvutussüsteemi ja analüüsi neid selles! Vajalik on luua konto minu Nextcloudi aadressil
+https://nextcloud.ons.ee/apps/registration/. Kui see on tehtud, teata mulle ja ma lisan su meie gruppi, misjärel leia kataloog *Sinimäe Põhikool*, millesse tee omanimeline alamkaust, kuhu sisse omakorda uus tabelarvutusfail ning järgi minu juhiseid! Kui Nextcloudi enam sisse ei saa, sest liiga palju on proovitud, saad sama teha ka otse ONLYOFFICE's vastavalt minu juhistele.

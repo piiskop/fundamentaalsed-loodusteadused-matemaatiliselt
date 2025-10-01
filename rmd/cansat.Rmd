@@ -1,0 +1,36 @@
+# Osalussoovid CanSati projekti
+
+Kui soovid osaleda CanSati projektis, palun kirjuta oma nimi tabelisse \@ref(tab:cansat-participants) leheküljel `r render_pageref(reference="tab:cansat-participants")`. CanSati projektis osalejaile seome võimalikult palju õpiväljundeid CanSati projektiga. CanSati projektis saad ehitada purksatelliidi ja seda kasutada.
+
+```{r label="cansat-participants", echo=FALSE}
+participant <- c(
+  "\\blank{Margarita Mussijenko}",
+  "\\blank{Margarita Mussijenko}",
+  "\\blank{Margarita Mussijenko}",
+  "\\blank{Margarita Mussijenko}",
+  "\\blank{Margarita Mussijenko}",
+  "\\blank{Margarita Mussijenko}",
+  "\\blank{Margarita Mussijenko}",
+  "\\blank{Margarita Mussijenko}",
+  "\\blank{Margarita Mussijenko}",
+  "\\blank{Margarita Mussijenko}",
+  "\\blank{Margarita Mussijenko}",
+  "\\blank{Margarita Mussijenko}"
+)
+
+data_frame_of_participation_wishes_in_cansat <- data.frame(
+  participant
+)
+
+colnames(data_frame_of_participation_wishes_in_cansat) <- c(
+  "Õpilase nimi"
+)
+
+rownames(data_frame_of_participation_wishes_in_cansat) <- c(1:12)
+
+print_table(
+  table <- data_frame_of_participation_wishes_in_cansat,
+  caption <- "Osalemissoovid CanSati projektis."
+)
+
+```
