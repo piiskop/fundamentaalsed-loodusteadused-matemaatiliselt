@@ -1,0 +1,291 @@
+# Keemia lähtetest
+
+```{r label="tasks-chemistry", echo=FALSE, results='asis'}
+goals <- list(
+  list( # K1
+    goal = "järgib laboris katseid tehes ja argielus kemikaale kasutades ohutusnõudeid",
+    level = 3
+  ),
+  list( # K2
+    goal = "tunneb tähtsamaid laborivahendeid ja kasutab neid praktilisi töid tehes õigesti",
+    level = 3
+  ),
+  list( # K3
+    goal = "eristab lahuseid ja pihuseid ning valmistab neid, toob näiteid lahuste ja pihuste kohta looduses ning igapäevaelus",
+    level = 3
+  ),
+  list( # K4
+    goal = "selgitab aatomi ehitust, kasutab keemiliste elementide tähiste leidmiseks, aatomi ehituse kirjeldamiseks ja elektronskeemi koostamiseks keemiliste elementide perioodilisustabelit",
+    level = 3
+  ),
+  list( # K5
+    goal = "eristab liht- ja liitaineid ning selgitab aine valemi põhjal aine koostist",
+    level = 3
+  ),
+  list( # K6
+    goal = "teab keemiliste elementide liigitamist metallilisteks ja mittemetallilisteks elementideks ning väärisgaasideks, otsib internetist näiteid metallide ja mittemetallide kasutamise kohta igapäevaelus ning võrdleb nende omadusi",
+    level = 4
+  ),
+  list( # K7
+    goal = "võrdleb hapniku ja vesiniku põhilisi omadusi",
+    level = 4
+  ),
+  list( # K8
+    goal = "teab keemiliste reaktsioonide esilekutsumise võimalusi, tunneb ära keemilise reaktsiooni toimumise iseloomulike tunnuste järgi",
+    level = 2
+  ),
+  list( # K9
+    goal = "teab süsinikuühendite paljususe põhjusi",
+    level = 2
+  ),
+  list( # K10
+    goal = "koostab süsinikuühendite struktuurivalemeid ja molekulimudeleid etteantud aatomite (C, H, O) arvu järgi, eristab lineaarset, hargnenud ja tsüklilist süsinikahelat",
+    level = 3
+  ),
+  list( # K11
+    goal = "lahendab lahuse protsendilisel koostisel põhinevaid arvutusülesandeid",
+    level = 3
+  ),
+  list( # K12
+    goal = "selgitab temperatuuri mõju gaaside ning (enamiku) soolade lahustuvusele vees, kasutab ainete lahustuvuse graafikut ja lahustuvustabelit, et leida vajalikku infot ning teha arvutusi ja järeldusi",
+    level = 4
+  ),
+  list( # K13
+    goal = "teeb arvutusi aine hulga, massi ja gaasi ruumala vaheliste seoste alusel, kasutab korrektselt vastavaid ühikuid ning põhjendab loogiliselt arvutuskäike",
+    level = 4
+  ),
+  list( # K14
+    goal = "analüüsib keemilise reaktsiooni võrrandis sisalduvat kvalitatiivset ja kvantitatiivset infot, mõistab ainete massi jäävust keemilistes reaktsioonides",
+    level = 4
+  ),
+  list( # K15
+    goal = "koostab süsivesinike ja etanooli täieliku põlemise reaktsioonivõrrandeid",
+    level = 4
+  ),
+  list( # K16
+    goal = "selgitab hapniku rolli põlemisreaktsioonides ning eluslooduses, analüüsib osoonikihi tähtsust ja lagunemist saastamise tagajärjel",
+    level = 4
+  ),
+  list( # K17
+    goal = "kogub gaasi, valides sobiva võtte lähtuvalt gaasi lahustuvusest vees ja gaasi tihedusest võrreldes õhu tihedusega",
+    level = 4
+  ),
+  list( # K18
+    goal = "eristab aktiivseid, keskmise aktiivsusega ja väheaktiivseid metalle nende asukoha järgi metallide pingereas ning uurib metallide aktiivsust",
+    level = 3
+  ),
+  list( # K19
+    goal = "eristab ioone neutraalsetest aatomitest ning selgitab ioonide tekkimist ja iooni laengut",
+    level = 3
+  ),
+  list( # K20
+    goal = "selgitab kovalentse, ioonilise ja metallilise sideme erinevust",
+    level = 4
+  ),
+  list( # K21
+    goal = "eristab valemi põhjal oksiide, happeid, hüdroksiide ja soolasid",
+    level = 2
+  ),
+  list( # K22
+    goal = "määrab aine valemi põhjal elementide oksüdatsiooniastmeid, koostab oksiidide nimetuste alusel valemeid ja valemite alusel nimetusi",
+    level = 3
+  ),
+  list( # K23
+    goal = "koostab hapete, hüdroksiidide ning soolade nimetuste alusel nende valemeid ja vastupidi",
+    level = 3
+  ),
+  list( # K24
+    goal = "mõistab reaktsioonivõrrandite tasakaalustamise põhimõtet",
+    level = 2
+  ),
+  list( # K25
+    goal = "korraldab lihtainete ühinemisreaktsioone hapnikuga ning koostab vastavaid reaktsioonivõrrandeid, toob näiteid igapäevaelus tuntumate oksiidide ja nende tähtsuse kohta",
+    level = 3
+  ),
+  list( # K26
+    goal = "uurib happeliste ja aluseliste oksiidide keemilisi omadusi: happeline oksiid + vesi, (tugevalt) aluseline oksiid + vesi, aluseline oksiid + hape, happeline oksiid + alus; koostab vastavate reaktsioonide võrrandeid",
+    level = 3
+  ),
+  list( # K27
+    goal = "lahendab reaktsioonivõrranditel põhinevaid arvutusülesandeid, lähtudes reaktsioonivõrrandite kordajatest (ainete moolsuhtest) ning reaktsioonis osalevate ainete hulkadest (moolides), tehes vajaduse korral ümberarvutusi ainehulga, massi ja (gaasi) ruumala vaheliste seoste alusel; põhjendab lahenduskäiku",
+    level = 4
+  ),
+  list( # K28
+    goal = "teab etanooli füsioloogilist toimet ja analüüsib sellega seotud probleeme igapäevaelus",
+    level = 4
+  ),
+  list( # K29
+    goal = "selgitab ja uurib keemiliste reaktsioonide soojusefekti",
+    level = 4
+  ),
+  list( # K30
+    goal = "analüüsib süsinikuühendite kasutusvõimalusi kütusena ning eristab taastuvaid ja taastumatuid energiaallikaid",
+    level = 4
+  ),
+  list( # K31
+    goal = "liigitab materjale hüdrofiilseks ja hüdrofoobseks",
+    level = 2
+  ),
+  list( # K32
+    goal = "seostab lahuste happelisi ja aluselisi omadusi nendes esinevate osakestega, hindab lahuse keskkonda indikaatoriga ja lahuse pH väärtuse järgi",
+    level = 3
+  )
+)
+
+tasks <- list(
+  list(
+    goal = 1,
+    level = 3,
+    task = "Leia jooniselt \\@ref(fig:chemistry-tasks-safety) neli viga, kus eksitakse laboriohutusnõuete vastu ja kirjelda igaüht:\\leavevmode\\
+    1. \\blank{Juuksed laiali.}\\leavevmode\\
+    2. \\blank{Söömine.}\\leavevmode\\
+    3. \\blank{Lekkimine.}\\leavevmode\\
+    4. \\blank{Nuusutamine otse allikast.}"
+  ),
+  list(
+    goal=32,
+    level=3,
+    task="Avastusretkel keemialaboris märkas Dave, et hooletu minioni Kevini pükstele läks ainet, mille pudelile oli lisatud ohutusmärk (vaata joonist \\@ref(fig:chemistry-tasks-safety-label)). Kevin ei teadnud, millise ainega võiks tegemist olla. Dave leidis käsiraamatust, et selle ohumärgi nimetus on
+    \\begin{itemize}
+      \\item[\\Circle] rõhu all olev gaas.
+      \\item[\\Circle] ohtlik keskkonnale.
+      \\item[\\Circle] plahvatusohtlik.
+      \\item[\\Circle] tuleohtlik.
+      \\item[\\Circle] söövitav.
+      \\item[\\Circle] oksüdeeriv.
+      \\item[\\Circle] tõsine terviseoht.
+    \\end{itemize}
+    Seda märki kasutatakse anumatel, kus hoitakse väga happelisi aineid, nagu
+    \\begin{itemize}
+      \\item[\\Square] \\ce{NH3}.
+      \\item[\\Square] \\ce{NaOH}.
+      \\item[\\Square] \\ce{CO2}.
+      \\item[\\Square] \\ce{HCl}.
+      \\item[\\Square] \\ce{Mg}.
+      \\item[\\Square] \\ce{CaO}.
+      \\item[\\Square] \\ce{O2}.
+      \\item[\\Square] \\ce{FeSO4}.
+      \\item[\\Square] \\ce{Cu(OH)2}.
+      \\item[\\Square] \\ce{AgNO3}.
+      \\item[\\Square] vesinikkloriidhape.
+    \\end{itemize}
+    Samuti kasutatakse seda väga aluseliste ainete, nagu 
+    \\begin{itemize}
+      \\item[\\Square] \\ce{NaOH}
+      \\item[\\Square] \\ce{SO3}
+      \\item[\\Square] \\ce{HCl}
+      \\item[\\Square] \\ce{Mg}
+      \\item[\\Square] \\ce{H2S}
+      \\item[\\Square] \\ce{Fe2O3}
+      \\item[\\Square] \\ce{CaCO3}
+      \\item[\\Square] \\ce{FeSO4}
+      \\item[\\Square] \\ce{O2}
+      \\item[\\Square] naatriumhüdroksiid
+    \\end{itemize}
+    tähistamiseks.\\leavevmode\\
+    Dave leidis laborikapist lillad lakmuspaberid. Kui paber sattus Kevini pükste vastu, siis muutus selle värv punaseks. Minionid leidsid indikaatorpaberilt selgituse: $\\mathrm{p}(\\ce{H})>7$ - sellises keskkonnas on lakmus sinine,  $\\mathrm{p}(\\ce{H})=7$ - sellises keskkonnas on lakmus lilla,  $\\mathrm{p}(\\ce{H})<7$ - sellises keskkonnas on lakmus punane. Kollased mehikesed otsustasid, et Kevini pükstele on sattunud   
+    \\begin{itemize}
+      \\item[\\Square] neutraalset
+      \\item[\\Square] aluselist
+      \\item[\\Square] happelist
+      \\item[\\Square] metallilist
+      \\item[\\Square] happeline
+    \\end{itemize}
+    ainet. Selle aine neutraliseerimiseks pidid minionid pükse loputama kergelt 
+    \\begin{itemize}
+      \\item[\\Circle] metallilise
+      \\item[\\Circle] happelise
+      \\item[\\Circle] aluselise
+      \\item[\\Circle] neutraalse
+    \\end{itemize}
+    ainega.
+    "
+  )
+)
+
+dataframe_tasks <- do.call(rbind, lapply(tasks, as.data.frame, stringsAsFactors = FALSE))
+number_goals <- length(goals)
+
+librarian::shelf(c(
+  "dplyr"
+))
+
+number_of_pupils <- 32
+
+goals_in_use <- unique(dataframe_tasks$goal)
+number_of_goals_in_use <- length(goals_in_use)
+
+random_sample_df <- function(df, new_size) {
+  base_size <- floor(new_size / nrow(df))  
+  remaining <- new_size %% nrow(df)
+
+  repeated_df <- df[rep(1:nrow(df), each = base_size), , drop = FALSE]
+
+  extra_rows <- df[sample(1:nrow(df), remaining, replace = FALSE), , drop = FALSE]
+
+  final_df <- rbind(repeated_df, extra_rows)
+  final_df <- final_df[sample(1:nrow(final_df)), , drop = FALSE]
+
+  return(final_df)
+}
+
+number_of_tasks_at_level_per_pupil <- 8 # 8
+ 
+number_of_tasks <- nrow(dataframe_tasks)
+df_segatud <- dataframe_tasks[sample(number_of_tasks), ]
+arranged_sampled_tasks <- arrange(df_segatud, goal, level)
+
+```
+
+## Üks ülesanne õpilase kohta
+
+```{r label="chemistry-list-of-tasks-one-per-pupil", echo=FALSE, results='asis'}
+
+for (index_of_pupil in 1:number_of_pupils) {
+  cat(paste("### Test: ", index_of_pupil, ". õpilane\n\n", sep = ""))
+
+  for (index in 1:number_of_goals_in_use) {
+    cat(paste(
+      "**\\color[hsb]{0.",
+      goals[[goals_in_use[index]]]$level - 1,
+      ", 1, .75}{Õpiväljund:}** Õpilane ",
+      goals[[goals_in_use[index]]]$goal,
+      ".\n\n", 
+      sep = ""
+    ))
+
+    for (index_of_levels in 1:6) {
+      tasks_goal_level <- subset(arranged_sampled_tasks, index_of_levels == `level` & goals_in_use[index] == `goal`)
+      number_of_tasks_goal_level <- nrow(tasks_goal_level)
+      if (number_of_tasks_goal_level > 0) {
+        
+        cat(
+          "**",
+          index_of_levels,
+          ". taseme ülesanne:** ",
+          sep = ""
+        )
+      
+        cat(tasks_goal_level[index_of_pupil %% number_of_tasks_goal_level + 1, ]$task, "\n\n", sep = "")
+      }
+    }
+
+  }
+
+}
+
+# })
+
+```
+
+## Joonised
+
+```{r label = "chemistry-tasks-safety", echo=FALSE, fig.cap = "Labori ohutusnõuete järgimine."}
+include_external_graphics("rmd/keemia/parem-pilt-ohutusn6uded.png")
+
+```
+
+```{r label = "chemistry-tasks-safety-label", echo=FALSE, fig.cap = "Ohumärk."}
+include_external_graphics("rmd/keemia/s__vitav0.PNG")
+
+```

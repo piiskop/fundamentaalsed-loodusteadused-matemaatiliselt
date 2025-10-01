@@ -6,8 +6,10 @@ rmd_files: [
   "rmd/kokkulepe-8.Rmd",
   "rmd/kokkulepe-9.Rmd",
   "rmd/hindamine.Rmd",
-  "rmd/lähtetest.Rmd",
-  "rmd/tulemused.Rmd",
+  "rmd/matemaatika/lähtetest.Rmd",
+  "rmd/matemaatika/tulemused.Rmd",
+  "rmd/keemia/keemia-lähtetest.Rmd",
+  "rmd/keemia/keemia-tulemused.Rmd",
   "rmd/voltimine.Rmd",
   "references.Rmd"
 ]

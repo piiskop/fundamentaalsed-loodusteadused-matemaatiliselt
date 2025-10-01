@@ -1,8 +1,8 @@
-# Lähtetest
+# Matemaatika lähtetest
 
 <!-- ## Ülesanded -->
 
-```{r label="tasks", echo=FALSE, results='asis'}
+```{r label="tasks-math", echo=FALSE, results='asis'}
 librarian::shelf(c(
   "profvis"
 ))
@@ -722,6 +722,16 @@ y = -2
     \\item[\\Circle] $2 \\cdot 3=7x$.
   \\end{itemize}"),
   list(
+    goal=36,
+    level=2,
+    task="Kauba ühe kilogrammi hind on \\qty{1,5}{\\euro}.\\leavevmode\\
+    Kauba koguhinna $y$ ja kauba koguse $x$ vahel esitub seos $y=$
+    \\begin{itemize}
+      \\item[\\Square] \\num{1,25}.
+      \\item[\\Square] $1,5 \\cdot x$.
+    \\end{itemize}"
+  ),
+  list(
     goal = 37,
     level = 3,
     task = "On antud võrrand $5x+7=x-1$. Milline arv on selle võrrandi lahendiks?
@@ -1311,7 +1321,7 @@ librarian::shelf(c(
   "dplyr"
 ))
 
-number_of_pupils <- 64
+number_of_pupils <- 32
 
 goals_in_use <- unique(dataframe_tasks$goal)
 # print(" dataframe_tasks ")
@@ -1652,131 +1662,131 @@ table
 ## Joonised
 
 ```{r label = "tasks-sector-diagram", echo=FALSE, fig.cap = "Roosioksa talu pererahva maade jaotus."}
-include_external_graphics("rmd/sektor1.png")
+include_external_graphics("rmd/matemaatika/sektor1.png")
 
 ```
 
 ```{r label = "tasks-discount-book", echo=FALSE, fig.cap = "Allahinnatud raamat."}
-include_external_graphics("rmd/reisijuht.png")
+include_external_graphics("rmd/matemaatika/reisijuht.png")
 
 ```
 
 ```{r label = "tasks-lines-angles", echo=FALSE, fig.cap = "Kahe sirge lõikamisel kolmandaga nurgad."}
-include_external_graphics("rmd/Def2.png")
+include_external_graphics("rmd/matemaatika/Def2.png")
 
 ```
 
 ```{r label = "tasks-lines-side-angles", echo=FALSE, fig.cap = "Kahe sirge lõikamisel kolmandaga kõrvunurgad."}
-include_external_graphics("rmd/joon2.png")
+include_external_graphics("rmd/matemaatika/joon2.png")
 
 ```
 
 ```{r label = "tasks-lines-top-angles", echo=FALSE, fig.cap = "Kahe sirge lõikamisel kolmandaga tippnurgad."}
-include_external_graphics("rmd/joon4.png")
+include_external_graphics("rmd/matemaatika/joon4.png")
 
 ```
 
 ```{r label = "tasks-lines-skewed-angles", echo=FALSE, fig.cap = "Kahe sirge lõikamisel kolmandaga põiknurgad."}
-include_external_graphics("rmd/joon1.png")
+include_external_graphics("rmd/matemaatika/joon1.png")
 
 ```
 
 ```{r label = "tasks-lines-close-angles", echo=FALSE, fig.cap = "Kahe sirge lõikamisel kolmandaga lähisnurgad."}
-include_external_graphics("rmd/joon3.png")
+include_external_graphics("rmd/matemaatika/joon3.png")
 
 ```
 
 ```{r label = "tasks-triangle-central-line", echo=FALSE, fig.cap = "Kolmnurga teatud lisajoon."}
-include_external_graphics("rmd/DEF3.png")
+include_external_graphics("rmd/matemaatika/DEF3.png")
 
 ```
 
 ```{r label = "tasks-triangle-gravitational-center", echo=FALSE, fig.cap = "Kolmnurga raskuskese."}
-include_external_graphics("rmd/DEF5.png")
+include_external_graphics("rmd/matemaatika/DEF5.png")
 
 ```
 
 ```{r label = "tasks-trapecoid-height-triangle", echo=FALSE, fig.cap = "Kolmnurgast ja trapetsist moodustuv kujund."}
-include_external_graphics("rmd/trapets.png")
+include_external_graphics("rmd/matemaatika/trapets.png")
 
 ```
 
 ```{r label = "tasks-trapecoid-central-line", echo=FALSE, fig.cap = "Trapets kesklõiguta."}
-include_external_graphics("rmd/trapets_DEF8.png")
+include_external_graphics("rmd/matemaatika/trapets_DEF8.png")
 
 ```
 
 ```{r label = "tasks-trapecoid-diagonal", echo=FALSE, fig.cap = "Trapets diagonaaliga."}
-include_external_graphics("rmd/DEF9.png")
+include_external_graphics("rmd/matemaatika/DEF9.png")
 
 ```
 
 ```{r label = "tasks-figures-linear-graphs", echo=FALSE, fig.cap = "Lineaarsed graafikud."}
-include_external_graphics("rmd/fun6_joonis.png")
+include_external_graphics("rmd/matemaatika/fun6_joonis.png")
 
 ```
 
 ```{r label = "tasks-figures-multiangle", echo=FALSE, fig.cap = "Mitme nurgaga kujund."}
-include_external_graphics("rmd/hlkn1_joonis.png")
+include_external_graphics("rmd/matemaatika/hlkn1_joonis.png")
 
 ```
 
 ```{r label = "tasks-figures-parallelogram", echo=FALSE, fig.cap = "Rööpkülik."}
-include_external_graphics("rmd/hlkn3_joonis.png")
+include_external_graphics("rmd/matemaatika/hlkn3_joonis.png")
 
 ```
 
 ```{r label = "tasks-figures-rhombus", echo=FALSE, fig.cap = "Romb."}
-include_external_graphics("rmd/hlkn5_joonis.png")
+include_external_graphics("rmd/matemaatika/hlkn5_joonis.png")
 
 ```
 
 ```{r label = "tasks-figures-circle-central-border-angle", echo=FALSE, fig.cap = "Sisenurkadega ring."}
-include_external_graphics("rmd/RJKH1.png")
+include_external_graphics("rmd/matemaatika/RJKH1.png")
 
 ```
 
 ```{r label = "tasks-figures-circle-central-2-border-angle", echo=FALSE, fig.cap = "Kaks nurka ringjoonelt."}
-include_external_graphics("rmd/RJKH2.png")
+include_external_graphics("rmd/matemaatika/RJKH2.png")
 
 ```
 
 ```{r label = "tasks-figures-circle-tangent", echo=FALSE, fig.cap = "Ring puutujatega."}
-include_external_graphics("rmd/RJK3_uus.png")
+include_external_graphics("rmd/matemaatika/RJK3_uus.png")
 
 ```
 
 ```{r label = "tasks-figures-triangles-circles", echo=FALSE, fig.cap = "Kolmnurgad sisejoontega."}
-include_external_graphics("rmd/RJK4.png")
+include_external_graphics("rmd/matemaatika/RJK4.png")
 
 ```
 
 ```{r label = "tasks-figures-multiangle-equilateral", echo=FALSE, fig.cap = "Hulknurk."}
-include_external_graphics("rmd/RJKH5.png")
+include_external_graphics("rmd/matemaatika/RJKH5.png")
 
 ```
 
 ```{r label = "tasks-figures-similar-triangles", echo=FALSE, fig.cap = "Sarnased kolmnurgad."}
-include_external_graphics("rmd/KSAR2_uus.png")
+include_external_graphics("rmd/matemaatika/KSAR2_uus.png")
 
 ```
 
 ```{r label = "tasks-figures-similar-triangles-2", echo=FALSE, fig.cap = "Kaks sarnast kolmnurka."}
-include_external_graphics("rmd/KSA3.png")
+include_external_graphics("rmd/matemaatika/KSA3.png")
 
 ```
 
 ```{r label = "tasks-figures-land-piece", echo=FALSE, fig.cap = "Maatükk."}
-include_external_graphics("rmd/KSA5_2.png")
+include_external_graphics("rmd/matemaatika/KSA5_2.png")
 
 ```
 
 ```{r label = "tasks-figures-area-of-shape", echo=FALSE, fig.cap = "Kujundi pindala."}
-include_external_graphics("rmd/HULK6.png")
+include_external_graphics("rmd/matemaatika/HULK6.png")
 
 ```
 
 ```{r label = "tasks-figures-graphs", echo=FALSE, fig.cap = "Graafikud."}
-include_external_graphics("rmd/lvs3.png")
+include_external_graphics("rmd/matemaatika/lvs3.png")
 
 ```
