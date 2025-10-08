@@ -4,10 +4,10 @@ Kui soovid osaleda CanSati projektis, palun kirjuta oma nimi tabelisse \@ref(tab
 
 ```{r label="cansat-participants", echo=FALSE}
 participant <- c(
-  "\\blank{Margarita Mussijenko}",
-  "\\blank{Margarita Mussijenko}",
-  "\\blank{Margarita Mussijenko}",
-  "\\blank{Margarita Mussijenko}",
+  "Zahar Orikovi",
+  "Andrei Aksjonov",
+  "Sergo Klišin",
+  "Maksim Mihhailov",
   "\\blank{Margarita Mussijenko}",
   "\\blank{Margarita Mussijenko}",
   "\\blank{Margarita Mussijenko}",

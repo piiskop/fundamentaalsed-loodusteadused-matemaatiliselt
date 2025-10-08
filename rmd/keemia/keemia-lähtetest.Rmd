@@ -129,6 +129,66 @@ goals <- list(
   list( # K32
     goal = "seostab lahuste happelisi ja aluselisi omadusi nendes esinevate osakestega, hindab lahuse keskkonda indikaatoriga ja lahuse pH väärtuse järgi",
     level = 3
+  ),
+  list( # K33
+    goal = "mõistab hapete ja aluste vastandlikkust, korraldab hapete ja aluste vahelisi reaktsioone ning koostab vastavaid reaktsioonivõrrandeid",
+    level = 3
+  ),
+  list( # K34
+    goal="toob näiteid tuntumate hapete, aluste ja soolade kasutamise kohta igapäevaelus",
+    level=3
+  ),
+  list( # K35
+    goal="selgitab tähtsamate anorgaaniliste ühendite leidumist looduses ja kasutamist argielus (väetised, vee karedus, ehitusmaterjalid)",
+    level=4
+  ),
+  list( # K36
+    goal="võrdleb ning põhjendab süsiniku lihtainete omadusi, võrdleb süsinikoksiidide omadusi",
+    level=4
+  ),
+  list( # K37
+    goal="eristab struktuurivalemi põhjal süsivesinikke, alkohole ja karboksüülhappeid",
+    level=4
+  ),
+  list( # K38
+    goal="tunneb struktuurivalemi järgi polümeeri",
+    level=3
+  ),
+  list( # K39
+    goal="iseloomustab tuntumaid süsinikuühenditel põhinevaid polümeerseid materjale (kiudained, plastid), analüüsib nende põhiomadusi, kasutamise võimalusi ja kasutamisega seonduvaid keskkonnaprobleeme",
+    level=5
+  ),
+  list( # K40
+    goal="mõistab elukeskkonda säästva suhtumise vajalikkust ning analüüsib keskkonna säästmise võimalusi",
+    level=5
+  ),
+  list( # K41
+    goal="mõistab sahhariidide, rasvade ja valkude rolli organismides, uurib nende omadusi ja sisaldust toiduainetes",
+    level=4
+  ),
+  list( # K42
+    goal="uurib etaanhappe keemilisi omadusi",
+    level=4
+  ),
+  list( # K43
+    goal="kirjeldab süsivesinike esinemisvorme looduses ja selgitab nende kasutusalasid",
+    level=4
+  ),
+  list( # K44
+    goal="hindab loogiliselt arvutustulemuste õigsust ning teeb arvutustulemuste põhjal järeldusi ja otsustusi",
+    level=5
+  ),
+  list( # K45
+    goal="teab keemilise saaste allikaid ja analüüsib saastumise tekkepõhjusi, saastumisest tingitud keskkonnaprobleeme (happesademed, raskmetallide ühendid, üleväetamine) ning võimalikke keskkonna säästmise meetmeid",
+    level=6
+  ),
+  list( # K46
+    goal="koostab reaktsioonivõrrandeid metallide ja hapete vaheliste reaktsioonide kohta",
+    level=3
+  ),
+  list( # K47
+    goal="seostab redoksreaktsioone keemiliste elementide oksüdatsiooniastmete muutumisega reaktsioonis, teab metallide käitumist keemilistes reaktsioonides redutseerijana ja hapniku käitumist oksüdeerijana",
+    level=4
   )
 )
 
@@ -141,6 +201,334 @@ tasks <- list(
     2. \\blank{Söömine.}\\leavevmode\\
     3. \\blank{Lekkimine.}\\leavevmode\\
     4. \\blank{Nuusutamine otse allikast.}"
+  ),
+  list(
+    goal=1,
+    level=3,
+    task="Vaata pilti \\@ref(fig:chemistry-tasks-experiment-class) ja otsusta, milline loetelus olev lause väljendab ohutusreeglit, mida katset teinud õpilased ei järginud:
+    \\begin{itemize}
+      \\item[\\Circle] Valasid vett happesse.
+      \\item[\\Circle] Jätsid anuma reaktsiooni järel sulgemata.
+      \\item[\\Circle] Kasutasid liiga suuri ainete koguseid.
+      \\item[\\Circle] Nuusutasid valesti reaktsioonis eralduvaid gaase.
+      \\item[\\Circle] Kuumutasid anumat valesti.
+      \\item[\\Circle] Valasid kokku hapet ja alust.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=2,
+    level=3,
+    task="Milline katsevahend on pildil \\@ref(fig:chemistry-tasks-experiment-class):
+    \\begin{itemize}
+      \\item[\\Circle] Katseklaas.
+      \\item[\\Circle] Keeduklaas.
+      \\item[\\Circle] Areomeeter.
+      \\item[\\Circle] Pipett.
+      \\item[\\Circle] Statiiv.
+      \\item[\\Circle] Lehter.
+      \\item[\\Circle] Kolb.
+      \\item[\\Circle] Uhmer.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=3,
+    level=3,
+    task="Mis on söögiäädikas?
+    \\begin{itemize}
+      \\item[\\Circle] Suspensioon.
+      \\item[\\Circle] Emulsioon.
+      \\item[\\Circle] Tõeline lahus.
+      \\item[\\Circle] Aerosool.
+      \\item[\\Circle] Vaht.
+      \\item[\\Circle] Tarre.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=3,
+    level=3,
+    task="Mis on kakaojook?
+    \\begin{itemize}
+      \\item[\\Circle] Suspensioon.
+      \\item[\\Circle] Emulsioon.
+      \\item[\\Circle] Tõeline lahus.
+      \\item[\\Circle] Aerosool.
+      \\item[\\Circle] Vaht.
+      \\item[\\Circle] Tarre.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=3,
+    level=3,
+    task="Mis on piim?
+    \\begin{itemize}
+      \\item[\\Circle] Suspensioon.
+      \\item[\\Circle] Emulsioon.
+      \\item[\\Circle] Tõeline lahus.
+      \\item[\\Circle] Aerosool.
+      \\item[\\Circle] Vaht.
+      \\item[\\Circle] Tarre.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=3,
+    level=3,
+    task="Mis on vahukoor?
+    \\begin{itemize}
+      \\item[\\Circle] Suspensioon.
+      \\item[\\Circle] Emulsioon.
+      \\item[\\Circle] Tõeline lahus.
+      \\item[\\Circle] Aerosool.
+      \\item[\\Circle] Vaht.
+      \\item[\\Circle] Tarre.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=3,
+    level=3,
+    task="Mis on sült?
+    \\begin{itemize}
+      \\item[\\Circle] Suspensioon.
+      \\item[\\Circle] Emulsioon.
+      \\item[\\Circle] Tõeline lahus.
+      \\item[\\Circle] Aerosool.
+      \\item[\\Circle] Vaht.
+      \\item[\\Circle] Tarre.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=4,
+    level=3,
+    task="Raud on
+    \\begin{itemize}
+      \\item[\\Square] metall.
+      \\item[\\Square] mittemetall.
+      \\item[\\Square] \\ce{Fe}.
+    \\end{itemize}
+        "
+  ),
+  list(
+    goal=4,
+    level=3,
+    task="Raua periood:
+    \\begin{itemize}
+      \\item[\\Circle] 1.
+      \\item[\\Circle] 2.
+      \\item[\\Circle] 3.
+      \\item[\\Circle] 4.
+      \\item[\\Circle] 5.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=4,
+    level=3,
+    task="Raua rühm:
+    \\begin{itemize}
+      \\item[\\Circle] IIA.
+      \\item[\\Circle] IIB.
+      \\item[\\Circle] VIIIA.
+      \\item[\\Circle] VIIIB.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=4,
+    level=3,
+    task="Raua prootonite arv:
+    \\begin{itemize}
+      \\item[\\Circle] 2.
+      \\item[\\Circle] 3.
+      \\item[\\Circle] 8.
+      \\item[\\Circle] 14.
+      \\item[\\Circle] 26.
+      \\item[\\Circle] 30.
+      \\item[\\Circle] 56.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=4,
+    level=3,
+    task="Raua neutronite arv:
+    \\begin{itemize}
+      \\item[\\Circle] 2.
+      \\item[\\Circle] 3.
+      \\item[\\Circle] 4.
+      \\item[\\Circle] 8.
+      \\item[\\Circle] 14.
+      \\item[\\Circle] 26.
+      \\item[\\Circle] 30.
+      \\item[\\Circle] 56.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=4,
+    level=3,
+    task="Raua elektronite arv:
+    \\begin{itemize}
+      \\item[\\Circle] 2.
+      \\item[\\Circle] 3.
+      \\item[\\Circle] 4.
+      \\item[\\Circle] 8.
+      \\item[\\Circle] 14.
+      \\item[\\Circle] 26.
+      \\item[\\Circle] 30.
+      \\item[\\Circle] 56.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=4,
+    level=3,
+    task="Raua aatom:
+    \\begin{itemize}
+      \\item[\\Circle] +26 | 2) 8) 14) 2).
+      \\item[\\Circle] +26 | 2) 8) 14).
+      \\item[\\Circle] +8 | 2) 8).
+      \\item[\\Circle] +8 | 2).
+      \\item[\\Circle] +8 | 2) 6).
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=4,
+    level=3,
+    task="Roostetamisprotsessis raua ioon:
+    \\begin{itemize}
+      \\item[\\Circle] +26 | 2) 8) 14) 2).
+      \\item[\\Circle] +26 | 2) 8) 14).
+      \\item[\\Circle] +8 | 2) 8).
+      \\item[\\Circle] +8 | 2).
+      \\item[\\Circle] +8 | 2) 6).
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=4,
+    level=3,
+    task="Roostetamisprotsessis hapniku ioon:
+    \\begin{itemize}
+      \\item[\\Circle] +26 | 2) 8) 14) 2).
+      \\item[\\Circle] +26 | 2) 8) 14).
+      \\item[\\Circle] +8 | 2) 8).
+      \\item[\\Circle] +8 | 2).
+      \\item[\\Circle] +8 | 2) 6).
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=4,
+    level=3,
+    task="Hapniku aatom:
+    \\begin{itemize}
+      \\item[\\Circle] +26 | 2) 8) 14) 2).
+      \\item[\\Circle] +26 | 2) 8) 14).
+      \\item[\\Circle] +8 | 2) 8).
+      \\item[\\Circle] +8 | 2).
+      \\item[\\Circle] +8 | 2) 6).
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=8,
+    level=2,
+    task="Vali kaks tunnust, mis näitavad, et pildil \\@ref(fig:chemistry-tasks-experiment-class) toimus keemiline reaktsioon:
+    \\begin{itemize}
+      \\item[\\Square] Valgusefektid.
+      \\item[\\Square] Gaasi eraldumine.
+      \\item[\\Square] Värvuse muutus.
+      \\item[\\Square] Aine on vedelas olekus.
+      \\item[\\Square] Sademe teke.
+      \\item[\\Square] Aine asukoha muutus.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=11,
+    level=3,
+    task="Mis on massiprotsent?
+    \\begin{itemize}
+      \\item[\\Circle] Aine, milles jaotuvad ühtlaselt teise aine väikesed osakesed.
+      \\item[\\Circle] Aine, mille väikesed osakesed jaotuvad ühtlaselt teises aines.
+      \\item[\\Circle] Suurus, mis näitab lahustunud aine massi protsenti lahuse kogumassis.
+      \\item[\\Circle] Ühtlane ainete segu, mis koosneb lahustist ja lahustunud ainest.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=11,
+    level=3,
+    task="Mis on lahus?
+    \\begin{itemize}
+      \\item[\\Circle] Aine, milles jaotuvad ühtlaselt teise aine väikesed osakesed.
+      \\item[\\Circle] Aine, mille väikesed osakesed jaotuvad ühtlaselt teises aines.
+      \\item[\\Circle] Suurus, mis näitab lahustunud aine massi protsenti lahuse kogumassis.
+      \\item[\\Circle] Ühtlane ainete segu, mis koosneb lahustist ja lahustunud ainest.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=11,
+    level=3,
+    task="Mis on lahusti?
+    \\begin{itemize}
+      \\item[\\Circle] Aine, milles jaotuvad ühtlaselt teise aine väikesed osakesed.
+      \\item[\\Circle] Aine, mille väikesed osakesed jaotuvad ühtlaselt teises aines.
+      \\item[\\Circle] Suurus, mis näitab lahustunud aine massi protsenti lahuse kogumassis.
+      \\item[\\Circle] Ühtlane ainete segu, mis koosneb lahustist ja lahustunud ainest.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=11,
+    level=3,
+    task="Mis on lahustunud aine?
+    \\begin{itemize}
+      \\item[\\Circle] Aine, milles jaotuvad ühtlaselt teise aine väikesed osakesed.
+      \\item[\\Circle] Aine, mille väikesed osakesed jaotuvad ühtlaselt teises aines.
+      \\item[\\Circle] Suurus, mis näitab lahustunud aine massi protsenti lahuse kogumassis.
+      \\item[\\Circle] Ühtlane ainete segu, mis koosneb lahustist ja lahustunud ainest.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=11,
+    level=3,
+    task="Vanaema oli ajakirjast lugenud, et kõrvetiste korral võiks kasutada süldi maitsestamiseks \\num{4}-\\unit{\\percent} äädikalahuse asemel \\num{2}-\\unit{\\percent} lahust. Vanamea lasi Annil mõõta kaaluga \\qty{200}{\\g} \\num{4}-\\unit{\\percent} äädikalahust. Ta palus arvutada, mitu grammi vett peab sellele lahusele lisama, et saada \\num{2}-\\unit{\\percent} äädikalahus. Kuidas saab anni leida äädika lahjendamiseks vajaliku vee massi?\\leavevmode\\
+    
+    Kirjuta tabelisse \\@ref(tab:chemistry-tasks-tables-solution) õige järjekord!"
+  ),
+  list(
+    goal=11,
+    level=3,
+    task="Vanaema oli ajakirjast lugenud, et kõrvetiste korral võiks kasutada süldi maitsestamiseks \\num{4}-\\unit{\\percent} äädikalahuse asemel \\num{2}-\\unit{\\percent} lahust. Vanamea lasi Annil mõõta kaaluga \\qty{200}{\\g} \\num{4}-\\unit{\\percent} äädikalahust. Ta palus arvutada, mitu grammi vett peab sellele lahusele lisama, et saada \\num{2}-\\unit{\\percent} äädikalahus. Kirjuta, mis peab olema joonise \\@ref(fig:chemistry-tasks-content-of-solution) lahtrites enne lahjendamist alustades vasakult ülalt ja liikudes alla ning seejärel paremale:\\leavevmode\\
+    \\blank{\\qty{96}{\\percent}}\\leavevmode\\
+    \\blank{\\qty{192}{\\g}}\\leavevmode\\
+    \\blank{\\qty{4}{\\percent}}\\leavevmode\\
+    \\blank{\\qty{8}{\\g}}\\leavevmode\\
+    \\blank{\\qty{100}{\\percent}}\\leavevmode\\
+    \\blank{\\qty{200}{\\g}}
+    "
+  ),
+  list(
+    goal=11,
+    level=3,
+    task="Vanaema oli ajakirjast lugenud, et kõrvetiste korral võiks kasutada süldi maitsestamiseks \\num{4}-\\unit{\\percent} äädikalahuse asemel \\num{2}-\\unit{\\percent} lahust. Vanamea lasi Annil mõõta kaaluga \\qty{200}{\\g} \\num{4}-\\unit{\\percent} äädikalahust. Ta palus arvutada, mitu grammi vett peab sellele lahusele lisama, et saada \\num{2}-\\unit{\\percent} äädikalahus. Kirjuta, mis peab olema joonise \\@ref(fig:chemistry-tasks-content-of-solution-after) lahtrites pärast lahjendamist alustades vasakult ülalt ja liikudes alla ning seejärel paremale:\\leavevmode\\
+    \\blank{\\qty{98}{\\percent}}\\leavevmode\\
+    \\blank{\\qty{392}{\\g}}\\leavevmode\\
+    \\blank{\\qty{2}{\\percent}}\\leavevmode\\
+    \\blank{\\qty{8}{\\g}}\\leavevmode\\
+    \\blank{\\qty{100}{\\percent}}\\leavevmode\\
+    \\blank{\\qty{400}{\\g}}
+    "
   ),
   list(
     goal=32,
@@ -200,6 +588,88 @@ tasks <- list(
     \\end{itemize}
     ainega.
     "
+  ),
+  list(
+    goal=33,
+    level=3,
+    task="Neutralisatsioonireaktsiooni lähteained on
+    \\begin{itemize}
+      \\item[\\Circle] \\ce{O2  +K}.
+      \\item[\\Circle] \\ce{KCl +AgNO3}.
+      \\item[\\Circle] \\ce{Cl +O2}.
+      \\item[\\Circle] \\ce{K +HCl}.
+      \\item[\\Circle] \\ce{KOH +HCL}.
+      \\item[\\Circle] \\ce{KOH +CuSO4}.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=33,
+    level=3,
+    task="Neutralisatsioonireaktsiooni saadused on
+    \\begin{itemize}
+      \\item[\\Circle] sool + sool.
+      \\item[\\Circle] sool + vesi.
+      \\item[\\Circle] alus.
+      \\item[\\Circle] sool + vesinik.
+      \\item[\\Circle] hape + alus.
+      \\item[\\Circle] hape.
+      \\item[\\Circle] oksiid.
+      \\item[\\Circle] sool + alus.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=47,
+    level=4,
+    task="Pildil \\@ref(fig:chemistry-tasks-Fe-ore) on
+    \\begin{itemize}
+      \\item[\\Circle] punane rauamaak (peamine koostisosa raud(III)oksiid), millest saab süsinikuga kuumutades puhta raua.
+      \\item[\\Circle] rauast eseme reaktsioon soolhappega. Selle käigus eraldub mullikestena vesinik.
+      \\item[\\Circle] raud(III)hüdroksiidi reaktsioon soolhappega ja selle käigus lahus neutraliseerub.
+      \\item[\\Circle] puhas raud, milles raua osakese oküdatsiooniaste on 0.
+      \\item[\\Circle] korrodeerunud rauast ese, mida katab raud(III)oksiid.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=47,
+    level=4,
+    task="Pildil \\@ref(fig:chemistry-tasks-Fe-nails) on
+    \\begin{itemize}
+      \\item[\\Circle] punane rauamaak (peamine koostisosa raud(III)oksiid), millest saab süsinikuga kuumutades puhta raua.
+      \\item[\\Circle] rauast eseme reaktsioon soolhappega. Selle käigus eraldub mullikestena vesinik.
+      \\item[\\Circle] raud(III)hüdroksiidi reaktsioon soolhappega ja selle käigus lahus neutraliseerub.
+      \\item[\\Circle] puhas raud, milles raua osakese oküdatsiooniaste on 0.
+      \\item[\\Circle] korrodeerunud rauast ese, mida katab raud(III)oksiid.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=47,
+    level=4,
+    task="Pildil \\@ref(fig:chemistry-tasks-Fe-reaction-with-metal) on
+    \\begin{itemize}
+      \\item[\\Circle] punane rauamaak (peamine koostisosa raud(III)oksiid), millest saab süsinikuga kuumutades puhta raua.
+      \\item[\\Circle] rauast eseme reaktsioon soolhappega. Selle käigus eraldub mullikestena vesinik.
+      \\item[\\Circle] raud(III)hüdroksiidi reaktsioon soolhappega ja selle käigus lahus neutraliseerub.
+      \\item[\\Circle] puhas raud, milles raua osakese oküdatsiooniaste on 0.
+      \\item[\\Circle] korrodeerunud rauast ese, mida katab raud(III)oksiid.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=47,
+    level=4,
+    task="Pildil \\@ref(fig:chemistry-tasks-Fe-corroded) on
+    \\begin{itemize}
+      \\item[\\Circle] punane rauamaak (peamine koostisosa raud(III)oksiid), millest saab süsinikuga kuumutades puhta raua.
+      \\item[\\Circle] rauast eseme reaktsioon soolhappega. Selle käigus eraldub mullikestena vesinik.
+      \\item[\\Circle] raud(III)hüdroksiidi reaktsioon soolhappega ja selle käigus lahus neutraliseerub.
+      \\item[\\Circle] puhas raud, milles raua osakese oküdatsiooniaste on 0.
+      \\item[\\Circle] korrodeerunud rauast ese, mida katab raud(III)oksiid.
+    \\end{itemize}
+    "
   )
 )
 
@@ -210,7 +680,7 @@ librarian::shelf(c(
   "dplyr"
 ))
 
-number_of_pupils <- 32
+number_of_pupils <- 16
 
 goals_in_use <- unique(dataframe_tasks$goal)
 number_of_goals_in_use <- length(goals_in_use)
@@ -278,6 +748,8 @@ for (index_of_pupil in 1:number_of_pupils) {
 
 ```
 
+\clearpage
+
 ## Joonised
 
 ```{r label = "chemistry-tasks-safety", echo=FALSE, fig.cap = "Labori ohutusnõuete järgimine."}
@@ -287,5 +759,76 @@ include_external_graphics("rmd/keemia/parem-pilt-ohutusn6uded.png")
 
 ```{r label = "chemistry-tasks-safety-label", echo=FALSE, fig.cap = "Ohumärk."}
 include_external_graphics("rmd/keemia/s__vitav0.PNG")
+
+```
+
+```{r label = "chemistry-tasks-experiment-class", echo=FALSE, fig.cap = "Katseklaas.", out.width=".92\\textwidth"}
+include_external_graphics("rmd/keemia/katseklaas.jpg")
+
+```
+
+```{r label = "chemistry-tasks-content-of-solution", echo=FALSE, fig.cap = "Lahuse koostis."}
+include_external_graphics("rmd/keemia/protsentjoonis_uuem_enne.jpg")
+
+```
+
+```{r label = "chemistry-tasks-content-of-solution-after", echo=FALSE, fig.cap = "Lahuse koostis pärast lahjendamist."}
+include_external_graphics("rmd/keemia/protsentjoonis_uuem_p_rast.jpg")
+
+```
+
+```{r label = "chemistry-tasks-Fe-ore", echo=FALSE, fig.cap = "Raud või sellega seotu 1."}
+include_external_graphics("rmd/keemia/rauamaak.jpg")
+
+```
+
+```{r label = "chemistry-tasks-Fe-nails", echo=FALSE, fig.cap = "Raud või sellega seotu 2."}
+include_external_graphics("rmd/keemia/raudnaelad.jpg")
+
+```
+
+```{r label = "chemistry-tasks-Fe-reaction-with-metal", echo=FALSE, fig.cap = "Raud või sellega seotu 3."}
+include_external_graphics("rmd/keemia/reaktsioon-metalliga.jpg")
+
+```
+
+```{r label = "chemistry-tasks-Fe-corroded", echo=FALSE, fig.cap = "Raud või sellega seotu 4."}
+include_external_graphics("rmd/keemia/korrudeerunud-nael.jpg")
+
+```
+
+\clearpage
+
+## Tabelid
+
+```{r label="chemistry-tasks-tables-solution", echo=FALSE}
+actions <- c(
+  "Arvutab, mitu grammi on \\qty{200}{\\g} \\num{4}-\\unit{\\percent} äädikalahuses puhast äädikat.",
+  "Lahutab saadud lahuse massist esialgse lahuse massi.",
+  "Arvutab, mitu grammi on kogu lahust siis, kui äädikas moodustab lahusest \\qty{2}{\\percent}."
+)
+
+order_of_actions <- c(
+  "\\blank{3}",
+  "\\blank{3}",
+  "\\blank{3}"
+)
+
+data <- data.frame(
+  actions,
+  order_of_actions
+)
+
+colnames(data) <- c(
+  "Tegevus",
+  "Mitmes?"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Uue lahuse arvutamine."
+) %>% landscape()
+
+table
 
 ```
