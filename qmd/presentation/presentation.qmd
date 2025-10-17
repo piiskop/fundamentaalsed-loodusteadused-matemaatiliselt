@@ -150,47 +150,65 @@ Keelatud on kõik abivahendid, välja arvatud need, mis on minu poolt ekstra lub
 - Iga trimestri lõpus on kokkuvõttev hindamine testiga, milles on ülesanded läbisegi või komplekssena ainult nende õpiväljundite kohta, mille kohta õpilasel juba on hinne.
 - Igal õpiväljundil ja vastaval hindel on kaal vastavalt Bloomi taksonoomiale.
 
-## Remote controlling
+## Valikud alates 2025-10-10
 
-1.  Configuring:
+1. Jätkamine individuaalsel õpijärjel.
 
-    ```
-    format:
-  revealjs:
-    multiplex:
-      url: 'http://ons.ee:1948/'
+2. Koolis saadud õpiku ja õppevihiku kasutamine.
 
-    ```
+## 1. Jätkamine individuaalsel õpijärjel
 
-2. Opening the main presentation HyperText Markup Language file for the audience.
+1. Oma tempo,
 
-3. Opening the file with the ending "-speaker.html" for remote controlling.
+2. sobilik järjekord,
 
-## Metadata: author
+3. lünkadeta teadmistes-oskustes,
 
-```
-    author:
-      - name: <the name of the first author>
-      - name: '<the name of the second author>'
-    <further names if necessary>
+4. tõenäoliselt suurepärane eksamitulemus,
 
-```
+5. eksperimendid,
 
-## Metadata: title
+6. mängud,
 
-```
-title: |
-    | <first line of the title>
-    | <second line of the title>
+7. filmid,
 
-```
+8. simulatsioonid.
 
-## Metadata: output file
+## 2. Koolis saadud õpiku ja õppevihiku kasutamine
 
-```
-    output-file: ../../_book/<the-name-of-the-output-file>.html
+1. Igas õppevihiku teemas selgitan teooria.
 
-```
+2. Õpilane lahendab kõik selle teema ülesanded.
+
+3. Kui koolis ei jõua, lahendab järgmiseks meie koolipäevaks kodus lõpuni.
+
+4. Õpiväljundi temaatika lõpus test korraga kahele nagu ikka.
+
+5. Test ajalimiidiga vastavalt Bloomi tasemele minutites.
+
+## 2. Omadused
+
+1. Etteantud tempo.
+
+2. Õpiku ja õppevihiku järjekord.
+
+3. Lüngad teadmistes-oskustes.
+
+4. Tõenäoliselt eksamis läbikukkumine.
+
+5. Ei mingeid eksperimente, mänge, filme ega simulatsioone, välja arvatud need, mis õpikus või õppevihikus.
+
+## 2. Kujundav hindamine
+
+5: nagu ikka,
+
+4: vähemalt kaks komponenti seostatult, aga mitte valmis,
+
+3: ainult vähemalt kaks komponenti,
+
+2: proovitud lahendada,
+
+1: pole proovitudki lahendada või liiga kaua tegemata.
 
 ## Metadata: format
 
@@ -370,118 +388,6 @@ A reference:
       :::
       
       ::::
-
-## Columns
-
-Column layout (@columns)[@quarto-block-layout].
-
-(@columns) An example of column layout:
-
-:::: {layout="[50, 50]"}
-
-::: {#columns-1}
-
-```
-:::: {layout="[ 60, 40 ]"}
-
-::: {#columns-3}
-first column
-
-:::
-
-::: {#columns-4}
-second column
-
-:::
-
-::::
-
-```
-
-:::
-
-::: {#columns-2}
-:::: {layout="[ 60, 40 ]"}
-
-::: {#columns-3}
-first column
-
-:::
-
-::: {#columns-4}
-second column
-
-:::
-
-::::
-
-:::
-
-::::
-
-## Translations[@quarto]
-
-- for built-in strings
-
-- file *<2-letter language code>.yml*
-
-- as metadata: `language: <file name>`
-
-## Non-breaking hyphen off
-
-Non-breaking hyphen (@non-breaking-hyphen-false)[@insert].
-
-(@non-breaking-hyphen-false) An example of a breaking hyphen.
-
-:::: {layout="[50, 50]"}
-
-::: {#columns-1}
-
-    ``{r label="fig-f-orbitals-example-hyphen-off", eval=FALSE, fig.cap="Nende olemasolu on oluline d-ploki elementide omaduste mõistmiseks. Tumedam värv tähistab positiivset[@atkins_2010_chemical(lk 30)]."}
-    include_external_graphics("f-orbitaalid.svg")
-
-    ``
-
-:::
-
-::: {#columns-2}
-
-```{r label="fig-f-orbitals-hyphen-off", echo=FALSE, fig.cap="Nende olemasolu on oluline d-ploki elementide omaduste mõistmiseks. Tumedam värv tähistab positiivset[@atkins_2010_chemical(lk 30)]."}
-include_external_graphics("f-orbitaalid.svg")
-
-```
-
-:::
-
-::::
-
-## Non-breaking hyphen on
-
-Non-breaking hyphen (@non-breaking-hyphen-true)[@insert].
-
-(@non-breaking-hyphen-true) An example of a breaking hyphen.
-
-:::: {layout="[50, 50]"}
-
-::: {#columns-1}
-
-    ``{r label="fig-f-orbitals-example-hyphen-on", eval=FALSE, fig.cap="Nende olemasolu on oluline d\u2011ploki elementide omaduste mõistmiseks. Tumedam värv tähistab positiivset[@atkins_2010_chemical(lk 30)]."}
-    include_external_graphics("f-orbitaalid.svg")
-
-    ``
-
-:::
-
-::: {#columns-2}
-
-```{r label="fig-f-orbitals-hyphen-on", echo=FALSE, fig.cap="Nende olemasolu on oluline d\u2011ploki elementide omaduste mõistmiseks. Tumedam värv tähistab positiivset[@atkins_2010_chemical(lk 30)]."}
-include_external_graphics("f-orbitaalid.svg")
-
-```
-
-:::
-
-::::
 
 ## Equation
 

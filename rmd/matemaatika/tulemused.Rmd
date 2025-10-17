@@ -491,7 +491,7 @@ classes_9_grades <- data.frame(
   	NA, # Margarita Mussijenko
   	NA, # Zahar Orikovi
   	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
+  	1, # Veniamin Postolenko
   	NA, # Angelina Solovjova
   	NA, # Sofia Zhuravleva
   	NA, # Ivan Timakin
@@ -552,7 +552,7 @@ classes_9_grades <- data.frame(
   	NA, # Evelina Tolli
   	NA, # Martin Tolli
   	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
+  	1, # Maia Tukkia
   	NA # Arina Vatševskihh
   ),
   c( # 6
@@ -719,20 +719,20 @@ classes_9_grades <- data.frame(
   ),
   c( # 15
   	NA, # Margus Evart
-  	NA, # Mikaela Galperman
+  	1, # Mikaela Galperman
   	NA, # Valerija Korenkova
   	NA, # Dmitri Litvinenko
   	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
+  	1, # Zahar Orikovi
   	NA, # Jekaterina Plotnikova
   	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
+  	1, # Angelina Solovjova
   	NA, # Sofia Zhuravleva
   	NA, # Ivan Timakin
   	NA, # Evelina Tolli
-  	NA, # Martin Tolli
+  	1, # Martin Tolli
   	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
+  	1, # Maia Tukkia
   	NA # Arina Vatševskihh
   ),
   c( # 16
@@ -1386,6 +1386,9 @@ classes_9_grades <- data.frame(
 )
 
 included_goals <- c(
+  5,
+  13,
+  15,
   25,
   29,
   30,
@@ -1394,12 +1397,12 @@ included_goals <- c(
   51
 )
 
-data_frame <- classes_9_grades[13]
+data_frame <- classes_9_grades[2]
 for (goal_identifier in included_goals) {
   data_frame <- cbind(data_frame, classes_9_grades[goal_identifier])
 }
 
-colnames(data_frame) <- c(13, included_goals)
+colnames(data_frame) <- c(2, included_goals)
 
 rownames(data_frame) <- names_9
 table <- print_table(

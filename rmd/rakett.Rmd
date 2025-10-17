@@ -1,5 +1,18 @@
 # Raketi eksperiment
 
+## Õpiväljundid
+
+- otsib, loeb ja mõistab iseseisvalt õppematerjalides olevaid tekste (2);
+- 1. teab andmete liike ja andmete kogumise erinevaid meetodeid (mõõtmine, küsimustik) (1); saavutatud:
+- 2. iseloomustab andmestikku aritmeetilise keskmise, mediaani, moodi, miinimumi, maksimumi ja ulatuse järgi (4)
+- 4. selgitab protsendi, promilli ja protsendipunkti mõiste tähendust (2);
+- 6. selgitab tõenäosuse tähendust, arvutab elulistel juhtudel sündmuse tõenäosuse (sh mündivise, täringu veeretamine, kaardimäng, loosimine) (3);
+- 8. kasutab protsentarvutusel erinevaid lahendusmeetodeid (ühikumeetod, võrre, skeem, algoritm) (3);
+- 9. lahendab protsentarvutuse tüüpülesandeid (osa leidmine, terviku leidmine, osamäära leidmine, suuruse muutumine) (3);
+- kasutab tabelarvutusprogrammi andmete esitamiseks, töötlemiseks ja tulemuste tõlgendamiseks (4).
+
+## Eksperimendi valmistamine ja andmete kogumine
+
 Valmista minu juhendamisel paberrakett ja mine spordisaali seda testima! Teosta kaheksa lendu ja iga kord loenda, mitu jalalaba täispikkust mahub otse lennu stardikohast maandumiskohani ning kirjuta tabelisse \@ref(tab:rocket-flights) leheküljel `r render_pageref(reference="tab:rocket-flights")`.
 
 ```{r label="rocket-flights", echo=FALSE}
@@ -47,6 +60,8 @@ print_table(
 
 \clearpage
 
+## Andmeanalüüs paberil
+
 Pärast lendude teostamist ja raporteerimist teostan arvutused lennupikkuste kohta jalalabade täispikkustes:
 
 Aritmeetiline keskmine: \blank{99}.
@@ -65,11 +80,111 @@ Mitu protsenti erineb mediaan aritmeetilisest keskmisest? \blank{\qty{999}{\perc
 
 Mitu promilli erineb mediaan aritmeetilisest keskmisest? \blank{\qty{999}{\percent}}.
 
-Mitu protsendipunkti erineb mediaan aritmeetilisest keskmisest? \blank{\qty{999}{\percent}}.
-
 Kui suur on tõenäosus, et järgmine lend oleks viimasest lennust pikem? \blank{0,999}.
 
-Järgnevalt kanna andmed mitmeotstarbelisse arvutisse ja teosta samad arvutused esmalt aadressil https://rdrr.io/snippets/ vastavalt minu juhendamisele!
+Kui järgmine lend ongi pikem, siis kui suur on tõenäosus, et kümnes lend on üheksandast pikem? \blank{0,999}.
 
-Seejärel kanna andmed arvutisse kasutades tabelarvutussüsteemi ja analüüsi neid selles! Vajalik on luua konto minu Nextcloudi aadressil
+Mitu protsendipunkti erineb viimane tõenäosus eelviimasest? \blank{\qty{999}{\percent}}.
+
+## Andmeanalüüs R's
+
+R on programmeerimiskeel, mis on ennekõike statistika jaoks. Kasutame seda, et saaksid kogemuse, kuidas koostada arvutuseeskirja ja arvutile käske anda, enne kui asud tabelarvutussüsteemi kasutama. Alustuseks on vast kõige lihtsam kasutada Positi enda serveril jooksvat RStudiot:
+
+1. Mine veebilehitsejas aadressile https://posit.cloud/!
+
+2. Kliki *GET STARTED*!
+
+3. Kliki *Free*!
+
+4. Kliki *Sign Up*!
+
+5. Täida vorm või logi sisse etteantud muu keskkonna kaudu!
+
+6. Kui oled juba sisse loginud, kliki *New Project* ja edasi *New RStudio Project*!
+
+7. Vali menüüst *File*, sealt *New File* ja sealt omakorda *R Markdown...*! Küsitakse, kas tahad, et vajalikud paketid paigaldataks, millele vasta *Yes*!
+
+8. *Title* välja kirjuta *Rakett* ja kinnita vajutades *OK*!
+
+9. Nüüd saad testida näidisfaili sisu klikkides *Knit*. Küsitakse, kuhu ja millise nimega fail salvestada, millele vastuseks kirjuta failinimeks *rakett*! Tulemusena avatakse uues aknas kompileeritud fail.
+
+10. Et sul pole seda näidissisu vaja, kustuta sellest failist kõik alates reast 6!
+
+11. Lisa see lähtekood reale 6:
+
+    ````{verbatim}
+    ```{r label="rocket-r", echo=FALSE, results='asis'}
+    options(OutDec = ",")
+    
+    flights <- c(9, 7, 7, 6, 8, 5, 7, 11)
+    
+    number_of_flights <- length(flights)
+    sum_of_flights <- sum(flights)
+    average_1 <- sum_of_flights / number_of_flights
+    
+    average_2 <- mean(flights)
+    
+    print(paste0("Sammhaaval arvutatud aritmeetiline keskmine: ", average_1, "."))
+    print(paste0("Funktsiooniga arvutatud aritmeetiline keskmine: ", average_2, "."))
+    
+    median_of_flights <- median(flights)
+    print(paste0("Mediaan: ", median_of_flights, "."))
+    
+    if (!require("librarian")) {
+      install.packages("librarian", dependencies = TRUE)
+    }
+    library(librarian)
+
+        librarian::shelf(modeest)
+    print(paste0("Mood: ", mfv(flights), "."))
+    
+    min_of_flights <- min(flights)
+    max_of_flights <- max(flights)
+    print(paste0("Miinimum: ", min_of_flights, "."))
+    print(paste0("Maksimum: ", max_of_flights, "."))
+    print(paste0("Ulatus: ", max_of_flights - min_of_flights, "."))
+    
+    difference_median_mean <- (median_of_flights - average_2) / average_2
+    
+    print(paste0("Mediaani erinevus aritmeetilisest keskmisest protsentides: ", difference_median_mean * 100, "."))
+    
+    print(paste0("Mediaani erinevus aritmeetilisest keskmisest promillides: ", difference_median_mean * 1000, "."))
+    
+    ```
+    
+    ````
+
+    Real 1 öeldakse *knitr*ile, mis paneb lähtekoodist lõpliku faili kokku, et tegemist on R-keelega, nimetatakse koodiplokk, keelatakse lähtekoodi näitamine ja sisu käsitlemine R Markdownina.
+    
+    Real 2 öeldakse, et komana kasutatakse koma, mitte punkti nagu vaikimisi.
+    
+    Reale 4 asenda muutuja `flights` väärtus enda andmetega!
+    
+    Real 6 küsitakse katsete arv ja omistatakse see muutujale `number_of_flights`.
+    
+    Real 7 küsitakse lendude summa.
+    
+    Real 8 arvutatakse aritmeetiline keskmine summa ja katsete arvu jagatisena.
+    
+    Real 10 arvutatakse aritmeetiline keskmine sisseehitatud funktsiooni `mean` abil.
+    
+    Ridadel 12 ja 13 kirjutatakse need kahel viisil arvutatud aritmeetilised keskmised välja funktsiooniga `print` ning funktsioon `paste0` ühendab sellele ette antud osad üheks tekstiks.
+    
+    Real 15 arvutatakse mediaan.
+    
+    Ridadel 18-21 paigaldatakse ja loetakse sisse teek *librarian*, millega saab muid teeke hõlpsamini kasutada.
+    
+    Real 23 kasutataksegi *librarian*'ga teeki *modeest*, mis on moe arvutamiseks vajalik, sest selles on funktsioon `mfv`.
+    
+    Real 26 arvutatakse katsete väärtuste miinimum ja järgmisel real maksimum.
+    
+    Real 30 arvutatakse katsete väärtuste ulatus ja kirjutatakse see välja.
+    
+    Real 32 arvutatakse mediaani ja aritmeetilise keskmise suhteline erinevus ning järgneval kahel real kirjutatakse see välja vastavalt protsentides ja promillides.
+
+R's ei tohi muutuja nimes olla tühikut. Iga algav jutumärk peab ka lõppema. Iga avanev sulg peab ka sulguma. Funktsiooni sisendid on eraldatud komaga. Sõned on jutumärkides.
+
+## Andmeanalüüs tabelarvutussüsteemis
+
+Vajalik on luua konto minu Nextcloudi aadressil
 https://nextcloud.ons.ee/apps/registration/. Kui see on tehtud, teata mulle ja ma lisan su meie gruppi, misjärel leia kataloog *Sinimäe Põhikool*, millesse tee omanimeline alamkaust, kuhu sisse omakorda uus tabelarvutusfail ning järgi minu juhiseid! Kui Nextcloudi enam sisse ei saa, sest liiga palju on proovitud, saad sama teha ka otse ONLYOFFICE's vastavalt minu juhistele.

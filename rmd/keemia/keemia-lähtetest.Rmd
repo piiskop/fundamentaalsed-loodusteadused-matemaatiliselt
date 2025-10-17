@@ -189,6 +189,10 @@ goals <- list(
   list( # K47
     goal="seostab redoksreaktsioone keemiliste elementide oksüdatsiooniastmete muutumisega reaktsioonis, teab metallide käitumist keemilistes reaktsioonides redutseerijana ja hapniku käitumist oksüdeerijana",
     level=4
+  ),
+  list( # K48
+    goal = "eristab füüsikalisi, keemilisi ja bioloogilisi nähtusi ning toob näiteid nendevaheliste seoste kohta",
+    level = 4
   )
 )
 
@@ -670,6 +674,96 @@ tasks <- list(
       \\item[\\Circle] korrodeerunud rauast ese, mida katab raud(III)oksiid.
     \\end{itemize}
     "
+  ),
+  list(
+    goal=48,
+    level=4,
+    task="Füüsikaline nähtus:
+    \\begin{itemize}
+      \\item[\\Square] Vee keemine.
+      \\item[\\Square] Raua roostetamine.
+      \\item[\\Square] Organismi võitlus viirushaigusega.
+      \\item[\\Square] Kuuma metalli sepistamine.
+      \\item[\\Square] Udu teke.
+      \\item[\\Square] Muna hüübimine praadimisel.
+      \\item[\\Square] Piima hapnemine.
+      \\item[\\Square] Lapse arenemine noorukiks.
+      \\item[\\Square] Vee puhastamine filtreerimise teel.
+      \\item[\\Square] Inimese kasvamine.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=48,
+    level=4,
+    task="Keemiline nähtus:
+    \\begin{itemize}
+      \\item[\\Square] Vee keemine.
+      \\item[\\Square] Raua roostetamine.
+      \\item[\\Square] Organismi võitlus viirushaigusega.
+      \\item[\\Square] Kuuma metalli sepistamine.
+      \\item[\\Square] Udu teke.
+      \\item[\\Square] Muna hüübimine praadimisel.
+      \\item[\\Square] Piima hapnemine.
+      \\item[\\Square] Lapse arenemine noorukiks.
+      \\item[\\Square] Vee puhastamine filtreerimise teel.
+      \\item[\\Square] Inimese kasvamine.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=48,
+    level=4,
+    task="Bioloogiline nähtus:
+    \\begin{itemize}
+      \\item[\\Square] Vee keemine.
+      \\item[\\Square] Raua roostetamine.
+      \\item[\\Square] Organismi võitlus viirushaigusega.
+      \\item[\\Square] Kuuma metalli sepistamine.
+      \\item[\\Square] Udu teke.
+      \\item[\\Square] Muna hüübimine praadimisel.
+      \\item[\\Square] Piima hapnemine.
+      \\item[\\Square] Lapse arenemine noorukiks.
+      \\item[\\Square] Vee puhastamine filtreerimise teel.
+      \\item[\\Square] Inimese kasvamine.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=48,
+    level=4,
+    task="Märgi tabelisse \\@ref(tab:chemistry-tasks-tables-occurrencies) vastav nähtuse liik ja näite tunnus järgnevast loetelust:
+    \\begin{enumerate}
+      \\item Lumi sulab veeks.
+      \\item Inimene lisab poekotti ostetud kaupa.
+      \\item Õpilane kõnni hommikul kodust kooli.
+      \\item Kokk uhmerdab/peenestab maitseaineid.
+      \\item Ahi soojeneb kütmisel.
+      \\item Kumm pikeneb venimisel.
+      \\item Tainas kerkib.
+      \\item Raud roostetab.
+      \\item Toit roiskub.
+      \\item Toit kõrbeb põhja.
+    \\end{enumerate}
+    "
+  ),
+  list(
+    goal=48,
+    level=4,
+    task="Märgi tabelisse \\@ref(tab:chemistry-tasks-tables-occurrency-of-many-types) igale reale, millise kahe nähtuse liigi tunnused nähtusel on järgnevast loetelust arvestades, et igas reas jääb üks lahter tühjaks:
+    \\begin{enumerate}
+      \\item Fotosünteesil tekib glükoos.
+      \\item Lill areneb.
+      \\item Tekivad \\ce{CO2} ja \\ce{H2O}.
+      \\item Koogivorm soojeneb.
+      \\item Vesi aurub.
+      \\item Fotosüntees peatub.
+      \\item Kuivas mullas puudub elu.
+      \\item Taim valmistub puhkuseks.
+      \\item Kook küpseb.
+      \\item Parafiin sulab.
+    \\end{enumerate}
+    "
   )
 )
 
@@ -828,6 +922,92 @@ table <- print_table(
   table = data,
   caption = "Uue lahuse arvutamine."
 ) %>% landscape()
+
+table
+
+```
+
+```{r label="chemistry-tasks-tables-occurrencies", echo=FALSE}
+description <- c(
+  "Muutub keha kuju.",
+  "Muutub maitse.",
+  "Muutuvad keha mõõtmed.",
+  "Muutub keha temperatuur.",
+  "Muutub värvus.",
+  "Muutub aine olek.",
+  "Eraldub gaas.",
+  "Muutub keha mass.",
+  "Muutub lõhn.",
+  "Muutub keha asukoht."
+)
+
+number_of_items <- length(description)
+
+type_of_occurrency <- rep(
+  x="\\Circle Füüsikaline. \\Circle Keemiline.",
+  number_of_items
+)
+
+example <- rep(x="\\blank{10}", number_of_items)
+
+data <- data.frame(
+  description,
+  type_of_occurrency,
+  example
+)
+
+colnames(data) <- c(
+  "Kirjeldus",
+  "Nähtuse liik",
+  "Näide"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Nähtuste jaotamine liikide kaupa näidetega."
+)
+
+table
+
+```
+
+```{r label="chemistry-tasks-tables-occurrency-of-many-types", echo=FALSE}
+description <- c(
+  "Küünal põleb.",
+  "Kevadlilled hakkavad õitsema.",
+  "Lehed muutuvad sügises värviliseks.",
+  "Ahjus olev kook küpseb ja kerkib.",
+  "Päike muudab maapinna kõvaks ja elutuks."
+)
+
+number_of_items <- length(description)
+
+chemical <- rep(x="\\blank{10}", number_of_items)
+physical <- rep(x="\\blank{10}", number_of_items)
+biological <- rep(x="\\blank{10}", number_of_items)
+
+data <- data.frame(
+  description,
+  chemical,
+  physical,
+  biological
+)
+
+colnames(data) <- c(
+  "Nähtuse kirjeldus",
+  "Keemilise nähtuse tunnus",
+  "Füsikalise nähtuse tunnus",
+  "Bioloogilise nähtuse tunnus"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Nähtuste jaotamine liikide kaupa tunnustega."
+) %>%
+  column_spec(2, width="8em") %>%
+  column_spec(3, width="8em") %>%
+  column_spec(4, width="8em") %>%
+  landscape()
 
 table
 
