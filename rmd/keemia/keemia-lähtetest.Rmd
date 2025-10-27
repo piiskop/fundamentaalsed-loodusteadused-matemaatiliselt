@@ -16,7 +16,7 @@ goals <- list(
   ),
   list( # K4
     goal = "selgitab aatomi ehitust, kasutab keemiliste elementide tähiste leidmiseks, aatomi ehituse kirjeldamiseks ja elektronskeemi koostamiseks keemiliste elementide perioodilisustabelit",
-    level = 3
+    level = 4
   ),
   list( # K5
     goal = "eristab liht- ja liitaineid ning selgitab aine valemi põhjal aine koostist",
@@ -40,7 +40,7 @@ goals <- list(
   ),
   list( # K10
     goal = "koostab süsinikuühendite struktuurivalemeid ja molekulimudeleid etteantud aatomite (C, H, O) arvu järgi, eristab lineaarset, hargnenud ja tsüklilist süsinikahelat",
-    level = 3
+    level = 4
   ),
   list( # K11
     goal = "lahendab lahuse protsendilisel koostisel põhinevaid arvutusülesandeid",
@@ -108,11 +108,11 @@ goals <- list(
   ),
   list( # K27
     goal = "lahendab reaktsioonivõrranditel põhinevaid arvutusülesandeid, lähtudes reaktsioonivõrrandite kordajatest (ainete moolsuhtest) ning reaktsioonis osalevate ainete hulkadest (moolides), tehes vajaduse korral ümberarvutusi ainehulga, massi ja (gaasi) ruumala vaheliste seoste alusel; põhjendab lahenduskäiku",
-    level = 4
+    level = 6
   ),
   list( # K28
     goal = "teab etanooli füsioloogilist toimet ja analüüsib sellega seotud probleeme igapäevaelus",
-    level = 4
+    level = 6
   ),
   list( # K29
     goal = "selgitab ja uurib keemiliste reaktsioonide soojusefekti",
@@ -120,7 +120,7 @@ goals <- list(
   ),
   list( # K30
     goal = "analüüsib süsinikuühendite kasutusvõimalusi kütusena ning eristab taastuvaid ja taastumatuid energiaallikaid",
-    level = 4
+    level = 6
   ),
   list( # K31
     goal = "liigitab materjale hüdrofiilseks ja hüdrofoobseks",
@@ -160,7 +160,7 @@ goals <- list(
   ),
   list( # K40
     goal="mõistab elukeskkonda säästva suhtumise vajalikkust ning analüüsib keskkonna säästmise võimalusi",
-    level=5
+    level=6
   ),
   list( # K41
     goal="mõistab sahhariidide, rasvade ja valkude rolli organismides, uurib nende omadusi ja sisaldust toiduainetes",
@@ -176,7 +176,7 @@ goals <- list(
   ),
   list( # K44
     goal="hindab loogiliselt arvutustulemuste õigsust ning teeb arvutustulemuste põhjal järeldusi ja otsustusi",
-    level=5
+    level=6
   ),
   list( # K45
     goal="teab keemilise saaste allikaid ja analüüsib saastumise tekkepõhjusi, saastumisest tingitud keskkonnaprobleeme (happesademed, raskmetallide ühendid, üleväetamine) ning võimalikke keskkonna säästmise meetmeid",
@@ -190,9 +190,29 @@ goals <- list(
     goal="seostab redoksreaktsioone keemiliste elementide oksüdatsiooniastmete muutumisega reaktsioonis, teab metallide käitumist keemilistes reaktsioonides redutseerijana ja hapniku käitumist oksüdeerijana",
     level=4
   ),
-  list( # K48
-    goal = "eristab füüsikalisi, keemilisi ja bioloogilisi nähtusi ning toob näiteid nendevaheliste seoste kohta",
-    level = 4
+  list( # LK48
+    goal="eristab füüsikalisi, keemilisi ja bioloogilisi nähtusi ning toob näiteid nendevaheliste seoste kohta",
+    level=4
+  ),
+  list( # LK49
+    goal="selgitab hingamise, põlemise ja fotosünteesi näitel, et keemilistes reaktsioonides energia eraldub või neeldub",
+    level=3
+  ),
+  list( # LK50
+    goal="seostab hapniku ja süsihappegaasi põlemise, kõdunemise ning hingamise fotosünteesiga; toob näiteid ainete ringkäigu kohta looduses",
+    level=5
+  ),
+  list( # LK51
+    goal="teab, et ained koosnevad aatomitest ja molekulidest; koostab lihtsamate molekulmudelite põhjal ainete valemeid",
+    level=3
+  ),
+  list( # LK52
+    goal="valmistab kindla protsendilise sisaldusega lahust, toob näiteid lahustite, lahustuvate ainete ja lahuste kohta ning selgitab lahuste tähtsust looduses ja igapäevaelus",
+    level=5
+  ),
+  list( # LK53
+    goal="lahutab segu, kasutades kohaseid meetodeid",
+    level=3
   )
 )
 
@@ -308,7 +328,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=3,
+    level=4,
     task="Raud on
     \\begin{itemize}
       \\item[\\Square] metall.
@@ -319,7 +339,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=3,
+    level=4,
     task="Raua periood:
     \\begin{itemize}
       \\item[\\Circle] 1.
@@ -332,7 +352,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=3,
+    level=4,
     task="Raua rühm:
     \\begin{itemize}
       \\item[\\Circle] IIA.
@@ -344,7 +364,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=3,
+    level=4,
     task="Raua prootonite arv:
     \\begin{itemize}
       \\item[\\Circle] 2.
@@ -359,7 +379,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=3,
+    level=4,
     task="Raua neutronite arv:
     \\begin{itemize}
       \\item[\\Circle] 2.
@@ -375,7 +395,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=3,
+    level=4,
     task="Raua elektronite arv:
     \\begin{itemize}
       \\item[\\Circle] 2.
@@ -391,7 +411,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=3,
+    level=4,
     task="Raua aatom:
     \\begin{itemize}
       \\item[\\Circle] +26 | 2) 8) 14) 2).
@@ -404,7 +424,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=3,
+    level=4,
     task="Roostetamisprotsessis raua ioon:
     \\begin{itemize}
       \\item[\\Circle] +26 | 2) 8) 14) 2).
@@ -417,7 +437,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=3,
+    level=4,
     task="Roostetamisprotsessis hapniku ioon:
     \\begin{itemize}
       \\item[\\Circle] +26 | 2) 8) 14) 2).
@@ -430,7 +450,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=3,
+    level=4,
     task="Hapniku aatom:
     \\begin{itemize}
       \\item[\\Circle] +26 | 2) 8) 14) 2).
@@ -764,6 +784,283 @@ tasks <- list(
       \\item Parafiin sulab.
     \\end{enumerate}
     "
+  ),
+  list(
+    goal=49,
+    level=3,
+    task="Lüngatäited on soojus, süsihappegaas, valgus, hapnik, vesi, glükoos.\\leavevmode\\
+    Fotosünteesis
+    \\begin{itemize}
+      \\item[\\Circle] eraldub
+      \\item[\\Circle] neeldub
+    \\end{itemize}
+    \\blank{süsihappegaas}.\\leavevmode\\
+    Täida lüngad fotosünteesi võrrandiskeletis \\@ref(eq:photosynthesis-breathing) õigete täidetega.
+    "
+  ),
+  list(
+    goal=49,
+    level=3,
+    task="Lüngatäited on soojus, süsihappegaas, valgus, hapnik, vesi, glükoos.\\leavevmode\\
+    Rakuhingamises
+    \\begin{itemize}
+      \\item[\\Circle] eraldub
+      \\item[\\Circle] neeldub
+    \\end{itemize}
+    \\blank{süsihappegaas}.\\leavevmode\\
+    Täida lüngad rakuhingamise võrrandiskeletis \\@ref(eq:photosynthesis-breathing) õigete täidetega.
+    "
+  ),
+  list(
+    goal=51,
+    level=3,
+    task="Kirjuta loetelust
+    \\begin{enumerate}
+      \\item keha,
+      \\item molekul,
+      \\item aatom,
+      \\item aatomituum,
+      \\item prooton,
+      \\item neutron,
+      \\item elektron,
+      \\item elektronkate
+    \\end{enumerate}
+    õige tunnus vastavalt iga järgmise definitsiooni juurde:\\leavevmode\\
+    \\leavevmode\\
+    Negatiivse elektrilaenguga osake - \\blank{8}.\\leavevmode\\
+    Aatomituuma ümbritsevad elektronid - \\blank{8}.\\leavevmode\\
+    Terviklik ainekogum alates kübemest kuni astronoomiliste objektideni - \\blank{8}.\\leavevmode\\
+    Aatomi osa, mis koosneb prootonitest ja neutronitest - \\blank{8}.\\leavevmode\\
+    Positiivse elektrilaenguga osake aatomituumas - \\blank{8}.\\leavevmode\\
+    Kahest või enamast aatomist koosnev aineosake - \\blank{8}.\\leavevmode\\
+    Elektrilaenguta osake aatomituumas - \\blank{8}.\\leavevmode\\
+    Aine väikseim osake - \\blank{8}.\\leavevmode\\
+    "
+  ),
+  list(
+    goal=51,
+    level=3,
+    task="Kirjuta loetelust
+    \\begin{enumerate}
+      \\item keha,
+      \\item molekul,
+      \\item aatom,
+      \\item aatomituum,
+      \\item prooton,
+      \\item neutron,
+      \\item elektron,
+      \\item elektronkate,
+      \\item aatomnumber,
+      \\item keemiline element
+    \\end{enumerate}
+    õige tunnus vastavalt iga järgmise definitsiooni juurde:\\leavevmode\\
+    \\leavevmode\\
+    Negatiivse elektrilaenguga osake - \\blank{8}.\\leavevmode\\
+    Aatomituuma ümbritsevad elektronid - \\blank{8}.\\leavevmode\\
+    Terviklik ainekogum alates kübemest kuni astronoomiliste objektideni - \\blank{8}.\\leavevmode\\
+    Aatomi osa, mis koosneb prootonitest ja neutronitest - \\blank{8}.\\leavevmode\\
+    Positiivse elektrilaenguga osake aatomituumas - \\blank{8}.\\leavevmode\\
+    Kahest või enamast aatomist koosnev aineosake - \\blank{8}.\\leavevmode\\
+    Elektrilaenguta osake aatomituumas - \\blank{8}.\\leavevmode\\
+    Aine väikseim osake - \\blank{8}.\\leavevmode\\
+    "
+  ),
+  list(
+    goal=51,
+    level=3,
+    task="Kirjuta joonisele \\@ref(fig:chemistry-tasks-atomic-model) igasse vastavasse ümarnurkadega rööpkülikusse õige mõiste tunnus järgnevast loetelust:
+    \\begin{enumerate}
+      \\item aatom,
+      \\item aatomituum,
+      \\item prooton,
+      \\item elektronkate,
+      \\item neutron,
+      \\item molekul,
+      \\item keha,
+      \\item elektron.
+    \\end{enumerate}"
+  ),
+  list(
+    goal=51,
+    level=3,
+    task="Joonisel \\@ref(fig:chemistry-tasks-H) on kujutatud vesiniku aatomi sümbol. Joonisel \\@ref(fig:chemistry-tasks-O) on kujutatud hapniku aatomi sümbol. Joonisel \\@ref(fig:chemistry-tasks-C) on kujutatud süsiniku aatomi sümbol.\\leavevmode\\
+    \\leavevmode\\
+    Palun märgi järgnevasse loetellu iga loetelu elemendi juurde vastava joonise tähis nimetatud kolmest joonisest ja joonistest \\@ref(fig:chemistry-tasks-O2) kuni \\@ref(fig:chemistry-tasks-H2O) on loetelus nimetatud olem kujutatud."
+  ),
+  list(
+    goal=51,
+    level=3,
+    task="Märgi loetelust
+    \\begin{enumerate}
+      \\item \\ce{H},
+      \\item \\ce{O2},
+      \\item \\ce{C},
+      \\item \\ce{H2O},
+      \\item \\ce{H2},
+      \\item \\ce{He},
+      \\item \\ce{O},
+      \\item \\ce{N},
+      \\item \\ce{CO},
+      \\item \\ce{N2},
+      \\item \\ce{CO2}
+    \\end{enumerate}
+    õige tunnus järgmisse loetellu iga vastava loetelu elemendi juurde:
+    \\begin{enumerate}
+      \\item süsiniku aatom - \\blank{10},
+      \\item süsihappegaas - \\blank{10},
+      \\item vesiniku aatom - \\blank{10},
+      \\item hapniku aatom - \\blank{10},
+      \\item hapniku molekul - \\blank{10},
+      \\item vesi - \\blank{10},
+      \\item vingugaas - \\blank{10}.
+    \\end{enumerate}
+    "
+  ),
+  list(
+    goal=51,
+    level=3,
+    task="Tähista joonisele \\@ref(fig:chemistry-tasks-air) kõik hapniku molekulid!\\leavevmode\\
+    \\leavevmode\\
+    Õhu koostist kujutaval joonisel on kokku
+    \\begin{itemize}
+      \\item[\\Circle] 1
+      \\item[\\Circle] 24
+      \\item[\\Circle] 52
+    \\end{itemize}
+    molekuli ja
+    \\begin{itemize}
+      \\item[\\Circle] 1
+      \\item[\\Circle] 24
+      \\item[\\Circle] 52
+    \\end{itemize}
+    aatomit. Kõige rohkem on joonisel
+    \\begin{itemize}
+      \\item[\\Circle] vee
+      \\item[\\Circle] hapniku
+      \\item[\\Circle] lämmastiku
+      \\item[\\Circle] süsihappegaasi
+    \\end{itemize}
+    molekule. Kõige vähem on joonisel
+    \\begin{itemize}
+      \\item[\\Circle] vee
+      \\item[\\Circle] hapniku
+      \\item[\\Circle] lämmastiku
+      \\item[\\Circle] süsihappegaasi
+    \\end{itemize}
+    ja
+  \\begin{itemize}
+      \\item[\\Circle] vee
+      \\item[\\Circle] hapniku
+      \\item[\\Circle] lämmastiku
+      \\item[\\Circle] süsihappegaasi
+    \\end{itemize}
+    molekule.\\leavevmode\\
+    \\leavevmode\\
+    Lämmastiku molekulvalem - \\blank{\\ce{CO2}}.\\leavevmode\\
+    Hapniku molekulvalem - \\blank{\\ce{CO2}}.\\leavevmode\\
+    Süsihappegaasi molekulvalem - \\blank{\\ce{CO2}}.\\leavevmode\\
+    Vee molekulvalem - \\blank{\\ce{CO2}}.
+    "
+  ),
+  list(
+    goal=52,
+    level=5,
+    task="Täida võrrandisse \\@ref(eq:solution) lüngad järgnevatest valikutest:
+    \\begin{enumerate}
+      \\item lahustuv aine,
+      \\item lahus,
+      \\item lahusti.
+    \\end{enumerate}
+    Selles võrrandis esimese komponendi selgitus on
+    \\begin{itemize}
+      \\item[\\Circle] ainete ühtlane segu.
+      \\item[\\Circle] sool.
+      \\item[\\Circle] aine, mida soovitakse lahustada.
+      \\item[\\Circle] aine, milles teine aine lahustub.
+      \\item[\\Circle] soolvesi.
+      \\item[\\Circle] vesi.
+    \\end{itemize}
+    Selles võrrandis teise komponendi selgitus on
+    \\begin{itemize}
+      \\item[\\Circle] ainete ühtlane segu.
+      \\item[\\Circle] sool.
+      \\item[\\Circle] aine, mida soovitakse lahustada.
+      \\item[\\Circle] aine, milles teine aine lahustub.
+      \\item[\\Circle] soolvesi.
+      \\item[\\Circle] vesi.
+    \\end{itemize}
+    Selles võrrandis kolmanda komponendi selgitus on
+    \\begin{itemize}
+      \\item[\\Circle] ainete ühtlane segu.
+      \\item[\\Circle] sool.
+      \\item[\\Circle] aine, mida soovitakse lahustada.
+      \\item[\\Circle] aine, milles teine aine lahustub.
+      \\item[\\Circle] soolvesi.
+      \\item[\\Circle] vesi.
+    \\end{itemize}
+    Selles võrrandis esimese komponendi näide on
+    \\begin{itemize}
+      \\item[\\Circle] ainete ühtlane segu.
+      \\item[\\Circle] sool.
+      \\item[\\Circle] aine, mida soovitakse lahustada.
+      \\item[\\Circle] aine, milles teine aine lahustub.
+      \\item[\\Circle] soolvesi.
+      \\item[\\Circle] vesi.
+    \\end{itemize}
+    Selles võrrandis teise komponendi näide on
+    \\begin{itemize}
+      \\item[\\Circle] ainete ühtlane segu.
+      \\item[\\Circle] sool.
+      \\item[\\Circle] aine, mida soovitakse lahustada.
+      \\item[\\Circle] aine, milles teine aine lahustub.
+      \\item[\\Circle] soolvesi.
+      \\item[\\Circle] vesi.
+    \\end{itemize}
+    Selles võrrandis kolmanda komponendi näide on
+    \\begin{itemize}
+      \\item[\\Circle] ainete ühtlane segu.
+      \\item[\\Circle] sool.
+      \\item[\\Circle] aine, mida soovitakse lahustada.
+      \\item[\\Circle] aine, milles teine aine lahustub.
+      \\item[\\Circle] soolvesi.
+      \\item[\\Circle] vesi.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=52,
+    level=5,
+    task="Täida tabelis \\@ref(tab:chemistry-tasks-tables-solution-components) lüngad valides järgnevate valikute seast:
+    \\begin{enumerate}
+      \\item vesi,
+      \\item sool,
+      \\item limonaad,
+      \\item süsihappegaas,
+      \\item suhkur.
+    \\end{enumerate}"
+  ),
+  list(
+    goal=53,
+    level=3,
+    task="Vali loetelust
+    \\begin{enumerate}
+      \\item filtrimine,
+      \\item sade
+      \\item sulam
+      \\item destilleerimine
+      \\item filter
+      \\item setitamine
+      \\item nõrutamine
+    \\end{enumerate}
+    õige vaste järgmistele definitsioonidele:
+    Aine, mis on saadud eri metallide kokku segamisel - \\blank{7}.
+    Väikeste avaustega seade gaasi või vedeliku puhastamiseks - \\blank{7}.
+    Sademe vedelikust eraldamine vedeliku äravalamise teel - \\blank{7}.
+    Vedeliku puhastamine filtri abil - \\blank{7}.
+    Vedelikust eraldunud tahke aine kübemed - \\blank{7}.
+    Aine puhastamise meetod raskusjõu toimel - \\blank{7}.
+    Vedeliku eraldamine lahusest aurustumisel ja seejärel auru veeldamine - \\blank{7}.
+    "
   )
 )
 
@@ -891,6 +1188,51 @@ include_external_graphics("rmd/keemia/korrudeerunud-nael.jpg")
 
 ```
 
+```{r label = "chemistry-tasks-atomic-model", echo=FALSE, fig.cap = "Aatomimudel."}
+include_external_graphics("rmd/keemia/aatomimudel.png")
+
+```
+
+```{r label = "chemistry-tasks-H", echo=FALSE, fig.cap = "Vesiniku aatom."}
+include_external_graphics("rmd/keemia/vesinik_aatom.png")
+
+```
+
+```{r label = "chemistry-tasks-O", echo=FALSE, fig.cap = "Hapniku aatom."}
+include_external_graphics("rmd/keemia/hapnik_aatom.png")
+
+```
+
+```{r label = "chemistry-tasks-C", echo=FALSE, fig.cap = "Süsiniku aatom."}
+include_external_graphics("rmd/keemia/sysinik.png")
+
+```
+
+```{r label = "chemistry-tasks-O2", echo=FALSE, fig.cap = "Mis see on?"}
+include_external_graphics("rmd/keemia/hapnik_mol.png")
+
+```
+
+```{r label = "chemistry-tasks-CO2", echo=FALSE, fig.cap = "Mis see on?"}
+include_external_graphics("rmd/keemia/sysihappe.png")
+
+```
+
+```{r label = "chemistry-tasks-H2", echo=FALSE, fig.cap = "Mis see on?"}
+include_external_graphics("rmd/keemia/vesinik_mol.png")
+
+```
+
+```{r label = "chemistry-tasks-H2O", echo=FALSE, fig.cap = "Mis see on?"}
+include_external_graphics("rmd/keemia/vesi.png")
+
+```
+
+```{r label = "chemistry-tasks-air", echo=FALSE, fig.cap = "Õhu molekulaarne koostis."}
+include_external_graphics("rmd/keemia/atmosphere-g0eccea759_1280.png")
+
+```
+
 \clearpage
 
 ## Tabelid
@@ -1012,3 +1354,65 @@ table <- print_table(
 table
 
 ```
+
+```{r label="chemistry-tasks-tables-solution-components", echo=FALSE}
+solvent <- c(
+  "õhk",
+  "vesi",
+  "\\blank{süsihappegaas}",
+  "hapu mahl",
+  "\\blank{süsihappegaas}"
+)
+
+solute <- c(
+  "\\blank{süsihappegaas}",
+  "suhkur, süsihappegaas, värvained",
+  "\\blank{süsihappegaas}",
+  "\\blank{süsihappegaas}",
+  "suhkur, vitamiinid, mineraalained"
+)
+
+solution <- c(
+  "niiske õhk",
+  "\\blank{süsihappegaas}",
+  "gaseeritud vesi",
+  "magus mahl",
+  "kasemahl"
+)
+
+data <- data.frame(
+  solvent,
+  solute,
+  solution
+)
+
+colnames(data) <- c(
+  "Lahusti",
+  "Lahustuv aine",
+  "Lahus"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Lahused."
+) %>%
+  landscape()
+
+table
+
+```
+
+## Võrrandid
+
+\begin{align}
+	&\blank{\text{süsihappegaas}}\leavevmode\\
+	+ &\blank{\text{süsihappegaas}}\leavevmode\\
+	\ce{->} &\blank{\text{süsihappegaas}}\leavevmode\\
+	+ &\blank{\text{süsihappegaas}}.
+	\label{eq:photosynthesis-breathing} 
+\end{align}
+
+\begin{align}
+  \blank{\text{lahustuv aine}} + \blank{\text{lahustuv aine}} &= \blank{\text{lahustuv aine}}.
+  \label{eq:solution}
+\end{align}
