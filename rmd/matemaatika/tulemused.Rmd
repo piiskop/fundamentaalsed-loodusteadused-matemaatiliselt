@@ -685,16 +685,16 @@ classes_9_grades <- data.frame(
   	NA, # Margus Evart
   	1, # Mikaela Galperman
   	1, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
+  	1, # Dmitri Litvinenko
   	1, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
+  	1, # Zahar Orikovi
   	NA, # Jekaterina Plotnikova
   	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
+  	1, # Angelina Solovjova
   	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
+  	1, # Ivan Timakin
   	NA, # Evelina Tolli
-  	NA, # Martin Tolli
+  	1, # Martin Tolli
   	NA, # Ilja Tsvek
   	1, # Maia Tukkia
   	NA # Arina Vatševskihh
@@ -720,15 +720,15 @@ classes_9_grades <- data.frame(
   c( # 15
   	NA, # Margus Evart
   	1, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
+  	1, # Valerija Korenkova
+  	1, # Dmitri Litvinenko
   	NA, # Margarita Mussijenko
   	1, # Zahar Orikovi
   	NA, # Jekaterina Plotnikova
   	NA, # Veniamin Postolenko
   	1, # Angelina Solovjova
   	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
+  	1, # Ivan Timakin
   	NA, # Evelina Tolli
   	1, # Martin Tolli
   	NA, # Ilja Tsvek
@@ -737,16 +737,16 @@ classes_9_grades <- data.frame(
   ),
   c( # 16
   	NA, # Margus Evart
-  	NA, # Mikaela Galperman
+  	1, # Mikaela Galperman
   	NA, # Valerija Korenkova
   	NA, # Dmitri Litvinenko
   	NA, # Margarita Mussijenko
   	NA, # Zahar Orikovi
   	NA, # Jekaterina Plotnikova
   	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
+  	1, # Angelina Solovjova
   	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
+  	1, # Ivan Timakin
   	NA, # Evelina Tolli
   	NA, # Martin Tolli
   	NA, # Ilja Tsvek
@@ -1389,6 +1389,7 @@ included_goals <- c(
   5,
   13,
   15,
+  16,
   25,
   29,
   30,
