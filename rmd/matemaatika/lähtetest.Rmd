@@ -194,38 +194,42 @@ võrdelise jaotamise ülesandeid)",
   ),
   list( # 45
     goal = "arvutab tasandiliste kujundite (korrapärane hulknurk, kolmnurk, rööpkülik, romb, trapets, ring) joonelemendid, ümbermõõdu, pindala",
-    level = 3
+    level=3
   ),
   list( # 46
-    goal = "arvutab ruumiliste kujundite (püstprisma, püramiid, silinder, koonus, kera) joonelemendid, pindala ja ruumala",
-    level = 3
+    goal="arvutab ruumiliste kujundite (püstprisma, püramiid, silinder, koonus, kera) joonelemendid, pindala ja ruumala",
+    level=3
   ),
   list( # 47
-    goal = "selgitab oma algebra- ja geomeetriateadmiste elulisi rakendusvõimalusi",
-    level = 2
+    goal="selgitab oma algebra- ja geomeetriateadmiste elulisi rakendusvõimalusi",
+    level=2
   ),
   list( # 48
-    goal = "teab kolmnurga ja trapetsi kesklõigu mõistet ning nende omadusi",
-    level = 1
+    goal="teab kolmnurga ja trapetsi kesklõigu mõistet ning nende omadusi",
+    level=1
   ),
   list( # 49
-    goal = "arvutab arvu 10 negatiivse täisarvulise astendajaga astme väärtuse",
-    level = 4
+    goal="arvutab arvu 10 negatiivse täisarvulise astendajaga astme väärtuse",
+    level=4
   ),
   list( # 50
-    goal = "kirjutab suuri ja väikseid arve standardkujul",
-    level = 4
+    goal="kirjutab suuri ja väikseid arve standardkujul",
+    level=4
   ),
   list( # 51
-    goal = "eristab hüpoteesi, eeldust, väidet ja tõestust, selgitab mõne teoreemi tõestuskäiku, vajaduse korral tuletab lihtsamaid valemeid",
-    level = 4
+    goal="eristab hüpoteesi, eeldust, väidet ja tõestust, selgitab mõne teoreemi tõestuskäiku, vajaduse korral tuletab lihtsamaid valemeid",
+    level=4
+  ),
+  list( # MI52
+    goal="kasutab mõõtes sobivaid mõõtühikuid",
+    level=3
   )
 )
 
 tasks <- list(
-  list(goal = 1, level = 1, task = "Millised on andmete liigid?"),
-  list(goal = 1, level = 1, task = "Nimeta üks andmete kogumise meetod!"),
-  list(goal = 1, level = 1, task = "Vaata allolevaid väiteid ja märgi, millised nendest on kvalitatiivsed andmed:\\leavevmode\\
+  list(goal=1, level=1, task="Millised on andmete liigid?"),
+  list(goal=1, level=1, task="Nimeta üks andmete kogumise meetod!"),
+  list(goal=1, level=1, task="Vaata allolevaid väiteid ja märgi, millised nendest on kvalitatiivsed andmed:\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] Temperatuur.
     \\item[\\Square] Aeg.
@@ -1184,9 +1188,36 @@ y = -2
     "
   ),
   list(
-    goal = 46,
-    level = 3,
-    task = "Pealt lahtise risttahukakujulise anuma ruudukujulise põhja ühe serva pikkus on \\qty{5}{\\centi\\m}. Anuma kõrgus on \\qty{8}{\\deci\\m}. Mitu liitrit vett mahutab see anum?
+    goal=45,
+    level=3,
+    task="Korrapäratu kujuga keha pindala määramiseks saab kasutada ühikruudu meetodit. Selleks kaetakse kujund ruudustikuga, milles on meil teada ühe ruudu
+    \\begin{itemize}
+      \\item[\\Circle] kõrgus.
+      \\item[\\Circle] pindala.
+      \\item[\\Circle] ruumala.
+      \\item[\\Circle] külje pikkus.
+    \\end{itemize}
+    Kujundit katvate ruutude arvu leidmiseks loendatakse täielikult ja osaliselt kaetud ruudud. Pindala arvutamiseks
+    \\begin{itemize}
+      \\item[\\Circle] jagatakse
+      \\item[\\Circle] korrutatakse
+    \\end{itemize}
+    osaliselt kaetud ruutude arv kahega ning
+    \\begin{itemize}
+      \\item[\\Circle] liidetakse täielikult kaetud ruutude arvule.
+      \\item[\\Circle] lahutatakse täielikult kaetud ruutude arvust.
+    \\end{itemize}
+    Selline kujundi pindala mõõtmine on
+    \\begin{itemize}
+      \\item[\\Circle] otsene.
+      \\item[\\Circle] kaudne.
+    \\end{itemize}
+    Joonisel \\@ref(fig:tasks-figures-unit-squares) on täielikult kaetud ruute \\blank{53}. Osaliselt kaetud ruute on \\blank{41}. Kui joonisel on ühe ruudu pindala \\qty{1}{\\square\\centi\\m}, siis on uuritava kujundi täisarvuline pindala \\blank{74}\\unit{\\square\\centi\\m}."
+  ),
+  list(
+    goal=46,
+    level=3,
+    task="Pealt lahtise risttahukakujulise anuma ruudukujulise põhja ühe serva pikkus on \\qty{5}{\\centi\\m}. Anuma kõrgus on \\qty{8}{\\deci\\m}. Mitu liitrit vett mahutab see anum?
     \\begin{itemize}
       \\item[\\Circle] 40
       \\item[\\Circle] 0,2
@@ -1291,6 +1322,46 @@ y = -2
       \\item[\\Circle] ei.
       \\item[\\Circle] siis.
     \\end{itemize}"
+  ),
+  list(
+    goal=52,
+    level=3,
+    task="Mõõda joonisel \\@ref(fig:tasks-figures-segment-1) oleva lõigu pikkus \\qty{1}{\\milli\\m} täpsusega! Mõõtmiseks kasuta joonlauda, mille mõõtmistäpsus on \\qty{1}{\\milli\\m}. Selle lõigu pikkus on \\blank{68}\\unit{\\milli\\m}."
+  ),
+  list(
+    goal=52,
+    level=3,
+    task="Mõõda joonisel \\@ref(fig:tasks-figures-segment-2) oleva lõigu pikkus \\qty{1}{\\deci\\m} täpsusega! Mõõtmiseks kasuta joonlauda, mille mõõtmistäpsus on \\qty{1}{\\milli\\m}. Selle lõigu pikkus on \\blank{68}\\unit{\\deci\\m}."
+  ),
+  list(
+    goal=52,
+    level=3,
+    task="Mõõda joonisel \\@ref(fig:tasks-figures-segment-3) oleva lõigu pikkus \\qty{0,5}{\\centi\\m} täpsusega! Mõõtmiseks kasuta joonlauda, mille mõõtmistäpsus on \\qty{1}{\\milli\\m}. Selle lõigu pikkus on \\blank{68}\\unit{\\centi\\m}."
+  ),
+  list(
+    goal=52,
+    level=3,
+    task="Mõõda joonisel \\@ref(fig:tasks-figures-segment-4) oleva lõigu pikkus \\qty{0,1}{\\centi\\m} täpsusega! Mõõtmiseks kasuta joonlauda, mille mõõtmistäpsus on \\qty{1}{\\milli\\m}. Selle lõigu pikkus on \\blank{68}\\unit{\\centi\\m}."
+  ),
+  list(
+    goal=52,
+    level=3,
+    task="Mõõda joonisel \\@ref(fig:tasks-figures-segment-5) oleva lõigu pikkus \\qty{10}{\\milli\\m} täpsusega! Mõõtmiseks kasuta joonlauda, mille mõõtmistäpsus on \\qty{1}{\\milli\\m}. Selle lõigu pikkus on \\blank{68}\\unit{\\milli\\m}."
+  ),
+  list(
+    goal=52,
+    level=3,
+    task="Mõõda joonisel \\@ref(fig:tasks-figures-segment-6) oleva lõigu pikkus \\qty{0,5}{\\deci\\m} täpsusega! Mõõtmiseks kasuta joonlauda, mille mõõtmistäpsus on \\qty{1}{\\milli\\m}. Selle lõigu pikkus on \\blank{68}\\unit{\\deci\\m}."
+  ),
+  list(
+    goal=52,
+    level=3,
+    task="Mõõda joonisel \\@ref(fig:tasks-figures-segment-7) oleva lõigu pikkus \\qty{1}{\\centi\\m} täpsusega! Mõõtmiseks kasuta joonlauda, mille mõõtmistäpsus on \\qty{1}{\\milli\\m}. Selle lõigu pikkus on \\blank{68}\\unit{\\centi\\m}."
+  ),
+  list(
+    goal=52,
+    level=3,
+    task="Mõõda joonisel \\@ref(fig:tasks-figures-segment-8) oleva lõigu pikkus \\qty{0,1}{\\centi\\m} täpsusega! Mõõtmiseks kasuta joonlauda, mille mõõtmistäpsus on \\qty{1}{\\milli\\m}. Selle lõigu pikkus on \\blank{68}\\unit{\\centi\\m}."
   )
 )
 
@@ -1788,5 +1859,50 @@ include_external_graphics("rmd/matemaatika/HULK6.png")
 
 ```{r label = "tasks-figures-graphs", echo=FALSE, fig.cap = "Graafikud."}
 include_external_graphics("rmd/matemaatika/lvs3.png")
+
+```
+
+```{r label = "tasks-figures-segment-1", echo=FALSE, fig.cap = "Esimene lõik."}
+include_external_graphics("rmd/matemaatika/l_igud_vilve1.png")
+
+```
+
+```{r label = "tasks-figures-segment-2", echo=FALSE, fig.cap = "Teine lõik."}
+include_external_graphics("rmd/matemaatika/L_ik_2.PNG")
+
+```
+
+```{r label = "tasks-figures-segment-3", echo=FALSE, fig.cap = "Kolmas lõik."}
+include_external_graphics("rmd/matemaatika/L_ik_3.PNG")
+
+```
+
+```{r label = "tasks-figures-segment-4", echo=FALSE, fig.cap = "Neljas lõik."}
+include_external_graphics("rmd/matemaatika/L_ik_4.PNG")
+
+```
+
+```{r label = "tasks-figures-segment-5", echo=FALSE, fig.cap = "Viies lõik."}
+include_external_graphics("rmd/matemaatika/L_ik_5.PNG")
+
+```
+
+```{r label = "tasks-figures-segment-6", echo=FALSE, fig.cap = "Kuues lõik."}
+include_external_graphics("rmd/matemaatika/l_ik_6.PNG")
+
+```
+
+```{r label = "tasks-figures-segment-7", echo=FALSE, fig.cap = "Seitsmes lõik."}
+include_external_graphics("rmd/matemaatika/l_ik_7.PNG")
+
+```
+
+```{r label = "tasks-figures-segment-8", echo=FALSE, fig.cap = "Kaheksas lõik."}
+include_external_graphics("rmd/matemaatika/L_ik_8.PNG")
+
+```
+
+```{r label = "tasks-figures-unit-squares", echo=FALSE, fig.cap = "Ühikruudud."}
+include_external_graphics("rmd/matemaatika/yhikruut_1.PNG")
 
 ```

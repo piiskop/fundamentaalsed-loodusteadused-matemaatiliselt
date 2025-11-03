@@ -1,0 +1,771 @@
+# Füüsika lähtetest
+
+```{r label="tasks-physics", echo=FALSE, results='asis'}
+goals <- list(
+  list( # LF1
+    goal="kaalub kehi, mõõdab temperatuuri ja pikkust, valides sobivad mõõtmisvahendid",
+    level=4
+  ),
+  list( # F2
+    goal="uurib ja kirjeldab keha liikumist ning oskab seda graafiliselt analüüsida",
+    level=4
+  ),
+  list( # LF3
+    goal="mõõdab või määrab kujundi pindala, keha ruumala, liikumise kiirust, tihedust",
+    level=3
+  ),
+  list( # F4
+    goal="seostab võnkumist heli tekkimise ja helilainete levimisega",
+    level=3
+  ),
+  list( # F5
+    goal="kavandab ja korraldab katsed müra tugevuse mõõtmiseks ning muusikariistade heli kõrguse ja sageduse vahelise seose uurimiseks",
+    level=6
+  ),
+  list( # F6
+    goal="teab, et vastastikmõju tugevust iseloomustab jõud",
+    level=1
+  ),
+  list( # F7
+    goal="uurib ja kirjeldab kehade vastastikmõju ning selgitab kehade kiiruse muutumist sõltuvalt kehade massist ja vastastikmõju kestusest",
+    level=2
+  ),
+  list( # F8
+    goal="oskab kasutada dünamomeetrit erinevate jõudude mõõtmiseks",
+    level=3
+  ),
+  list( # F4
+    goal="võrdleb eri kehadele mõjuvat raskusjõudu ja seostab seda keha massiga",
+    level=4
+  ),
+  list( # F10
+    goal="uurib hõõrdejõudu ja seletab selle mõju kehade liikumisele, analüüsib graafiliselt hõõrdejõu sõltuvust rõhumisjõust",
+    level=4
+  ),
+  list( # F11
+    goal="kavandab ja teeb katse rõhu määramiseks, seostab rõhku kokkupuute pindala ning rõhumisjõuga",
+    level=6
+  ),
+  list( # F12
+    goal="kirjeldab rõhu edasikandumist gaasides ja vedelikes (Pascali seadus); teeb katse vedelikes kehadele mõjuva üleslükkejõu uurimiseks ja selgitab katse tulemusi",
+    level=4
+  ),
+  list( # F13
+    goal="tunneb kehade ujumise ja uppumise tingimusi ning selgitab nende seoseid loodusnähtustega",
+    level=2
+  ),
+  list( # F14
+    goal="seletab õhurõhu, vedelikusamba rõhku ja üleslükkejõu mõistet ning rakendab neid loodusnähtusi selgitades",
+    level=3
+  ),
+  list( # F15
+    goal="uurib elastsusjõudu ja seletab selle tekkimise põhjuseid",
+    level=2
+  ),
+  list( # F16
+    goal="seletab mehaanilise töö, mehaanilise energia (potentsiaalse ja kineetilise energia), võimsuse ja kasuteguri mõistet",
+    level=2
+  ),
+  list( # F17
+    goal="selgitab lihtmehhanismide otstarvet ja üldist tööpõhimõtet, rakendades mehaanika kuldreeglit",
+    level=3
+  ),
+  list( # F18
+    goal="$\\text{rakendab probleemülesandeid lahendades järgmisi seoseid: } \\overline{v}=\frac{r}{t}; \\rho=\\frac{m}{V}; F = m \\cdot g; p=\\frac{F}{A}; p =\\rho \\cdot g \\cdot h; F_\\text{üleslüke}=\\rho \\cdot g \\cdot V; W = F \\cdot r; \\overline{P}=\\frac{W}{t}; \\nu=T^{-1}$",
+    level=4
+  ),
+  list( # F19
+    goal="kirjeldab katsete põhjal jõu, liikumise ja energia seoseid; teab energia liike ning -allikaid; 
+hindab taastuvenergia tootmise ja kasutamise võimalusi oma kodukohas",
+    level=5
+  ),
+  list( # F20
+    goal="eristab aineid ja materjale nende omaduste (värvuse, tiheduse, sulamis- ja 
+keemistemperatuuri, soojusjuhtivuse) uurimise põhjal ning seostab omadusi nende 
+kasutusaladega",
+    level=2
+  )
+)
+
+tasks <- list(
+  list(
+    goal=1,
+    level=4,
+    task="Märgi joonisel \\@ref(fig:tasks-figures-weights) kangkaalu teisele kaalukausile õiged kaaluvihid, et kaal jääks tasakaalu, järgmiste vihitüüpide seast: \\qty{100}{\\g}, \\qty{1000}{\\milli\\g}, \\qty{100}{\\milli\\g}, \\qty{10}{\\milli\\g}, \\qty{500}{\\g}, \\qty{1}{\\kg}, \\qty{50}{\\g}, \\qty{1000}{\\kg}."
+  ),
+  list(
+    goal=2,
+    level=4,
+    task="Liikumine on keha
+    \\begin{itemize}
+      \\item[\\Circle] kuju
+      \\item[\\Circle] suuna
+      \\item[\\Circle] asukoha
+    \\end{itemize}
+    muutus teise
+    \\begin{itemize}
+      \\item[\\Square] asja
+      \\item[\\Square] keha
+      \\item[\\Square] punkti
+    \\end{itemize}
+    suhtes ajas ja ruumis. Liikumise kirjeldamiseks võib mõõta
+    \\begin{itemize}
+      \\item[\\Circle] energiat
+      \\item[\\Circle] muutust
+      \\item[\\Circle] teepikkust
+    \\end{itemize}
+    mööda trajektoori, samuti võib mõõta selleks kulunud
+    \\begin{itemize}
+      \\item[\\Circle] energiat.
+      \\item[\\Circle] aega.
+      \\item[\\Circle] jõudu.
+    \\end{itemize}
+    Kergem ja ülevaatlikum on nähtuse kirjeldamiseks kasutada ühte suurust. Liikumise korral on selleks
+    \\begin{itemize}
+      \\item[\\Circle] aeg.
+      \\item[\\Circle] kiirus.
+      \\item[\\Circle] teepikkus.
+    \\end{itemize}
+    Kiirus näitab, millise
+    \\begin{itemize}
+      \\item[\\Square] aja
+      \\item[\\Square] osa
+      \\item[\\Square] teepikkuse
+    \\end{itemize}
+    läbib ühtlaselt liikuv keha
+    \\begin{itemize}
+      \\item[\\Circle] ruumis.
+      \\item[\\Circle] ajaühikus.
+      \\item[\\Circle] pikkusühikus.
+    \\end{itemize}
+    Füüsikas on igal suurusel oma tähis, mõõteriist ja mõõtühik. Kiiruse tähis on
+    \\begin{itemize}
+      \\item[\\Circle] $s$,
+      \\item[\\Circle] $t$,
+      \\item[\\Circle] $v$,
+    \\end{itemize}
+    määramisriistaks
+    \\begin{itemize}
+      \\item[\\Circle] kell
+      \\item[\\Circle] joonlaud
+      \\item[\\Circle] spidomeeter
+    \\end{itemize}
+    ja ühikuks 1
+    \\begin{itemize}
+      \\item[\\Circle] \\unit{\\milli\\s},
+      \\item[\\Circle] \\unit{\\m\\per\\s},
+      \\item[\\Circle] \\unit{\\s\\per\\m},
+    \\end{itemize}
+    kasutatakse ka 1
+    \\begin{itemize}
+      \\item[\\Circle] \\unit{\\hour\\kilo\\m}.
+      \\item[\\Circle] \\unit{\\hour\\per\\kilo\\m}.
+      \\item[\\Circle] \\unit{\\kilo\\m\\per\\hour}.
+    \\end{itemize}
+    Kiiruse arvutamise valem on seega
+    \\begin{itemize}
+      \\item[\\Circle] $s = \\frac{v}{t}$.
+      \\item[\\Circle] $t = \\frac{s}{v}$.
+      \\item[\\Circle] $v = \\frac{s}{t}$.
+    \\end{itemize}
+    Kui kega liigub
+    \\begin{itemize}
+      \\item[\\Circle] näivalt,
+      \\item[\\Circle] ühtlaselt,
+      \\item[\\Circle] ebaühtlaselt,
+    \\end{itemize}
+    siis hetkkiirus muutub pidevalt ja liikumise kirjeldamiseks on mugavam kasutada
+    \\begin{itemize}
+      \\item[\\Circle] kogu
+      \\item[\\Circle] näivat
+      \\item[\\Circle] keskmist
+    \\end{itemize}
+    kiirust. Keha liikumise kiiruse mõõtmiseks kasutatakse
+    \\begin{itemize}
+      \\item[\\Circle] spidomeetrit,
+      \\item[\\Circle] termomeetrit,
+      \\item[\\Circle] dünamomeetrit,
+    \\end{itemize}
+    mis näitab meile
+    \\begin{itemize}
+      \\item[\\Circle] hetkkiirust.
+      \\item[\\Circle] kogukiirust.
+      \\item[\\Circle] keskmist kiirust.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=2,
+    level=4,
+    task="Buss väljus vaatluse hetkel peatusest. Esimese minutiga saavutas see kiiruseks \\qty{10}{\\km\\per\\hour}, teise minutiga kiirus kahekordistus. Buss saavutas kolmanda minuti lõpuks kiiruse \\qty{30}{\\kilo\\m\\per\\hour}, millega oli võimalik tipptunni ummikus sõita. Järgmised \\qty{10}{\\min} sõitis buss saavutatud kiirusega ning seejärel hakkas pidurdama, sest jõudis järgmisesse peatusesse. Hoo ühtlase vähendamiseni kuni peatumiseni kulus bussil kolm minutit. Koosta bussi liikumise graafik joonisele \\@ref(fig:tasks-figures-movement-chart).\\leavevmode\\
+    \\leavevmode\\
+    Kiirus asub graafiku
+    \\begin{itemize}
+      \\item[\\Circle] vertikaalteljel.
+      \\item[\\Circle] horisontaalteljel.
+    \\end{itemize}
+    Buss sõitis kogu tee
+    \\begin{itemize}
+      \\item[\\Circle] ühtlaselt.
+      \\item[\\Circle] ebaühtlaselt.
+    \\end{itemize}
+    Buss sõitis tipptunnil ummikus olles
+    \\begin{itemize}
+      \\item[\\Circle] ühtlaselt.
+      \\item[\\Circle] ebaühtlaselt.
+    \\end{itemize}
+    \\leavevmode\\
+    Bussil kulus jääva kiiruse saavutamiseni \\blank{kaks} minutit.\\leavevmode\\
+    Bussil kulus pidurdamiseks \\blank{kolm} minutit.\\leavevmode\\
+    Bussisõit ühest peatusest teiseni kestis kokku \\blank{25} minutit.\\leavevmode\\
+    Bussi pidurdamine algas \\blank{13}. minutil.\\leavevmode\\
+    \\leavevmode\\
+    Graafiku põhjal
+    \\begin{itemize}
+      \\item[\\Circle] saab
+      \\item[\\Circle] ei saa
+    \\end{itemize}
+    öelda, et buss sõitis mööda sirgjoonelist trajektoori.
+    "
+  ),
+  list(
+    goal=2,
+    level=4,
+    task="Tabelis \\@ref(tab:tasks-tables-movement) on liikumist kirjeldavad laused. Otsusta iga lause puhul, mis või kes liigub, ning mille või kelle suhtes liikumine toimub valides lünkadesse loetelust: pilt, Päike, pintsel, sõrmed, klaver, inimene, lõuend, mobiiltelefon, Maa, tool, lennuk."
+  ),
+  list(
+    goal=2,
+    level=4,
+    task="Märgi tabelisse \\@ref(tab:tasks-tables-movement-types) iga tegevuse kohta, millist tüüpi liikumisega on tegemist."
+  ),
+  list(
+    goal=3,
+    level=3,
+    task="Arvutuste gegemisel kasuta kalkulaatorit ja arvuline vastus kirjuta kümnendiku täpsusega:\\leavevmode\\
+    \\leavevmode\\
+    \\qty{100}{\\m} jooksu maailmarekordi omanikku nimetatakse sageli maailma kiireimaks meheks või naiseks. Praegune meeste maailmarekord, mille 2009. aastal püstitas Usain Bolt, on \\qty{9,58}{\\s}. Selle põhjal saab arvutada, et Boldi keskmine kiirus oli
+    \\begin{itemize}
+      \\item[\\Square] \\num{10,44}
+      \\item[\\Square] \\num{10,4}
+    \\end{itemize}
+    \\unit{\\m\\per\\s}.\\leavevmode\\
+    \\leavevmode\\
+    Mõni aasta tagasi korraldas telekanal National Geographic virtuaalse \\qty{100}{\\m} jooksu võistluse maailma nobedaime inimese Usain Bolti ja gepardi vahel. Gepard installeeriti teleekraanile Bolti kõrvale: mõni sekund pärast starti ol iloom kaadrist kadunud ja hetk hiljem ületas lõpujoone ajaga \\num{5,95}. Boltil jäi gepardi finišihetkest joosta veel \\qty{40}{\\m}. Selle põhjal saab arvutada, et gepardi keskmine kiirus oli
+    \\begin{itemize}
+      \\item[\\Square] \\num{12,09}
+      \\item[\\Square] \\num{16,8}
+    \\end{itemize}
+    \\unit{\\m\\per\\s}. Seega on gepard
+    \\begin{itemize}
+      \\item[\\Square] \\blank{9,9}
+      \\item[\\Square] \\num{1,16}
+      \\item[\\Square] \\num{1,6}
+    \\end{itemize}
+    korda kiirem kui Usain Bolt.\\leavevmode\\
+    \\leavevmode\\
+    Eesti rekord on \\qty{100}{\\m} jooksus \\qty{10,18}{\\s} ja selle püstitas Karl Erik Nazarov 2023. aastal. Karli keskmine kiirus oli
+    \\begin{itemize}
+      \\item[\\Square] \\blank{10,2}
+      \\item[\\Square] \\num{9,81}
+      \\item[\\Square] \\num{9,8}
+    \\end{itemize}
+    \\unit{\\m\\per\\s}, seega on Karl
+    \\begin{itemize}
+      \\item[\\Square] \\blank{9,9}
+      \\item[\\Square] \\num{1,06}
+      \\item[\\Square] \\num{1,1}
+    \\end{itemize}
+    korda aeglasem kui Usain Bolt ja
+    \\begin{itemize}
+      \\item[\\Square] \\blank{9,9}
+      \\item[\\Square] \\num{9,53}
+      \\item[\\Square] \\num{1,7}
+    \\end{itemize}
+    korda aeglasem kui gepard.\\leavevmode\\
+    \\leavevmode\\
+    Praegune naiste \\qty{100}{\\m} jooksu maailmarekord, mille 1088 püstitas Florence Griffith-Joyner, on \\qty{10,49}{\\s}. See vastab keskmisele kiirusele
+    \\begin{itemize}
+      \\item[\\Square] \\blank{10,5}
+      \\item[\\Square] \\num{1,27}
+    \\end{itemize}
+    \\unit{\\m\\per\\s}. Eesti rekord on \\qty{11,35}{\\s} ja selle püstitas Ksenija Balta 11. juunipäevas 2014. Ksenija keskmine kiirus oli
+    \\begin{itemize}
+      \\item[\\Square] \\blank{8,8}
+      \\item[\\Square] \\num{8,72}
+      \\item[\\Square] \\num{8,7}
+    \\end{itemize}
+    \\unit{\\m\\per\\s}."
+  ),
+  list(
+    goal=16,
+    level=2,
+    task="Märgi tabelisse \\@ref(tab:tasks-tables-energy), kas tegemist on kineetilise või potentsiaalse energiaga."
+  ),
+  list(
+    goal=19,
+    level=5,
+    task="Märgi tabelisse \\@ref(tab:tasks-tables-energy-type) iga seadme kohta algne ja muundatud energialiik valides järgnevate valikute seast:
+    \\begin{enumerate}
+      \\item keemiline energia,
+      \\item elektrienergia,
+      \\item mehaaniline/liikumisenergia,
+      \\item soojusenergia,
+      \\item valgusenergia.
+    \\end{enumerate}"
+  ),
+  list(
+    goal=20,
+    level=2,
+    task="    Väiksema tihedusega aine jääb suurema tihedusega aine peale. Allapoole vajub
+    \\begin{itemize}
+      \\item[\\Circle] suurema
+      \\item[\\Circle] väiksema
+    \\end{itemize}
+    tihedusega aine ja peale jääb 
+    \\begin{itemize}
+      \\item[\\Circle] suurema
+      \\item[\\Circle] väiksema
+    \\end{itemize}
+    tihedusega aine. Esmalt peab veenduma, et kõik füüsikalised
+    \\begin{itemize}
+      \\item[\\Circle] kehad
+      \\item[\\Circle] suurused
+      \\item[\\Circle] nähtused
+    \\end{itemize}
+    on
+    \\begin{itemize}
+      \\item[\\Circle] sama
+      \\item[\\Circle] võrdse
+      \\item[\\Circle] erineva
+    \\end{itemize}
+    ühikuga.\\leavevmode\\
+    \\leavevmode\\
+    Täienda tabelit \\@ref(tab:tasks-tables-density).\\leavevmode\\
+    \\leavevmode\\
+    Märgi joonisel \\@ref(fig:tasks-figures-glass) oleva klaasi sisu kohta õiged kihid loetelust: merevesi, mesi, masinaõli, nafta, puhas vesi.
+    "
+  ),
+  list(
+    goal=20,
+    level=2,
+    task="Märgi tabelisse \\@ref(tab:tasks-tables-heat) iga keha juurde, kas see on hea soojusjuht."
+  ),
+  list(
+    goal=20,
+    level=2,
+    task="Märgi tabelisse \\@ref(tab:tasks-tables-characteristics-of-substances) iga aine kirjelduse ette järgnevast loetelust õige aine tunnus:
+    \\begin{enumerate}
+      \\item vesinik,
+      \\item vask,
+      \\item alumiinium,
+      \\item vesi,
+      \\item kuld,
+      \\item süsihappegaas,
+      \\item hapnik.
+    \\end{enumerate}
+    "
+  )
+)
+
+dataframe_tasks <- do.call(rbind, lapply(tasks, as.data.frame, stringsAsFactors = FALSE))
+number_goals <- length(goals)
+
+librarian::shelf(c(
+  "dplyr"
+))
+
+number_of_pupils <- 16
+
+goals_in_use <- unique(dataframe_tasks$goal)
+number_of_goals_in_use <- length(goals_in_use)
+
+random_sample_df <- function(df, new_size) {
+  base_size <- floor(new_size / nrow(df))  
+  remaining <- new_size %% nrow(df)
+
+  repeated_df <- df[rep(1:nrow(df), each = base_size), , drop = FALSE]
+
+  extra_rows <- df[sample(1:nrow(df), remaining, replace = FALSE), , drop = FALSE]
+
+  final_df <- rbind(repeated_df, extra_rows)
+  final_df <- final_df[sample(1:nrow(final_df)), , drop = FALSE]
+
+  return(final_df)
+}
+
+number_of_tasks_at_level_per_pupil <- 8 # 8
+ 
+number_of_tasks <- nrow(dataframe_tasks)
+df_segatud <- dataframe_tasks[sample(number_of_tasks), ]
+arranged_sampled_tasks <- arrange(df_segatud, goal, level)
+
+```
+
+## Üks ülesanne õpilase kohta
+
+```{r label="physics-list-of-tasks-one-per-pupil", echo=FALSE, results='asis'}
+
+for (index_of_pupil in 1:number_of_pupils) {
+  cat(paste("### Test: ", index_of_pupil, ". õpilane\n\n", sep = ""))
+
+  for (index in 1:number_of_goals_in_use) {
+    cat(paste(
+      "**\\color[hsb]{0.",
+      goals[[goals_in_use[index]]]$level - 1,
+      ", 1, .75}{Õpiväljund:}** Õpilane ",
+      goals[[goals_in_use[index]]]$goal,
+      ".\n\n", 
+      sep = ""
+    ))
+
+    for (index_of_levels in 1:6) {
+      tasks_goal_level <- subset(arranged_sampled_tasks, index_of_levels == `level` & goals_in_use[index] == `goal`)
+      number_of_tasks_goal_level <- nrow(tasks_goal_level)
+      if (number_of_tasks_goal_level > 0) {
+        
+        cat(
+          "**",
+          index_of_levels,
+          ". taseme ülesanne:** ",
+          sep = ""
+        )
+      
+        cat(tasks_goal_level[index_of_pupil %% number_of_tasks_goal_level + 1, ]$task, "\n\n", sep = "")
+      }
+    }
+
+  }
+
+}
+
+# })
+
+```
+
+\clearpage
+
+## Joonised
+
+```{r label = "tasks-figures-weights", echo=FALSE, fig.cap = "Kaalud."}
+include_external_graphics("rmd/füüsika/lineaarm__tmed3_kaalud_uus.PNG")
+
+```
+
+```{r label = "tasks-figures-movement-chart", echo=FALSE, fig.cap = "Liikumisgraafik."}
+include_external_graphics("rmd/füüsika/graafik_uus.PNG")
+
+```
+
+```{r label = "tasks-figures-glass", echo=FALSE, fig.cap = "Klaas."}
+include_external_graphics("rmd/füüsika/water-glass-gf096afdf0_1920.png-mh_uus_1.png")
+
+```
+
+\clearpage
+
+## Tabelid
+
+```{r label="tasks-tables-movement", echo=FALSE}
+description <- c(
+  "Poiss mängib klaverit.",
+  "Inimene hüppab langevarjuga.",
+  "Suvitaja lebab päikese käes.",
+  "Kunstnik maalib pilti.",
+  "Õpilane toksib mobiiltelefonis sõnumit."
+)
+
+subject <- c(
+  "\\blank{mobiiltelefon}",
+  "\\blank{mobiiltelefon}",
+  "\\blank{mobiiltelefon}",
+  "\\blank{mobiiltelefon}",
+  "\\blank{mobiiltelefon}"
+)
+
+data <- data.frame(
+  description,
+  subject,
+  subject
+)
+
+colnames(data) <- c(
+  "Liikumise kirjeldus",
+  "Subjekt",
+  "Sihitis"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Mis või kes liigub mille või kelle suhtes?"
+) %>% landscape()
+
+table
+
+```
+
+```{r label="tasks-tables-movement-types", echo=FALSE}
+activity <- c(
+  "korvpallur viskab palli korvi",
+  "baleriin teeb piruetti",
+  "õun kukub puu otsast alla",
+  "lift liigub üles",
+  "tüdruk lõikab paberist ruutu välja",
+  "õpilane kirjutab oma nime pliiatsiga",
+  "karussell keerleb",
+  "õpilane joonistab viisnurka",
+  "pesumasina trummel pöörleb",
+  "pall põrkab seinalt otse tagasi",
+  "koer ajab kassi taga",
+  "poiss hüppab hüppenööriga",
+  "vurr pöörleb",
+  "sportlane jookseb \\qty{100}{\\m} staadionil",
+  "sportlane jookseb \\qty{200}{\\m} staadionil",
+  "lennuk võtab stardiks hoogu"
+)
+
+type <- c(
+  "\\Square",
+  "\\Square",
+  "\\Square",
+  "\\Square",
+  "\\Square",
+  "\\Square",
+  "\\Square",
+  "\\Square",
+  "\\Square",
+  "\\Square",
+  "\\Square",
+  "\\Square",
+  "\\Square",
+  "\\Square",
+  "\\Square",
+  "\\Square"
+)
+
+data <- data.frame(
+  activity,
+  type,
+  type,
+  type,
+  type
+)
+
+colnames(data) <- c(
+  "Tegevus",
+  "Sirgjooneline",
+  "Kõverjooneline",
+  "Ringjooneline",
+  "Murdjooneline"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Millist tüüpi on liikumine?"
+) %>% landscape()
+
+table
+
+```
+
+```{r label="tasks-tables-energy", echo=FALSE}
+activity <- c(
+  "Koer jookseb peremehe poole.",
+  "Vesi liigub lainetena kalda poole.",
+  "Jalgratturid sõidavad ühes grupis.",
+  "Rebane istub kännu peal.",
+  "Mees seisab vinnastatud vibuga.",
+  "Purjelaud sõidab tuules.",
+  "Jooksjad ootavad starti.",
+  "Tuulegeneraatorite labad pöörlevad."
+)
+
+type <- c(
+  "\\Circle",
+  "\\Circle",
+  "\\Circle",
+  "\\Circle",
+  "\\Circle",
+  "\\Circle",
+  "\\Circle",
+  "\\Circle"
+)
+
+data <- data.frame(
+  activity,
+  type,
+  type
+)
+
+colnames(data) <- c(
+  "Tegevus",
+  "Kineetiline energia",
+  "Potentsiaalne energia"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Millist tüüpi on energia?"
+) %>% landscape()
+
+table
+
+```
+
+```{r label="tasks-tables-energy-type", echo=FALSE}
+device <- c(
+  "elektrilamp",
+  "elektrigeneraator/tuulegeneraator",
+  "elektriradiaator",
+  "bensiiniga automootor",
+  "patarei"
+)
+
+type <- c(
+  "\\blank{5}",
+  "\\blank{5}",
+  "\\blank{5}",
+  "\\blank{5}",
+  "\\blank{5}"
+)
+
+data <- data.frame(
+  type,
+  device,
+  type
+)
+
+colnames(data) <- c(
+  "Algne energialiik",
+  "Seade energia muundamiseks",
+  "Muundatud energialiik"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Millist tüüpi on energia enne ja pärast?"
+) %>% landscape()
+
+table
+
+```
+
+```{r label="tasks-tables-density", echo=FALSE}
+substance <- c(
+  "mesi",
+  "vesi",
+  "masinaõli",
+  "merevesi",
+  "nafta"
+)
+
+density_of_substance <- c(
+  "\\qty{1,35}{\\g\\per\\cubic\\centi\\m}",
+  "\\qty{1}{\\kg\\per\\cubic\\deci\\m}",
+  "\\qty{900}{\\kg\\per\\cubic\\m}",
+  "\\qty{1,03}{\\g\\per\\cubic\\centi\\m}",
+  "\\qty{0,8}{\\g\\per\\cubic\\centi\\m}"
+)
+
+density_in_g_per_cm_cubed <- c(
+  "\\num{1,35}",
+  "\\Circle \\num{1,30} \\Circle \\qty{1,00}{\\g\\per\\cubic\\centi\\m} \\Circle \\blank{0,9}",
+  "\\Circle \\num{1,05} \\Circle \\qty{0,90}{\\g\\per\\cubic\\centi\\m} \\Circle \\blank{0,9}",
+  "\\num{1,03}",
+  "\\num{0,8}"
+)
+
+data <- data.frame(
+  substance,
+  density_of_substance,
+  density_in_g_per_cm_cubed
+)
+
+colnames(data) <- c(
+  "Aine",
+  "Tihedus",
+  "$\\frac{\\text{Tihedus}}{\\unit{\\g\\per\\cubic\\centi\\m}}$"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Tihedused."
+) %>% landscape()
+
+table
+
+```
+
+```{r label="tasks-tables-heat", echo=FALSE}
+body_on_heat <- c(
+    "vask",
+    "jää",
+    "keedupott",
+    "udusuled",
+    "vill",
+    "kivi",
+    "penoplast",
+    "ahjupann",
+    "õhk",
+    "ahjuroop",
+    "puit",
+    "pliidiraud",
+    "paber",
+    "vesi",
+    "vaakum",
+    "kuiv sammal"
+)
+
+type_of_heat_connection <- rep("\\Square", 16)
+
+data <- data.frame(
+  body_on_heat,
+  type_of_heat_connection
+)
+
+colnames(data) <- c(
+  "Keha",
+  "Kas hea soojusjuht?"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Soojusjuhtivus."
+)
+
+table
+
+```
+
+```{r label="tasks-tables-characteristics-of-substances", echo=FALSE}
+
+substance <- c(
+    "Aine tihedus on \\qty{1}{\\g\\per\\cubic\\centi\\m}, seda kasutatakse hea lahustina, ei põle, puhta ainena keeb temperatuuril \\qty{100}{\\degree\\celsius}.",
+    "Hõbedase läikega metall, keskmise sulamistemperatuuriga, üks kõige väiksema tihedusega metall, hea elektri- ja soojusjuhtivusega.",
+    "Suure tihedusega metall, hea elektrijuht, kuldse läikega, kasutatakse elektriliinides.",
+    "Põlemist mittetoetav gaas, nähtamatu ja värvitu, tekib põlemisel, õhust suurema tihedusega.",
+    "Gaas, mis toetab põlemist, lõhnata, maitseta, värvuseta.",
+    "Maal vähelevinud gaas, tähtede peamine koostisaine, kõige väiksema aatommassiga aine, väga tuleohtlik, värvusetu, lõhnatu.",
+    "Väga suure tihedusega väärismetall, pehme ja särav."
+)
+
+index_of_substance <- rep("\\blank{7}", length(substance))
+
+data <- data.frame(
+  index_of_substance,
+  substance
+)
+
+colnames(data) <- c(
+  "Aine identifikaator",
+  "Aine kirjeldus"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Aine kindlakstegemine."
+) %>%
+  column_spec(2, width="32em")
+
+table
+
+```
