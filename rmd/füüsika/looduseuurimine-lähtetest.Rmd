@@ -71,7 +71,7 @@ goals <- list(
     level=3
   ),
   list( # F18
-    goal="$\\text{rakendab probleemülesandeid lahendades järgmisi seoseid: } \\overline{v}=\frac{r}{t}; \\rho=\\frac{m}{V}; F = m \\cdot g; p=\\frac{F}{A}; p =\\rho \\cdot g \\cdot h; F_\\text{üleslüke}=\\rho \\cdot g \\cdot V; W = F \\cdot r; \\overline{P}=\\frac{W}{t}; \\nu=T^{-1}$",
+    goal="rakendab probleemülesandeid lahendades järgmisi seoseid: $\\overline{v}=\\frac{r}{t}; \\rho=\\frac{m}{V}; F = m \\cdot g; p=\\frac{F}{A}; p =\\rho \\cdot g \\cdot h; F_\\text{üleslüke}=\\rho \\cdot g \\cdot V; W = F \\cdot r; \\overline{P}=\\frac{W}{t}; \\nu=T^{-1}$",
     level=4
   ),
   list( # F19
@@ -241,7 +241,7 @@ tasks <- list(
   list(
     goal=3,
     level=3,
-    task="Arvutuste gegemisel kasuta kalkulaatorit ja arvuline vastus kirjuta kümnendiku täpsusega:\\leavevmode\\
+    task="Arvutuste tegemisel kasuta kalkulaatorit ja arvuline vastus kirjuta kümnendiku täpsusega:\\leavevmode\\
     \\leavevmode\\
     \\qty{100}{\\m} jooksu maailmarekordi omanikku nimetatakse sageli maailma kiireimaks meheks või naiseks. Praegune meeste maailmarekord, mille 2009. aastal püstitas Usain Bolt, on \\qty{9,58}{\\s}. Selle põhjal saab arvutada, et Boldi keskmine kiirus oli
     \\begin{itemize}
@@ -297,9 +297,327 @@ tasks <- list(
     \\unit{\\m\\per\\s}."
   ),
   list(
+    goal=3,
+    level=3,
+    task="Joonisel \\@ref(fig:tasks-figures-prism) esitatud klotsi tiheduse määramiseks mõõtis Gru kõik klotsi servad. Tähega **A** on tähistatud klotsi
+    \\begin{itemize}
+      \\item[\\Circle] kõrgus,
+      \\item[\\Circle] laius,
+      \\item[\\Circle] pikkus,
+    \\end{itemize}
+    serv **B** on klotsi
+    \\begin{itemize}
+      \\item[\\Circle] kõrgus
+      \\item[\\Circle] laius
+      \\item[\\Circle] pikkus
+    \\end{itemize}
+    ja serv **C** on
+    \\begin{itemize}
+      \\item[\\Circle] kõrgus.
+      \\item[\\Circle] laius.
+      \\item[\\Circle] pikkus.
+    \\end{itemize}
+    Puuklotsi mõõtmeteks sai ta \\num{14,4}, \\num{4,3} ja \\qty{5,5}{\\centi\\m}. Nende andmete põhjal arvutas ta klotsi 
+    \\begin{itemize}
+      \\item[\\Circle] massi.
+      \\item[\\Circle] ruumala.
+      \\item[\\Circle] tiheduse.
+    \\end{itemize}
+    Leitud väärtuseks sai Gru umbes
+    \\begin{itemize}
+      \\item[\\Circle] \\num{340,6}
+      \\item[\\Circle] \\num{346,6}
+      \\item[\\Circle] \\num{360,6}
+      \\item[\\Circle] \\num{366,6}
+    \\end{itemize}
+    \\unit{\\cubic\\centi\\m}. Klotsi
+    \\begin{itemize}
+      \\item[\\Circle] massiks
+      \\item[\\Circle] ruumalaks
+      \\item[\\Circle] tiheduseks
+    \\end{itemize}
+    mõõtis Gru \\qty{225}{\\g}, selleks kasutas ta 
+    \\begin{itemize}
+      \\item[\\Circle] joonlauda.
+      \\item[\\Circle] kaalu.
+      \\item[\\Circle] mõõdulinti.
+      \\item[\\Circle] mõõtesilindrit.
+    \\end{itemize}
+    Kalkulaatoriga arvutamises oli Gru väga osav, seega klotsi tihedus oli
+    \\begin{itemize}
+      \\item[\\Circle] \\num{0,53}
+      \\item[\\Circle] \\num{0,60}
+      \\item[\\Circle] \\num{0,66}
+      \\item[\\Circle] \\num{0,69}
+    \\end{itemize}
+    \\unit{\\g\\per\\cubic\\centi\\m}. Selle tulemuse ja tabeli \\@ref(tab:tasks-tables-density-of-wood) põhjal tegi Gru järelduse, et tema kaminapuud olid tõenäoliselt 
+    \\begin{itemize}
+      \\item[\\Circle] kase-
+      \\item[\\Circle] lehise-
+      \\item[\\Circle] lepa-
+      \\item[\\Circle] tamme-
+    \\end{itemize}
+    puust.
+    "
+  ),
+  list(
+    goal=10,
+    level=4,
+    task="Dave leidis labori kastist sajagrammise massiga kehi ja ühe mõõteriista, mida ta ei tundnud. Kevin tegi ettepaneku mõõt aklotsi ja laua vahelist hõõrdejõudu. Gru arvas, et nad võiksid klotsi massi leitud kehade abil muuta. Katse tlemused kanti graafikule joonisel \\@ref(fig:tasks-figures-friction). Lahenda alamülesanded:
+    \\begin{enumerate}
+      \\item Dave'i leitud mõõteriist oli jõu mõõtmiseks kasutatav
+      \\begin{itemize}
+        \\item[\\Circle] areomeeter.
+        \\item[\\Circle] baromeeter.
+        \\item[\\Circle] dosimeeter.
+        \\item[\\Circle] dünamomeeter.
+      \\end{itemize}
+      Graafiku vertikaalteljele märkisid nad 
+      \\begin{itemize}
+        \\item[\\Circle] hõõrdejõu
+        \\item[\\Circle] massi
+        \\item[\\Circle] teepikkuse
+        \\item[\\Circle] võimsuse
+      \\end{itemize}
+      ja horisontaalteljele
+      \\begin{itemize}
+        \\item[\\Circle] hõõrdejõu.
+        \\item[\\Circle] massi.
+        \\item[\\Circle] teepikkuse.
+        \\item[\\Circle] võimsuse.
+      \\end{itemize}
+      \\item Mililne on sõltuvus hõõrdejõu ja klotsi massi vahel?
+      \\begin{itemize}
+        \\item[\\Circle] Ruutsõltuvus.
+        \\item[\\Circle] Pöördvõrdeline.
+        \\item[\\Circle] Võrdeline.
+      \\end{itemize}
+      \\item Arvuta klotsi raskusjõud, kui selle mass on \\qty{1,2}{\\kg}: Ligikaudu
+      \\begin{itemize}
+        \\item[\\Circle] \\qty{12,8}{\\N}.
+        \\item[\\Circle] \\qty{11,8}{\\N}.
+        \\item[\\Circle] \\qty{10,8}{\\N}.
+      \\end{itemize}
+      \\item Arvuta klotsi hõõrdejõu väärtus, kui klotsi mass on \\qty{1,2}{\\kg}: Klotsi hõõrdejõud on
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{3,53}\\unit{\\N}.
+        \\item[\\Circle] \\qty{3,53}{\\N}.
+        \\item[\\Circle] \\qty{12,8}{\\N}.
+        \\item[\\Circle] \\approx\\qty{0,2}{\\N}\\unit{\\N}.
+      \\end{itemize}
+    \\end{enumerate}
+    "
+  ),
+  list(
+    goal=12,
+    level=4,
+    task="Vaata joonist \\@ref(fig:tasks-figures-bodies-in-water) ja vasta soorita järgmised alamülesanded:
+    \\begin{enumerate}
+      \\item Millisele kehale mõjub kõige suurem üleslükkejõud?
+      \\begin{itemize}
+        \\item[\\Circle] \\textbf{D}.
+        \\item[\\Circle] \\textbf{E}.
+        \\item[\\Circle] \\textbf{C}.
+        \\item[\\Circle] \\textbf{B}.
+      \\end{itemize}
+      \\item Gru leidis puidu tiheduseks \\qty{0,66}{\\g\\per\\cubic\\centi\\m}. Millise keha tihedus on kõige lhedasema väärtusega Gru puuhalu tihedusele?
+      \\begin{itemize}
+        \\item[\\Circle] \\textbf{D}.
+        \\item[\\Circle] \\textbf{E}.
+        \\item[\\Circle] \\textbf{C}.
+        \\item[\\Circle] \\textbf{B}.
+      \\end{itemize}
+      \\item Millisele kehale mõjuv raskusjõud on suurem üleslükkejõust?
+      \\begin{itemize}
+        \\item[\\Circle] \\textbf{D}.
+        \\item[\\Circle] \\textbf{E}.
+        \\item[\\Circle] \\textbf{C}.
+        \\item[\\Circle] \\textbf{B}.
+      \\end{itemize}
+      \\item Millise keha alumsiele tahule avaldub suurim rõhk?
+      \\begin{itemize}
+        \\item[\\Circle] \\textbf{D}.
+        \\item[\\Circle] \\textbf{E}.
+        \\item[\\Circle] \\textbf{C}.
+        \\item[\\Circle] \\textbf{B}.
+      \\end{itemize}
+      \\item Järjesta kehad tiheduse alusel kahanevas järjekorras:
+      \\begin{enumerate}
+        \\item \\blank{D}
+        \\item \\blank{D}
+        \\item \\blank{D}
+        \\item \\blank{D}
+      \\end{enumerate}
+    \\end{enumerate}
+    "
+  ),
+  list(
     goal=16,
     level=2,
     task="Märgi tabelisse \\@ref(tab:tasks-tables-energy), kas tegemist on kineetilise või potentsiaalse energiaga."
+  ),
+  list(
+    goal=16,
+    level=2,
+    task="Vaata joonist \\@ref(fig:tasks-figures-energy) ja märgi tabelisse \\@ref(tab:tasks-tables-mechanical-energy) iga rulataja kohta esitatud väite kohta, kas see on tõene või väär."
+  ),
+  list(
+    goal=16,
+    level=2,
+    task="
+    \\begin{enumerate}
+      \\item Avalda töö valemist jõud:
+      \\begin{itemize}
+        \\item[\\Circle] $\\frac{s}{W}$.
+        \\item[\\Circle] $\\frac{W}{s}$.
+        \\item[\\Circle] $W \\cdot s$.
+      \\end{itemize}
+      \\item Millistel juhtudel teeb Gru tööd? Ta
+      \\begin{itemize}
+        \\item[\\Square] lohistab kaminapuud mööda põrandat.
+        \\item[\\Square] lükkab rasket puudega käru, kuid käru ei liigu paigast.
+        \\item[\\Square] hoiab sületäit kaminapuid oma süles.
+        \\item[\\Square] läheb sületäie kaminapuudega trepist üles.
+        \\item[\\Square] tõstab kaminapuud kaminasse.
+        \\item[\\Square] püüab tõsta suurt hulka kaminapuid, kuid ei jaksa.
+      \\end{itemize}
+      \\item Gru tõukas kaminapuudega käru jõuga \\qty{200}{\\N} ja tegi seejuures tööd \\qty{1200}{\\J}. Kui pika tee ta läbis?
+      \\begin{itemize}
+        \\item[\\Circle] \\qty{8}{\\m}.
+        \\item[\\Circle] \\qty{6}{\\m}.
+        \\item[\\Circle] \\qty{4}{\\m}.
+        \\item[\\Circle] \\qty{5}{\\m}.
+      \\end{itemize}
+      \\item Gru tõstis korraga \\qty{10}{\\kg} kaminapuid \\qty{2}{\\m} kõrgusele puuriita. Kui suur oli tehtud töö?
+      \\begin{itemize}
+        \\item[\\Circle] \\qty{1,96}{\\kilo\\J}.
+        \\item[\\Circle] \\qty{19,6}{\\kilo\\J}.
+        \\item[\\Circle] \\qty{196}{\\J}.
+        \\item[\\Circle] \\qty{1960}{\\J}.
+      \\end{itemize}
+    \\end{enumerate}
+    "
+  ),
+  list(
+    goal=2,
+    level=2,
+    task="Pärast katsete läbiviimist otsustas Gru üllatada Dave'i ning Kevinit maitsvate pitsadega. Selleks, et pitsad ära tuua, rentis Gru tänaval seisnud elektrilise tõukeratta (joonis \\@ref(fig:tasks-figures-movement-diagram)).
+    \\begin{enumerate}
+      \\item Millisel ajavahemikul liikus Gru ühtlase kiirusega?
+      \\begin{itemize}
+        \\item[\\Circle] \\textbf{A}.
+        \\item[\\Circle] \\textbf{B}.
+        \\item[\\Circle] \\textbf{C}.
+      \\end{itemize}
+      \\item Millisel ajavahemikul liikus Gru kiirenevalt?
+      \\begin{itemize}
+        \\item[\\Circle] \\textbf{A}.
+        \\item[\\Circle] \\textbf{B}.
+        \\item[\\Circle] \\textbf{C}.
+      \\end{itemize}
+      \\item Millisel ajavahemikul liikus Gru aeglustavalt?
+      \\begin{itemize}
+        \\item[\\Circle] \\textbf{A}.
+        \\item[\\Circle] \\textbf{B}.
+        \\item[\\Circle] \\textbf{C}.
+      \\end{itemize}
+      \\item Grul kulus ratta rentimisest kuni sõitma hakkamiseni
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{0}\\unit{\\s}.
+        \\item[\\Circle] \\qty{20}{\\s}.
+        \\item[\\Circle] \\qty{1}{\\s}.
+        \\item[\\Circle] \\qty{5}{\\s}.
+        \\item[\\Circle] \\qty{0}{\\s}.
+      \\end{itemize}
+      Grul kulus pitsakohvikusse jõudmiseks
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{300}\\unit{\\s}.
+        \\item[\\Circle] \\qty{210}{\\s}.
+        \\item[\\Circle] \\qty{60}{\\s}.
+        \\item[\\Circle] \\qty{260}{\\s}.
+        \\item[\\Circle] \\qty{240}{\\s}.
+        \\item[\\Circle] \\qty{255}{\\s}.
+      \\end{itemize}
+      Kiirenevalt liikus Gru
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{10}\\unit{\\s}.
+        \\item[\\Circle] \\qty{10}{\\s}.
+        \\item[\\Circle] \\qty{30}{\\s}.
+        \\item[\\Circle] \\qty{20}{\\s}.
+        \\item[\\Circle] \\qty{15}{\\s}.
+        \\item[\\Circle] \\qty{60}{\\s}.
+      \\end{itemize}
+      Aeglustuvalt liikus Gru
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{20}\\unit{\\s}.
+        \\item[\\Circle] \\qty{40}{\\s}.
+        \\item[\\Circle] \\qty{15}{\\s}.
+        \\item[\\Circle] \\qty{20}{\\s}.
+      \\end{itemize}
+      Gru liikus ühtlase kiirusega
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{240}\\unit{\\s}.
+        \\item[\\Circle] \\qty{200}{\\s}.
+        \\item[\\Circle] \\qty{45}{\\s}.
+        \\item[\\Circle] \\qty{255}{\\s}.
+        \\item[\\Circle] \\qty{140}{\\s}.
+      \\end{itemize}
+      Ühtlase kiirusega läbis ta tõukerattaga umbes
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{90}\\unit{\\kilo\\m}.
+        \\item[\\Circle] \\qty{8}{\\kilo\\m}.
+        \\item[\\Circle] \\qty{20}{\\kilo\\m}.
+        \\item[\\Circle] \\qty{5}{\\kilo\\m}.
+        \\item[\\Circle] \\qty{2}{\\kilo\\m}.
+        \\item[\\Circle] \\qty{1,05}{\\kilo\\m}.
+        \\item[\\Circle] -\\unit{\\kilo\\m}.
+      \\end{itemize}
+      Ühtlasel liikumisel töötab tõukeratta mootor võimsusega \\qty{280}{\\W}, järelikult kulutab mootor 
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{67}\\,\\unit{\\kilo\\J}
+        \\item[\\Circle] \\qty{56}{\\kilo\\J}
+        \\item[\\Circle] \\qty{125}{\\kilo\\J}
+        \\item[\\Circle] \\qty{39,2}{\\kilo\\J}
+        \\item[\\Circle] \\qty{392}{\\kilo\\J}
+      \\end{itemize}
+      energiat. Mootor rakendab ühtlasel liikumisel veojõudu 
+      \\begin{itemize}
+        \\item[\\Circle] $\\blank{\\frac{67}{90}}$\\unit{\\N}.
+        \\item[\\Circle] \\qty{11,2}{\\N}.
+        \\item[\\Circle] \\qty{15}{\\N}.
+        \\item[\\Circle] \\qty{28}{\\N}.
+        \\item[\\Circle] \\qty{37,3}{\\N}.
+      \\end{itemize}
+    \\end{enumerate}
+    "
+  ),
+  list(
+    goal=18,
+    level=4,
+    task="Täida tabel \\@ref(tab:tasks-tables-physical-quantities-formulas-units) õigete valikutega järgmiste seast:
+    \\begin{enumerate}
+      \\item \\unit{\\s},
+      \\item kiirus,
+      \\item \\unit{\\m\\per\\s},
+			\\item optiline tugevus,
+			\\item $\\rho = \\frac{m}{V}$,
+			\\item võnkeperiood,
+			\\item $N = \\frac{A}{t}$,
+			\\item \\unit{\\m},
+			\\item $p = \\frac{F}{S}$,
+			\\item tihedus,
+			\\item võimsus,
+			\\item rõhk,
+			\\item \\unit{\\newton},
+			\\item $D = \\frac{1}{f}$,
+			\\item \\unit{\\pascal},
+			\\item üleslükkejõud,
+			\\item $\\nu = \\frac{1}{T}$,
+			\\item \\unit{\\joule},
+			\\item $A = F \\cdot s$,
+			\\item $F = m \\cdot g$,
+			\\item \\unit{\\hertz}.
+    \\end{enumerate}"
   ),
   list(
     goal=19,
@@ -461,9 +779,75 @@ include_external_graphics("rmd/füüsika/water-glass-gf096afdf0_1920.png-mh_uus_
 
 ```
 
+```{r label = "tasks-figures-energy", echo=FALSE, fig.cap = "Energia."}
+include_external_graphics("rmd/füüsika/energia.png")
+
+```
+
+```{r label = "tasks-figures-prism", echo=FALSE, fig.cap = "Risttahukas."}
+include_external_graphics("rmd/füüsika/risttahukas.jpg")
+
+```
+
+```{r label = "tasks-figures-bodies-in-water", echo=FALSE, fig.cap = "Kehad vees."}
+include_external_graphics("rmd/füüsika/bodies-in-water.jpg")
+
+```
+
+```{r label = "tasks-figures-friction", echo=FALSE, fig.cap = "Hõõrdejõud."}
+include_external_graphics("rmd/füüsika/H__rdej_ud_ver_2.png")
+
+```
+
+```{r label = "tasks-figures-movement-diagram", echo=FALSE, fig.cap = "Gru liikumiskiiruse muutus tõukeratta rentimisest pitsakohvikuni."}
+include_external_graphics("rmd/füüsika/Elektrit_uks_t_htedega.jpg")
+
+```
+
 \clearpage
 
 ## Tabelid
+
+```{r label="tasks-tables-heat", echo=FALSE}
+body_on_heat <- c(
+    "vask",
+    "jää",
+    "keedupott",
+    "udusuled",
+    "vill",
+    "kivi",
+    "penoplast",
+    "ahjupann",
+    "õhk",
+    "ahjuroop",
+    "puit",
+    "pliidiraud",
+    "paber",
+    "vesi",
+    "vaakum",
+    "kuiv sammal"
+)
+
+type_of_heat_connection <- rep("\\Square", 16)
+
+data <- data.frame(
+  body_on_heat,
+  type_of_heat_connection
+)
+
+colnames(data) <- c(
+  "Keha",
+  "Kas hea soojusjuht?"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Soojusjuhtivus."
+)
+
+table
+
+```
 
 ```{r label="tasks-tables-movement", echo=FALSE}
 description <- c(
@@ -695,47 +1079,6 @@ table
 
 ```
 
-```{r label="tasks-tables-heat", echo=FALSE}
-body_on_heat <- c(
-    "vask",
-    "jää",
-    "keedupott",
-    "udusuled",
-    "vill",
-    "kivi",
-    "penoplast",
-    "ahjupann",
-    "õhk",
-    "ahjuroop",
-    "puit",
-    "pliidiraud",
-    "paber",
-    "vesi",
-    "vaakum",
-    "kuiv sammal"
-)
-
-type_of_heat_connection <- rep("\\Square", 16)
-
-data <- data.frame(
-  body_on_heat,
-  type_of_heat_connection
-)
-
-colnames(data) <- c(
-  "Keha",
-  "Kas hea soojusjuht?"
-)
-
-table <- print_table(
-  table = data,
-  caption = "Soojusjuhtivus."
-)
-
-table
-
-```
-
 ```{r label="tasks-tables-characteristics-of-substances", echo=FALSE}
 
 substance <- c(
@@ -765,6 +1108,144 @@ table <- print_table(
   caption = "Aine kindlakstegemine."
 ) %>%
   column_spec(2, width="32em")
+
+table
+
+```
+
+```{r label="tasks-tables-physical-quantities-formulas-units", echo=FALSE}
+
+quantity <- c(
+    "\\blank{88}",
+    "raskusjõud",
+    "\\blank{88}",
+    "\\blank{88}",
+    "mehaaniline töö",
+    "\\blank{88}",
+    "sagedus"
+)
+
+formula <- c(
+  "$\\overline{v} = \\frac{r}{t}$",
+  "\\blank{88}",
+  "\\blank{88}",
+  "\\blank{88}",
+  "\\blank{88}",
+  "\\blank{88}",
+  "\\blank{88}"
+)
+
+unit <- c(
+  "\\blank{88}",
+  "\\blank{88}",
+  "\\unit{\\per\\m}",
+  "\\unit{\\kg\\per\\cubic\\m}",
+  "\\blank{88}",
+  "\\unit{\\watt}",
+  "\\blank{88}"
+)
+
+data <- data.frame(
+  quantity,
+  formula,
+  unit
+)
+
+colnames(data) <- c(
+  "Füüsikaline suurus",
+  "Valem",
+  "Mõõtühik"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Füüsikalistele suurustele vastavad valemid ja mõõtühikud."
+) %>%
+  landscape()
+
+table
+
+```
+
+```{r label="tasks-tables-mechanical-energy", echo=FALSE}
+allegiation <- c(
+  "Maksimaalne kineetiline energia on \\qty{1500}{\\J}.",
+  "Maksimaalne potentsiaalne energia on \\qty{3000}{\\J}.",
+  "Potentsiaalne energia on minimaalne viie meetri kaugusel.",
+  "Potentsiaalne energia on nelja meetri kõrgusel \\qty{750}{\\J}.",
+  "Kineetiline energia on minimaalne nulli meetri ja kümne meetri kaugusel.",
+  "Kineetiline energia on ühe meetri kaugusel \\qty{2250}{\\J}."
+)
+
+resolution <- rep(
+  "\\Circle",
+  length(allegiation)
+)
+
+data <- data.frame(
+  allegiation,
+  resolution,
+  resolution
+)
+
+colnames(data) <- c(
+  "Väide",
+  "Tõene",
+  "Väär"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Väited mehaanilise energia kohta."
+) %>%
+  landscape()
+
+table
+
+```
+
+```{r label="tasks-tables-density-of-wood", echo=FALSE}
+type_of_wood <- c(
+  "pappel",
+  "kuusk",
+  "haab",
+  "mänd",
+  "lepp",
+  "lehis",
+  "kask",
+  "tamm",
+  "vaher",
+  "saar"
+)
+
+density_of_wood <- c(
+  400,
+  470,
+  490,
+  520,
+  530,
+  590,
+  650,
+  690,
+  710,
+  720
+)
+
+data <- data.frame(
+  type_of_wood,
+  density_of_wood
+)
+
+colnames(data) <- c(
+  "Puidu liik",
+  "$\\frac{\\text{Tihedus}}{\\unit{\\kg\\per\\cubic\\m}}$"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Puidu tihedus."
+) %>%
+  landscape()
 
 table
 

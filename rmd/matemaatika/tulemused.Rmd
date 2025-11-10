@@ -509,7 +509,7 @@ classes_9_grades <- data.frame(
   	NA, # Margarita Mussijenko
   	NA, # Zahar Orikovi
   	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
+  	1, # Veniamin Postolenko
   	NA, # Angelina Solovjova
   	NA, # Sofia Zhuravleva
   	NA, # Ivan Timakin
@@ -727,7 +727,7 @@ classes_9_grades <- data.frame(
   	NA, # Jekaterina Plotnikova
   	NA, # Veniamin Postolenko
   	1, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
+  	1, # Sofia Zhuravleva
   	1, # Ivan Timakin
   	NA, # Evelina Tolli
   	1, # Martin Tolli
@@ -1118,7 +1118,7 @@ classes_9_grades <- data.frame(
   	NA, # Mikaela Galperman
   	NA, # Valerija Korenkova
   	NA, # Dmitri Litvinenko
-  	1, # Margarita Mussijenko
+  	NA, # Margarita Mussijenko
   	NA, # Zahar Orikovi
   	NA, # Jekaterina Plotnikova
   	NA, # Veniamin Postolenko
@@ -1386,6 +1386,7 @@ classes_9_grades <- data.frame(
 )
 
 included_goals <- c(
+  3,
   5,
   13,
   15,
@@ -1408,7 +1409,7 @@ colnames(data_frame) <- c(2, included_goals)
 rownames(data_frame) <- names_9
 table <- print_table(
   table = data_frame,
-  caption = "Üheksanda taseme õpilaste saavutatud õpiväljundid."
+  caption = "Üheksanda taseme õpilaste saavutatud õpiväljundid matemaatikas."
 ) %>% landscape()
 
 table

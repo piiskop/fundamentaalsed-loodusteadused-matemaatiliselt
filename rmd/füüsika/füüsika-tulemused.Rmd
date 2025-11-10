@@ -1,8 +1,8 @@
-# Tulemused keemias
+# Tulemused füüsikas
 
 ## Õpiväljundid
 
-```{r label="chemistry-goals", echo=FALSE, results='asis'}
+```{r label="goals-in-physics", echo=FALSE, results='asis'}
 for (index in 1:number_of_goals_in_use) {
   cat(paste(
     "**\\color[hsb]{0.",
@@ -20,11 +20,9 @@ for (index in 1:number_of_goals_in_use) {
 
 ## Saavutatused
 
-<!-- \begin{landscape} -->
+Üheksanda taseme õpilaste saavutatused on esitatud tabelis \@ref(tab:physics-targets-9).
 
-Üheksanda taseme õpilaste saavutatused on esitatud tabelis \@ref(tab:chemistry-targets-9).
-
-```{r label="chemistry-targets-9", echo=FALSE}
+```{r label="physics-targets-9", echo=FALSE}
 classes_9_grades <- data.frame(
   c( # 1
   	NA, # Margus Evart
@@ -46,25 +44,7 @@ classes_9_grades <- data.frame(
   ),
   c( # 2
   	NA, # Margus Evart
-  	1, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	1, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	1, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	1, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	1, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 3
-  	1, # Margus Evart
-  	1, # Mikaela Galperman
+  	NA, # Mikaela Galperman
   	NA, # Valerija Korenkova
   	NA, # Dmitri Litvinenko
   	NA, # Margarita Mussijenko
@@ -72,13 +52,31 @@ classes_9_grades <- data.frame(
   	NA, # Jekaterina Plotnikova
   	NA, # Veniamin Postolenko
   	NA, # Angelina Solovjova
-  	1, # Sofia Zhuravleva
-  	1, # Ivan Timakin
+  	NA, # Sofia Zhuravleva
+  	NA, # Ivan Timakin
   	NA, # Evelina Tolli
-  	1, # Martin Tolli
-  	1, # Ilja Tsvek
-  	1, # Maia Tukkia
-  	1 # Arina Vatševskihh
+  	NA, # Martin Tolli
+  	NA, # Ilja Tsvek
+  	NA, # Maia Tukkia
+  	NA # Arina Vatševskihh
+  ),
+  c( # 3
+  	NA, # Margus Evart
+  	NA, # Mikaela Galperman
+  	NA, # Valerija Korenkova
+  	NA, # Dmitri Litvinenko
+  	NA, # Margarita Mussijenko
+  	NA, # Zahar Orikovi
+  	NA, # Jekaterina Plotnikova
+  	NA, # Veniamin Postolenko
+  	NA, # Angelina Solovjova
+  	NA, # Sofia Zhuravleva
+  	NA, # Ivan Timakin
+  	NA, # Evelina Tolli
+  	NA, # Martin Tolli
+  	NA, # Ilja Tsvek
+  	NA, # Maia Tukkia
+  	NA # Arina Vatševskihh
   ),
   c( # 4
   	NA, # Margus Evart
@@ -153,22 +151,22 @@ classes_9_grades <- data.frame(
   	NA # Arina Vatševskihh
   ),
   c( # 8
-  	1, # Margus Evart
-  	1, # Mikaela Galperman
+  	NA, # Margus Evart
+  	NA, # Mikaela Galperman
   	NA, # Valerija Korenkova
-  	1, # Dmitri Litvinenko
-  	1, # Margarita Mussijenko
+  	NA, # Dmitri Litvinenko
+  	NA, # Margarita Mussijenko
   	NA, # Zahar Orikovi
   	NA, # Jekaterina Plotnikova
-  	1, # Veniamin Postolenko
+  	NA, # Veniamin Postolenko
   	NA, # Angelina Solovjova
-  	1, # Sofia Zhuravleva
-  	1, # Ivan Timakin
+  	NA, # Sofia Zhuravleva
+  	NA, # Ivan Timakin
   	NA, # Evelina Tolli
-  	1, # Martin Tolli
-  	1, # Ilja Tsvek
-  	1, # Maia Tukkia
-  	1 # Arina Vatševskihh
+  	NA, # Martin Tolli
+  	NA, # Ilja Tsvek
+  	NA, # Maia Tukkia
+  	NA # Arina Vatševskihh
   ),
   c( # 9
   	NA, # Margus Evart
@@ -208,7 +206,7 @@ classes_9_grades <- data.frame(
   ),
   c( # 11
   	NA, # Margus Evart
-  	1, # Mikaela Galperman
+  	NA, # Mikaela Galperman
   	NA, # Valerija Korenkova
   	NA, # Dmitri Litvinenko
   	NA, # Margarita Mussijenko
@@ -334,262 +332,10 @@ classes_9_grades <- data.frame(
   ),
   c( # 18
   	NA, # Margus Evart
-  	NA, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	NA, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 19
-  	NA, # Margus Evart
-  	NA, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	NA, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 20
-  	NA, # Margus Evart
-  	NA, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	NA, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 21
-  	NA, # Margus Evart
-  	NA, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	NA, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 22
-  	NA, # Margus Evart
-  	NA, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	NA, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 23
-  	NA, # Margus Evart
-  	NA, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	NA, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 24
-  	NA, # Margus Evart
-  	NA, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	NA, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 25
-  	NA, # Margus Evart
-  	NA, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	NA, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 26
-  	NA, # Margus Evart
-  	NA, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	NA, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 27
-  	NA, # Margus Evart
-  	NA, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	NA, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 28
-  	NA, # Margus Evart
-  	NA, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	NA, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 29
-  	NA, # Margus Evart
-  	NA, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	NA, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 30
-  	NA, # Margus Evart
-  	NA, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	NA, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 31
-  	NA, # Margus Evart
-  	NA, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	NA, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	NA, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	NA, # Martin Tolli
-  	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 32
-  	NA, # Margus Evart
   	1, # Mikaela Galperman
   	NA, # Valerija Korenkova
   	NA, # Dmitri Litvinenko
-  	1, # Margarita Mussijenko
+  	NA, # Margarita Mussijenko
   	NA, # Zahar Orikovi
   	NA, # Jekaterina Plotnikova
   	NA, # Veniamin Postolenko
@@ -599,38 +345,14 @@ classes_9_grades <- data.frame(
   	NA, # Evelina Tolli
   	NA, # Martin Tolli
   	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  ),
-  c( # 33
-  	1, # Margus Evart
-  	1, # Mikaela Galperman
-  	NA, # Valerija Korenkova
-  	NA, # Dmitri Litvinenko
-  	1, # Margarita Mussijenko
-  	NA, # Zahar Orikovi
-  	NA, # Jekaterina Plotnikova
-  	1, # Veniamin Postolenko
-  	NA, # Angelina Solovjova
-  	1, # Sofia Zhuravleva
-  	NA, # Ivan Timakin
-  	NA, # Evelina Tolli
-  	1, # Martin Tolli
-  	1, # Ilja Tsvek
   	1, # Maia Tukkia
-  	NA # Arina Vatševskihh
-  )
-)
+  	1 # Arina Vatševskihh
+  ))
 
 included_goals <- c(
-  3,
-  8,
-  11,
-  32,
-  33
 )
 
-first_index <- 2
+first_index <- 18
 
 data_frame <- classes_9_grades[first_index]
 for (goal_identifier in included_goals) {
@@ -642,7 +364,7 @@ colnames(data_frame) <- c(first_index, included_goals)
 rownames(data_frame) <- names_9
 table <- print_table(
   table = data_frame,
-  caption = "Üheksanda taseme õpilaste saavutatud õpiväljundid keemias."
+  caption = "Üheksanda taseme õpilaste saavutatud õpiväljundid füüsikas."
 ) %>% landscape()
 
 table

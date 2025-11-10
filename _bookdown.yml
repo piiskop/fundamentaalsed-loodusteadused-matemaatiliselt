@@ -9,6 +9,7 @@ rmd_files: [
   "rmd/matemaatika/lähtetest.Rmd",
   "rmd/matemaatika/tulemused.Rmd",
   "rmd/füüsika/looduseuurimine-lähtetest.Rmd",
+  "rmd/füüsika/füüsika-tulemused.Rmd",
   "rmd/keemia/keemia-lähtetest.Rmd",
   "rmd/keemia/keemia-tulemused.Rmd",
   "rmd/voltimine.Rmd",

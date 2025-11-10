@@ -910,6 +910,11 @@ y = -2
     $$x=-3 \\rightarrow y=\\blank{13}.$$"
   ),
   list(
+    goal=37,
+    level=3,
+    task="Palun täida tabel \\@ref(tab:tasks-tables-formulas) valides lünkadesse järgmiste valikute seast: $\\frac{A}{p}$, $\\frac{\\rho}{m}$, $m \\cdot \\rho$, $\\frac{a}{F}$, $\\frac{\\overline{P}}{t}$, $\\frac{\\overline{v}}{A}$, $\\frac{F}{g}$, $\\frac{V \\cdot g}{F_\\text{üleslüke}}$, $\\frac{m}{\\rho}$, $\\frac{s}{\\overline{v}}$, $\\rho \\cdot A$, $F \\cdot g$, $\\frac{F_\\text{üleslüke}}{V \\cdot g}$, $s \\cdot \\overline{v}$, $\\overline{P} \\cdot t$, $\\frac{p}{A}$, $\\frac{t}{\\overline{P}}$."
+  ),
+  list(
     goal = 39,
     level = 6,
     task = "Loe teksti ja koosta tekstile vastav võrrand:\\leavevmode\\
@@ -1024,7 +1029,7 @@ y = -2
   list(
     goal=44,
     level=4,
-    task="Võrdhaarses kolmnurgas $ABC$ on $DE \\parallel AB$, $CD=\\qty{6}{\\centi\\m}$, $EB=\\qty{9}{\\centi\\m}$ ja $AB=\\qty{20}{\\centi\\m} (joonis \\@ref(fig:tasks-figures-similar-triangles).
+    task="Võrdhaarses kolmnurgas $ABC$ on $DE \\parallel AB$, $CD=\\qty{6}{\\centi\\m}$, $EB=\\qty{9}{\\centi\\m}$ ja $AB=\\qty{20}{\\centi\\m}$ (joonis \\@ref(fig:tasks-figures-similar-triangles)).
     $$\\frac{6}{15}=\\frac{DE}{\\blank{AB}}.$$
     Lõigu $DE$ pikkus on \\blank{8}\\ensuremath{\\thinspace}\\unit{\\centi\\m}."
   ),
@@ -1721,6 +1726,53 @@ colnames(data_frame) <- c(1:length(data_frame))
 table <- print_table(
   table = data_frame,
   caption = "Osamäärade erinevad esitusviisid.",
+  do_i_transpose = TRUE
+)
+
+table
+
+```
+
+```{r label="tasks-tables-formulas", echo=FALSE}
+data <- data.frame(
+  c( # 1
+  	"$F = m \\cdot g.$", # põhivalem
+  	"$m = \\blank{\\frac{F_\\text{üleslüke}}{V \\cdot g}}.$" # avaldatud valem
+  ),
+  c( # 2
+  	"$\\overline{v} = \\frac{r}{t}.$", # põhivalem
+  	"$t = \\blank{\\frac{F_\\text{üleslüke}}{V \\cdot g}}.$" # avaldatud valem
+  ),
+  c( # 3
+  	"$p = \\frac{F}{s}.$", # põhivalem
+  	"$F = \\blank{\\frac{F_\\text{üleslüke}}{V \\cdot g}}.$" # avaldatud valem
+  ),
+  c( # 4
+  	"$\\rho = \\frac{m}{V}.$", # põhivalem
+  	"$V = \\blank{\\frac{F_\\text{üleslüke}}{V \\cdot g}}.$" # avaldatud valem
+  ),
+  c( # 5
+  	"$F_\\text{üleslüke} = \\rho \\cdot g \\cdot V.$", # põhivalem
+  	"$\\rho = \\blank{\\frac{F_\\text{üleslüke}}{V \\cdot g}}.$" # avaldatud valem
+  ),
+  c( # 6
+  	"$\\overline{P} = \\frac{W}{t}.$", # põhivalem
+  	"$W = \\blank{\\frac{F_\\text{üleslüke}}{V \\cdot g}}.$" # avaldatud valem
+  )
+)
+
+data_frame <- data
+
+rownames(data_frame) <- c(
+  "Põhivalem",
+  "Avaldatud valem"
+)
+
+colnames(data_frame) <- c(1:length(data_frame))
+
+table <- print_table(
+  table = data_frame,
+  caption = "Valemiteisendused.",
   do_i_transpose = TRUE
 )
 
