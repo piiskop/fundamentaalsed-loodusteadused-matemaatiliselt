@@ -23,14 +23,16 @@ Kinnitan oma allkirjaga tabelis \@ref(tab:agreement-8) oma nime real, et kohustu
 \renewcommand{\arraystretch}{2}
 
 ```{r label="agreement-8", echo=FALSE}
+number_of_parties <- length(names_8) + 1
+
 rows <- data.frame(
   rep(
     "\\blank{2025-09-05}",
-    10
+    number_of_parties
   ), # kuupäev
   rep(
     "\\blank{peacecop kalmer:}",
-    10
+    number_of_parties
   ) # allkiri
 )
 

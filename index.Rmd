@@ -243,6 +243,7 @@ names_8 <- c(
 	"Olesja Makarova",
 	"Artjom Malinin",
 	"Maksim Mihhailov",
+  "Julija Rutenburg",
 	"Nikita Timakin"
 )
 
