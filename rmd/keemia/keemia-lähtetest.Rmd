@@ -328,7 +328,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=4,
+    level=2,
     task="Raud on
     \\begin{itemize}
       \\item[\\Square] metall.
@@ -339,7 +339,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=4,
+    level=2,
     task="Raua periood:
     \\begin{itemize}
       \\item[\\Circle] 1.
@@ -352,7 +352,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=4,
+    level=2,
     task="Raua rühm:
     \\begin{itemize}
       \\item[\\Circle] IIA.
@@ -364,7 +364,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=4,
+    level=2,
     task="Raua prootonite arv:
     \\begin{itemize}
       \\item[\\Circle] 2.
@@ -379,7 +379,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=4,
+    level=2,
     task="Raua neutronite arv:
     \\begin{itemize}
       \\item[\\Circle] 2.
@@ -395,8 +395,8 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=4,
-    task="Raua elektronite arv:
+    level=2,
+    task="Raua elektronide arv:
     \\begin{itemize}
       \\item[\\Circle] 2.
       \\item[\\Circle] 3.
@@ -411,7 +411,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=4,
+    level=2,
     task="Raua aatom:
     \\begin{itemize}
       \\item[\\Circle] +26 | 2) 8) 14) 2).
@@ -424,7 +424,47 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=4,
+    level=2,
+    task="Tee ruutskeem 112. elemendi kohta!"
+  ),
+  list(
+    goal=4,
+    level=2,
+    task="Kirjuta elektronvalem seaborgiumi aatomi kohta!"
+  ),
+  list(
+    goal=4,
+    level=2,
+    task="Kirjuta elektronide arv energiatasemete kaupa 105 prootoniga aatomi kohta!"
+  ),
+  list(
+    goal=4,
+    level=2,
+    task="Tee Lewise skeem 111 elektroniga aatomi aatomi kohta!"
+  ),
+  list(
+    goal=4,
+    level=2,
+    task="Milline on 14. rühmas ja neljandas perioodis asuva elemendi aatomi peakvantarvu väärtus?"
+  ),
+  list(
+    goal=4,
+    level=2,
+    task="Milline on kolmandas perioodis oleva väärisgaasi aatomi orbiidi nurkimpulsi kvantarvu väärtus?"
+  ),
+  list(
+    goal=4,
+    level=2,
+    task="Milline on röntgeeniumi aatomi magnetilise kvantarvu väärtus?"
+  ),
+  list(
+    goal=4,
+    level=2,
+    task="Koosta ruutskeem, elektronvalem, määra energiatasemete kaupa elektronide arv, koosta Lewise skeem ja määra kõikide nelja kvantarvu väärtus neutroniteta aatomi kohta!"
+  ),
+  list(
+    goal=4,
+    level=3,
     task="Roostetamisprotsessis raua ioon:
     \\begin{itemize}
       \\item[\\Circle] +26 | 2) 8) 14) 2).
@@ -437,7 +477,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=4,
+    level=3,
     task="Roostetamisprotsessis hapniku ioon:
     \\begin{itemize}
       \\item[\\Circle] +26 | 2) 8) 14) 2).
@@ -450,7 +490,7 @@ tasks <- list(
   ),
   list(
     goal=4,
-    level=4,
+    level=3,
     task="Hapniku aatom:
     \\begin{itemize}
       \\item[\\Circle] +26 | 2) 8) 14) 2).
@@ -474,6 +514,37 @@ tasks <- list(
       \\item[\\Square] Aine asukoha muutus.
     \\end{itemize}
     "
+  ),
+  list(
+    goal=9,
+    level=2,
+    task="Miks on nii palju erinevaid süsinikuühendeid?"
+  ),
+  list(
+    goal=9,
+    level=2,
+    task="Miks on nii palju erinevaid süsinikuühendeid?"
+  ),
+  list(
+    goal=9,
+    level=2,
+    task="Miks on nii palju erinevaid süsinikuühendeid? Märgista iga õige vastus:
+    \\begin{itemize}
+      \\item[\\Square] C–C ja C–H sidemed on tugevad.
+      \\item[\\Square] C aatomis on tavaliselt 6 neutronit.
+      \\item[\\Square] Aatomite järjestuse muutmisel võib saada uue ühendi.
+      \\item[\\Square] C aatomi väliskihis on neli elektroni.
+      \\item[\\Square] Leidub palju eri kujuga süsinikuahelaid.
+      \\item[\\Square] C aatom võib anda nii üksik-, kaksik- kui ka kolmiksideme.
+      \\item[\\Square] C aatomeid leidub fossiilsetes kütustes.
+      \\item[\\Square] C võib anda sidemeid paljude erinevate aatomitega.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=10,
+    level=2,
+    task="Joonista kõikide võimalike heptaani isomeeride graafilised struktuurivalemid!"
   ),
   list(
     goal=11,
@@ -642,6 +713,16 @@ tasks <- list(
       \\item[\\Circle] sool + alus.
     \\end{itemize}
     "
+  ),
+  list(
+    goal=34,
+    level=2,
+    task="Miks on askorbiinhape vajalik?"
+  ),
+  list(
+    goal=34,
+    level=2,
+    task="Milleks kasutatakse väävelhapet?"
   ),
   list(
     goal=47,
@@ -1064,7 +1145,16 @@ tasks <- list(
   )
 )
 
-dataframe_tasks <- do.call(rbind, lapply(tasks, as.data.frame, stringsAsFactors = FALSE))
+goals_to_keep <- c(
+  4,
+  9,
+  10,
+  34
+)
+
+filtered <- tasks[sapply(tasks, function(x) x$goal %in% goals_to_keep)]
+
+dataframe_tasks <- do.call(rbind, lapply(filtered, as.data.frame, stringsAsFactors = FALSE))
 number_goals <- length(goals)
 
 librarian::shelf(c(

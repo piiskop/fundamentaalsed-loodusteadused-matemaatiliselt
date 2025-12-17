@@ -1,6 +1,6 @@
 \onecolumn
 
-# References {.unnumbered}
+# Allikad {.unnumbered}
 
 \hyphenpenalty=10000
 \fontspec{Symbola}

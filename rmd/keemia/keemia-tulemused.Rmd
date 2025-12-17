@@ -178,14 +178,14 @@ classes_9_grades <- data.frame(
   	NA, # Margarita Mussijenko
   	NA, # Zahar Orikovi
   	NA, # Jekaterina Plotnikova
-  	NA, # Veniamin Postolenko
+  	1, # Veniamin Postolenko
   	NA, # Angelina Solovjova
   	NA, # Sofia Zhuravleva
   	NA, # Ivan Timakin
   	NA, # Evelina Tolli
-  	NA, # Martin Tolli
+  	1, # Martin Tolli
   	NA, # Ilja Tsvek
-  	NA, # Maia Tukkia
+  	1, # Maia Tukkia
   	NA # Arina Vatševskihh
   ),
   c( # 10
@@ -619,15 +619,53 @@ classes_9_grades <- data.frame(
   	1, # Ilja Tsvek
   	1, # Maia Tukkia
   	NA # Arina Vatševskihh
+  ),
+  c( # 34
+  	NA, # Margus Evart
+  	NA, # Mikaela Galperman
+  	NA, # Valerija Korenkova
+  	NA, # Dmitri Litvinenko
+  	NA, # Margarita Mussijenko
+  	NA, # Zahar Orikovi
+  	NA, # Jekaterina Plotnikova
+  	NA, # Veniamin Postolenko
+  	NA, # Angelina Solovjova
+  	NA, # Sofia Zhuravleva
+  	NA, # Ivan Timakin
+  	NA, # Evelina Tolli
+  	NA, # Martin Tolli
+  	NA, # Ilja Tsvek
+  	NA, # Maia Tukkia
+  	NA # Arina Vatševskihh
+  ),
+  c( # 35
+  	NA, # Margus Evart
+  	NA, # Mikaela Galperman
+  	NA, # Valerija Korenkova
+  	NA, # Dmitri Litvinenko
+  	NA, # Margarita Mussijenko
+  	NA, # Zahar Orikovi
+  	NA, # Jekaterina Plotnikova
+  	1, # Veniamin Postolenko
+  	NA, # Angelina Solovjova
+  	NA, # Sofia Zhuravleva
+  	NA, # Ivan Timakin
+  	NA, # Evelina Tolli
+  	NA, # Martin Tolli
+  	NA, # Ilja Tsvek
+  	NA, # Maia Tukkia
+  	NA # Arina Vatševskihh
   )
 )
 
 included_goals <- c(
   3,
   8,
+  9,
   11,
   32,
-  33
+  33,
+  35
 )
 
 first_index <- 2

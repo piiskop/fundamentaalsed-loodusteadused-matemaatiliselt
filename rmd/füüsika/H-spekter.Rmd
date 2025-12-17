@@ -1,0 +1,159 @@
+# Vesiniku spekter
+
+Eesmärgina saad aru, et
+
+1. elektron ergastub üksnes teatud diskreetsetel energia väärtustel.
+
+2. madalamale energiatasemele langev elektron kiirgab energiat, mis võib olla meile nähtav.
+
+3. mitte igasugune kiirgus pole meile nähtav.
+
+4. vesinikul on konkreetne spekter.
+
+Tegevused:
+
+1. Navigeeri veebilehitsejas aadressile https://foothillastrosims.github.io/hydrogen-atom-alpha/ [@foothillastrosims_hydrogen_alpha]!
+
+2.  Pane tähele, millest simulatsioon koosneb! Põhiskeemil vasakul üleval on modelleeritud vesiniku aatom, mille keskel on prootoniga (*p*) tuum ja selle ümber on kujutatud elektronkatte energiatasemed. Alguses on rohekalt tähistatud elektron esimesel ehk kõige väiksema energiaga tasemel. Kui lased kiirgata footoni vajutades *Fire Photon*, liigub paremalt footoni mudel elektroni suunas. Kui sa sätteid ei muuda, siis näed, et ükskõik, kui palju footoneid lased kiirgata, mitte ükski nendest elektroni ei ergasta. *Photon Selection*i kastis on all liugur, mille skaala juurde on märgitud *Infrared*, *Visible* ja *Ultraviolet*. Kui sa seda liugurit nihutad, näed, kuidas taustal värvus muutub ning ühtlasi muutuvad ka sageduse, lainepikkuse ja energia väärtused. Pane tähele, et infrapunases tsoonis kuvatakse midagi tumelillakat, aga see on ainult sümbolvärv, sest infrapunases tsoonis olevat valgust inimese silm ei näe. Kui liigutad edasi paremale, näed, et ilmuvad erinevad värvused nagu punane, kollane, roheline, helesinine, sügavsinine, kuni jõuad ultraviolettsesse tsooni, kus on kasutuses taas lillakas sümbolvärv, sest ka ultravioletset valgust inimese silm ei näe. Tee kindlaks, milline on footoni kõige suurem ja väiksem lainepikkus, mille puhul inimese silm näeb nähtavat valgust, liigutades liugurit hästi vähesel määral infrapunasest tsoonist ultravioletsesse või vastupidi.
+
+    Nähtava valguse väikseim lainepikkus: \blank{\qty{420}{\nano\m}}.
+
+    Nähtava valguse suurim lainepikkus: \blank{\qty{760}{\nano\m}}.
+    
+    Märgi üles ka vastavad energiatasemed:
+    
+    Nähtavaks valguseks väikseim energiatase: \blank{\qty{1,67}{\electronvolt}}.
+    
+    Nähtavaks valguseks suurim energiatase: \blank{\qty{2,95}{\electronvolt}}.
+
+    Kui vajutad *Fire Photon*ist sinu poolt vaadates paremal olevaid nuppe, koged iga kord elektroni ergastamist. Kui aga paigutad liuguri kuskile vahepealsele energiaväärtusele, ergastamist ei toimu. See tuleneb sellest, et looduses on paigas konkreetsed diskreetsed ergastamiseks vajalikud energia väärtused. Sõltuvalt nupust ergastatakse elektron kas teisele, kolmandale, neljandale, viiendale või kuuendale energiatasemele. Kui liigutad liuguri viimasest nupust paremale sinu poolt vaadates ja lased kiirata prootoni, siis näed, et ergastamine toimub alati ning nii võimsalt, et elektron väljub aatomist ehk asub võnkuma n-ö lõpmatusega tähistatud energiatasemel. Kui see juhtub, jääb vesiniku aatom elektronist ilma ja siis pole enam tegemist aatomiga, vaid iooniga. Vesiniku aatomis on alati üks elektron. Kui vesiniku elektronide arv erineb ühest, on tegemist vesiniku iooniga. Kui elektron väljub aatomist, siis võime väita, et see väljub süsteemist ja me ei tea, mis toimub edasi kogu selle energiaga, mille elektron omastas footonilt. Kui muidu ühelt energiatasemelt muule langedes eralduv energiakogus kuvatakse kastis *Event Log*, siis elektroni liitumise puhul vesinikku seda ei kuvata, kuna pole teada, millise energiaga elektron sisse tuli. Edasi on aga energia teada, sest elektron asub võnkuma konkreetsel energiatasemel. Kastis *Energy Level Diagram* näed eri energiatasemete vahelist vaheldumist.
+    
+    Vaata ka skaalasid! Näed, et sageduse ja energia skaala on lineaarsed, kuid lainepikkuse skaalal ei ole vahemikud võrdsed. Nt vahemikus \qty{100}{\nano\m} kuni \qty{200}{\nano\m} väheneb sagedus vähem kui vahemikus \qty{1}{\micro\m} kuni \qty{10}{\micro\m}. Samuti peaksid tähele panema, et mida suurem on sagedus, seda suurem on energia, ning mida suurem on sagedus, seda väiksem on lainepikkus.
+    
+4. Lülita välja *automatic de-excitation*, et saaksid jälgida protsessi sammhaaval!
+
+5.  Täida tabel \@ref(tab:colors-absorption) kasutades erinevat lähteenergia taset elektroni ergastamiseks! Sagedus, lainepikkus ja neeldumisenergia märgi vastavalt skaalale! Samuti märgi lähtetase ja sihttase, mille leiad nii põhikastist kui *Energy Level Diagram*ilt kui ka *Event Log*ist. Tabelisse märgi ainult need juhud, kui toimub ergastamine.
+
+    Kui ergastamise rida on täidetud, siis vii läbi mugandumine vajutades nupule *Drop to:* ja märgi tabelisse \@ref(tab:colors-emission) üks või mitu rida mugandumise kohta märkides taseme, millel elektron asub võnkuma, emiteeritud energia ja sõnaliselt värvuse, kui on nähtavas osas. Kui nähtavas osas ei ole, siis märgi vastavalt *ultravioletne* või *infrapunane*!
+    
+    Katsu nii teha, et tasemete vahed on erinevad, sest muidu hakkavad sul read korduma.
+
+    ```{r label="colors-absorption", echo=FALSE}
+    number_of_rows <- 8
+    
+    number_of_row <- seq(1, number_of_rows)
+    wavelength_absorption <- rep("\\blank{\\num{97,2}}", number_of_rows)
+    f <- rep("\\blank{\\num{2.5e15}}", number_of_rows)
+    E_absorption <- rep("\\blank{\\num{10,20}}", number_of_rows)
+    n_0 <- rep("\\blank{\\num{1}}", number_of_rows)
+    n <- rep("\\blank{\\num{6}}", number_of_rows)
+    
+    data <- data.frame(
+      number_of_row,
+      f,
+      wavelength_absorption,
+      E_absorption,
+      n_0,
+      n
+    )
+    
+    colnames(data) <- c(
+      "Katse",
+      "$\\frac{\\nu}{\\unit{\\Hz}}$",
+      "$\\frac{\\lambda}{\\unit{\\nano\\m}}$",
+      "$\\frac{E}{\\unit{\\electronvolt}}$",
+      "$n_0$",
+      "$n_1$"
+    )
+    
+    librarian::shelf(
+      c("dplyr", "kableExtra")
+    )
+    
+    table <- print_table(
+      table=data,
+      caption="Elektroni ergastamine."
+    ) %>%
+      landscape()
+    
+    table
+    
+    ```
+    
+    ```{r label="colors-emission", echo=FALSE}
+    number_of_rows <- 16
+    
+    number_of_row <- rep("\\blank{\\num{8}}", number_of_rows)
+    n_back <- rep("\\blank{\\num{2}}", number_of_rows)
+    E_emission <- rep("\\blank{\\num{10,20}}", number_of_rows)
+    color <- rep("\\blank{helesinine}", number_of_rows)
+    
+    data <- data.frame(
+      number_of_row,
+      n_back,
+      E_emission,
+      color
+    )
+    
+    colnames(data) <- c(
+      "Katse",
+      "$n_{-1}$",
+      "$\\frac{E}{\\unit{\\electronvolt}}$",
+      "Värvus"
+    )
+    
+    librarian::shelf(
+      c("dplyr", "kableExtra")
+    )
+    
+    table <- print_table(
+      table=data,
+      caption="Elektroni mugandumine."
+    )
+    
+    table
+    
+    ```
+    
+    Üks hea võimalus eksperimenteerida on katsetada läbi kõik sinu poolt vaadatuna nupust *Fire Photon* paremal olevad nupud ja lõpuks kasutada liugurit omakorda paremal - nii saad järjest läbi proovida kõik vesiniku energiatasemed.
+    
+6. Pane tähele, et kui sa just ei lasknud vesinikku ioniseerida, siis emiteeritava energia kogus vastab neeldunud energia kogusele. Kui see nii ei ole, siis on miski su eksperimendis valesti läinud.
+
+7. Eelnevalt kindlasti nägid, et nähtava valguse spektris on mõni üksik erinev värvus. Järgnevalt tee kindlaks kõikvõimalikud erinevad värvused! Selleks lase vesinik ioniseerida ja seejärel mugandada elektron eri energiatasemele ja sealt omakorda erinevatele energiatasemetele. Selle põhjal täida tabel \@ref(tab:colors-with-energy)! Märgi sellesse tabelisse ainult erineva värvuse katsed!
+
+    ```{r label="colors-with-energy", echo=FALSE}
+    number_of_rows <- 4
+    
+    n_start <- rep("\\blank{\\num{2}}", number_of_rows)
+    n_end <- rep("\\blank{\\num{2}}", number_of_rows)
+    color <- rep("\\blank{helesinine}", number_of_rows)
+    E_emission <- rep("\\blank{\\num{3,02}}", number_of_rows)
+    
+    data <- data.frame(
+      n_start,
+      n_end,
+      color,
+      E_emission
+    )
+    
+    colnames(data) <- c(
+      "$n_\\text{enne}$",
+      "$n_\\text{pärast}$",
+      "Värvus",
+      "$\\frac{E}{\\unit{\\electronvolt}}$"
+    )
+    
+    librarian::shelf(
+      c("dplyr", "kableExtra")
+    )
+    
+    table <- print_table(
+      table=data,
+      caption="Värvused seoses energia muuduga."
+    )
+    
+    table
+    
+    ```
+
+8. Kas panid tähele, milliseid värvusi polnud? Vaata nüüd vesiniku nähtava valguse spektrit aadressil https://foothillastrosims.github.io/Spectroscopy-Demonstrator/ [@foothillastrosims_spectroscopy]! Mida näed? Mitu joont on ja millist värvi need on? Simulatsiooni kaudu tegid kindlaks, et vesinikul on konkreetsed spektrijooned, millest nähtavas valguses on ainult mõned värvitoonid. Samas kohas saad vaadata muude keemiliste elementide spektrit. Näed, et igaühel on unikaalne spekter ning selle järgi saab keemilisi elemente üksteisest eristada.

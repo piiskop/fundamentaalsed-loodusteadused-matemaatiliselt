@@ -84,6 +84,10 @@ hindab taastuvenergia tootmise ja kasutamise võimalusi oma kodukohas",
 keemistemperatuuri, soojusjuhtivuse) uurimise põhjal ning seostab omadusi nende 
 kasutusaladega",
     level=2
+  ),
+  list( # F21
+    goal="tunneb erinevaid valgusallikaid; liigitab valgusallikaid nende suuruse ja valguse spektraalse koostise järgi",
+    level=2
   )
 )
 
@@ -92,6 +96,99 @@ tasks <- list(
     goal=1,
     level=4,
     task="Märgi joonisel \\@ref(fig:tasks-figures-weights) kangkaalu teisele kaalukausile õiged kaaluvihid, et kaal jääks tasakaalu, järgmiste vihitüüpide seast: \\qty{100}{\\g}, \\qty{1000}{\\milli\\g}, \\qty{100}{\\milli\\g}, \\qty{10}{\\milli\\g}, \\qty{500}{\\g}, \\qty{1}{\\kg}, \\qty{50}{\\g}, \\qty{1000}{\\kg}."
+  ),
+  list(
+    goal=2,
+    level=2,
+    task="Pärast katsete läbiviimist otsustas Gru üllatada Dave'i ning Kevinit maitsvate pitsadega. Selleks, et pitsad ära tuua, rentis Gru tänaval seisnud elektrilise tõukeratta (joonis \\@ref(fig:tasks-figures-movement-diagram)).
+    \\begin{enumerate}
+      \\item Millisel ajavahemikul liikus Gru ühtlase kiirusega?
+      \\begin{itemize}
+        \\item[\\Circle] \\textbf{A}.
+        \\item[\\Circle] \\textbf{B}.
+        \\item[\\Circle] \\textbf{C}.
+      \\end{itemize}
+      \\item Millisel ajavahemikul liikus Gru kiirenevalt?
+      \\begin{itemize}
+        \\item[\\Circle] \\textbf{A}.
+        \\item[\\Circle] \\textbf{B}.
+        \\item[\\Circle] \\textbf{C}.
+      \\end{itemize}
+      \\item Millisel ajavahemikul liikus Gru aeglustavalt?
+      \\begin{itemize}
+        \\item[\\Circle] \\textbf{A}.
+        \\item[\\Circle] \\textbf{B}.
+        \\item[\\Circle] \\textbf{C}.
+      \\end{itemize}
+      \\item Grul kulus ratta rentimisest kuni sõitma hakkamiseni
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{0}\\unit{\\s}.
+        \\item[\\Circle] \\qty{20}{\\s}.
+        \\item[\\Circle] \\qty{1}{\\s}.
+        \\item[\\Circle] \\qty{5}{\\s}.
+        \\item[\\Circle] \\qty{0}{\\s}.
+      \\end{itemize}
+      Grul kulus pitsakohvikusse jõudmiseks
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{300}\\unit{\\s}.
+        \\item[\\Circle] \\qty{210}{\\s}.
+        \\item[\\Circle] \\qty{60}{\\s}.
+        \\item[\\Circle] \\qty{260}{\\s}.
+        \\item[\\Circle] \\qty{240}{\\s}.
+        \\item[\\Circle] \\qty{255}{\\s}.
+      \\end{itemize}
+      Kiirenevalt liikus Gru
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{10}\\unit{\\s}.
+        \\item[\\Circle] \\qty{10}{\\s}.
+        \\item[\\Circle] \\qty{30}{\\s}.
+        \\item[\\Circle] \\qty{20}{\\s}.
+        \\item[\\Circle] \\qty{15}{\\s}.
+        \\item[\\Circle] \\qty{60}{\\s}.
+      \\end{itemize}
+      Aeglustuvalt liikus Gru
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{20}\\unit{\\s}.
+        \\item[\\Circle] \\qty{40}{\\s}.
+        \\item[\\Circle] \\qty{15}{\\s}.
+        \\item[\\Circle] \\qty{20}{\\s}.
+      \\end{itemize}
+      Gru liikus ühtlase kiirusega
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{240}\\unit{\\s}.
+        \\item[\\Circle] \\qty{200}{\\s}.
+        \\item[\\Circle] \\qty{45}{\\s}.
+        \\item[\\Circle] \\qty{255}{\\s}.
+        \\item[\\Circle] \\qty{140}{\\s}.
+      \\end{itemize}
+      Ühtlase kiirusega läbis ta tõukerattaga umbes
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{90}\\unit{\\kilo\\m}.
+        \\item[\\Circle] \\qty{8}{\\kilo\\m}.
+        \\item[\\Circle] \\qty{20}{\\kilo\\m}.
+        \\item[\\Circle] \\qty{5}{\\kilo\\m}.
+        \\item[\\Circle] \\qty{2}{\\kilo\\m}.
+        \\item[\\Circle] \\qty{1,05}{\\kilo\\m}.
+        \\item[\\Circle] -\\unit{\\kilo\\m}.
+      \\end{itemize}
+      Ühtlasel liikumisel töötab tõukeratta mootor võimsusega \\qty{280}{\\W}, järelikult kulutab mootor 
+      \\begin{itemize}
+        \\item[\\Circle] \\blank{67}\\,\\unit{\\kilo\\J}
+        \\item[\\Circle] \\qty{56}{\\kilo\\J}
+        \\item[\\Circle] \\qty{125}{\\kilo\\J}
+        \\item[\\Circle] \\qty{39,2}{\\kilo\\J}
+        \\item[\\Circle] \\qty{392}{\\kilo\\J}
+      \\end{itemize}
+      energiat. Mootor rakendab ühtlasel liikumisel veojõudu 
+      \\begin{itemize}
+        \\item[\\Circle] $\\blank{\\frac{67}{90}}$\\unit{\\N}.
+        \\item[\\Circle] \\qty{11,2}{\\N}.
+        \\item[\\Circle] \\qty{15}{\\N}.
+        \\item[\\Circle] \\qty{28}{\\N}.
+        \\item[\\Circle] \\qty{37,3}{\\N}.
+      \\end{itemize}
+    \\end{enumerate}
+    "
   ),
   list(
     goal=2,
@@ -499,99 +596,6 @@ tasks <- list(
     "
   ),
   list(
-    goal=2,
-    level=2,
-    task="Pärast katsete läbiviimist otsustas Gru üllatada Dave'i ning Kevinit maitsvate pitsadega. Selleks, et pitsad ära tuua, rentis Gru tänaval seisnud elektrilise tõukeratta (joonis \\@ref(fig:tasks-figures-movement-diagram)).
-    \\begin{enumerate}
-      \\item Millisel ajavahemikul liikus Gru ühtlase kiirusega?
-      \\begin{itemize}
-        \\item[\\Circle] \\textbf{A}.
-        \\item[\\Circle] \\textbf{B}.
-        \\item[\\Circle] \\textbf{C}.
-      \\end{itemize}
-      \\item Millisel ajavahemikul liikus Gru kiirenevalt?
-      \\begin{itemize}
-        \\item[\\Circle] \\textbf{A}.
-        \\item[\\Circle] \\textbf{B}.
-        \\item[\\Circle] \\textbf{C}.
-      \\end{itemize}
-      \\item Millisel ajavahemikul liikus Gru aeglustavalt?
-      \\begin{itemize}
-        \\item[\\Circle] \\textbf{A}.
-        \\item[\\Circle] \\textbf{B}.
-        \\item[\\Circle] \\textbf{C}.
-      \\end{itemize}
-      \\item Grul kulus ratta rentimisest kuni sõitma hakkamiseni
-      \\begin{itemize}
-        \\item[\\Circle] \\blank{0}\\unit{\\s}.
-        \\item[\\Circle] \\qty{20}{\\s}.
-        \\item[\\Circle] \\qty{1}{\\s}.
-        \\item[\\Circle] \\qty{5}{\\s}.
-        \\item[\\Circle] \\qty{0}{\\s}.
-      \\end{itemize}
-      Grul kulus pitsakohvikusse jõudmiseks
-      \\begin{itemize}
-        \\item[\\Circle] \\blank{300}\\unit{\\s}.
-        \\item[\\Circle] \\qty{210}{\\s}.
-        \\item[\\Circle] \\qty{60}{\\s}.
-        \\item[\\Circle] \\qty{260}{\\s}.
-        \\item[\\Circle] \\qty{240}{\\s}.
-        \\item[\\Circle] \\qty{255}{\\s}.
-      \\end{itemize}
-      Kiirenevalt liikus Gru
-      \\begin{itemize}
-        \\item[\\Circle] \\blank{10}\\unit{\\s}.
-        \\item[\\Circle] \\qty{10}{\\s}.
-        \\item[\\Circle] \\qty{30}{\\s}.
-        \\item[\\Circle] \\qty{20}{\\s}.
-        \\item[\\Circle] \\qty{15}{\\s}.
-        \\item[\\Circle] \\qty{60}{\\s}.
-      \\end{itemize}
-      Aeglustuvalt liikus Gru
-      \\begin{itemize}
-        \\item[\\Circle] \\blank{20}\\unit{\\s}.
-        \\item[\\Circle] \\qty{40}{\\s}.
-        \\item[\\Circle] \\qty{15}{\\s}.
-        \\item[\\Circle] \\qty{20}{\\s}.
-      \\end{itemize}
-      Gru liikus ühtlase kiirusega
-      \\begin{itemize}
-        \\item[\\Circle] \\blank{240}\\unit{\\s}.
-        \\item[\\Circle] \\qty{200}{\\s}.
-        \\item[\\Circle] \\qty{45}{\\s}.
-        \\item[\\Circle] \\qty{255}{\\s}.
-        \\item[\\Circle] \\qty{140}{\\s}.
-      \\end{itemize}
-      Ühtlase kiirusega läbis ta tõukerattaga umbes
-      \\begin{itemize}
-        \\item[\\Circle] \\blank{90}\\unit{\\kilo\\m}.
-        \\item[\\Circle] \\qty{8}{\\kilo\\m}.
-        \\item[\\Circle] \\qty{20}{\\kilo\\m}.
-        \\item[\\Circle] \\qty{5}{\\kilo\\m}.
-        \\item[\\Circle] \\qty{2}{\\kilo\\m}.
-        \\item[\\Circle] \\qty{1,05}{\\kilo\\m}.
-        \\item[\\Circle] -\\unit{\\kilo\\m}.
-      \\end{itemize}
-      Ühtlasel liikumisel töötab tõukeratta mootor võimsusega \\qty{280}{\\W}, järelikult kulutab mootor 
-      \\begin{itemize}
-        \\item[\\Circle] \\blank{67}\\,\\unit{\\kilo\\J}
-        \\item[\\Circle] \\qty{56}{\\kilo\\J}
-        \\item[\\Circle] \\qty{125}{\\kilo\\J}
-        \\item[\\Circle] \\qty{39,2}{\\kilo\\J}
-        \\item[\\Circle] \\qty{392}{\\kilo\\J}
-      \\end{itemize}
-      energiat. Mootor rakendab ühtlasel liikumisel veojõudu 
-      \\begin{itemize}
-        \\item[\\Circle] $\\blank{\\frac{67}{90}}$\\unit{\\N}.
-        \\item[\\Circle] \\qty{11,2}{\\N}.
-        \\item[\\Circle] \\qty{15}{\\N}.
-        \\item[\\Circle] \\qty{28}{\\N}.
-        \\item[\\Circle] \\qty{37,3}{\\N}.
-      \\end{itemize}
-    \\end{enumerate}
-    "
-  ),
-  list(
     goal=18,
     level=4,
     task="Täida tabel \\@ref(tab:tasks-tables-physical-quantities-formulas-units) õigete valikutega järgmiste seast:
@@ -682,10 +686,21 @@ tasks <- list(
       \\item hapnik.
     \\end{enumerate}
     "
+  ),
+  list(
+    goal=21,
+    level=2,
+    task="Kirjuta üles nii palju erinevat tüüpi valgusallikaid, kui tead! Märgi igaühe kohta, kas see on külm või soe valguse mõttes. Kirjelda igat loetletud valgusallikat võimalikult põhjalikult!"
   )
 )
 
-dataframe_tasks <- do.call(rbind, lapply(tasks, as.data.frame, stringsAsFactors = FALSE))
+goals_to_keep <- c(
+  21
+)
+
+filtered <- tasks[sapply(tasks, function(x) x$goal %in% goals_to_keep)]
+
+dataframe_tasks <- do.call(rbind, lapply(filtered, as.data.frame, stringsAsFactors = FALSE))
 number_goals <- length(goals)
 
 librarian::shelf(c(
@@ -774,7 +789,7 @@ include_external_graphics("rmd/füüsika/graafik_uus.PNG")
 
 ```
 
-```{r label = "tasks-figures-glass", echo=FALSE, fig.cap = "Klaas."}
+```{r label = "tasks-figures-glass", echo=FALSE, fig.cap = "Klaas.",  out.height=".92\\textheight"}
 include_external_graphics("rmd/füüsika/water-glass-gf096afdf0_1920.png-mh_uus_1.png")
 
 ```

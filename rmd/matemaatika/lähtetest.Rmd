@@ -1,4 +1,4 @@
-# Matemaatika lähtetest
+# Matemaatika ülesanded
 
 <!-- ## Ülesanded -->
 
@@ -227,9 +227,40 @@ võrdelise jaotamise ülesandeid)",
 )
 
 tasks <- list(
-  list(goal=1, level=1, task="Millised on andmete liigid?"),
-  list(goal=1, level=1, task="Nimeta üks andmete kogumise meetod!"),
-  list(goal=1, level=1, task="Vaata allolevaid väiteid ja märgi, millised nendest on kvalitatiivsed andmed:\\leavevmode\\
+  list(
+    goal=1,
+    level=1,
+    task="1 + 1 = \\blank{2}."
+  ),
+  list(
+    goal=1,
+    level=1,
+    task="1 + 2 = \\blank{3}."
+  ),
+  list(
+    goal=1,
+    level=1,
+    task="2 + 1 = \\blank{3}."
+  ),
+  list(
+    goal=1,
+    level=1,
+    task="1 + 0 = \\blank{1}."
+  ),
+  list(
+    goal=1,
+    level=2,
+    task="Millised on andmete liigid?"
+  ),
+  list(
+    goal=1,
+    level=2, 
+    task="Nimeta üks andmete kogumise meetod!"
+  ),
+  list(
+    goal=1, 
+    level=2,
+    task="Vaata allolevaid väiteid ja märgi, millised nendest on kvalitatiivsed andmed:\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] Temperatuur.
     \\item[\\Square] Aeg.
@@ -242,8 +273,12 @@ tasks <- list(
     \\item[\\Square] Pikkus.
     \\item[\\Square] Mass.
     \\item[\\Square] Silmavärv.
-  \\end{itemize}"),
-  list(goal = 1, level = 1, task = "Vaata allolevaid väiteid ja märgi, millised nendest on kvantitatiivsed andmed:\\leavevmode\\
+  \\end{itemize}"
+  ),
+  list(
+    goal=1,
+    level=2,
+    task="Vaata allolevaid väiteid ja märgi, millised nendest on kvantitatiivsed andmed:\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] Temperatuur.
     \\item[\\Square] Aeg.
@@ -256,8 +291,12 @@ tasks <- list(
     \\item[\\Square] Pikkus.
     \\item[\\Square] Mass.
     \\item[\\Square] Silmavärv.
-  \\end{itemize}"),
-  list(goal = 1, level = 1, task = "Vaata allolevaid väiteid ja märgi, millised nendest on diskreetsed andmed:\\leavevmode\\
+  \\end{itemize}"
+  ),
+  list(
+    goal=1,
+    level=2,
+    task="Vaata allolevaid väiteid ja märgi, millised nendest on diskreetsed andmed:\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] Temperatuur.
     \\item[\\Square] Aeg.
@@ -266,8 +305,12 @@ tasks <- list(
     \\item[\\Square] Õpilaste arv klassis.
     \\item[\\Square] Pikkus.
     \\item[\\Square] Mass.
-  \\end{itemize}"),
-  list(goal = 1, level = 1, task = "Vaata allolevaid väiteid ja märgi, millised nendest on jätkuvad andmed:\\leavevmode\\
+  \\end{itemize}"
+  ),
+  list(
+    goal=1,
+    level=2,
+    task="Vaata allolevaid väiteid ja märgi, millised nendest on pidevad andmed:\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] Temperatuur.
     \\item[\\Square] Aeg.
@@ -276,66 +319,139 @@ tasks <- list(
     \\item[\\Square] Õpilaste arv klassis.
     \\item[\\Square] Pikkus.
     \\item[\\Square] Mass.
-  \\end{itemize}"),
-  list(goal = 2, level = 1, task = "Mis on aritmeetiline keskmine?"),
-  list(goal = 2, level = 1, task = "Mis on mediaan?"),
-  list(goal = 2, level = 1, task = "Mis on mood?"),
-  list(goal = 2, level = 1, task = "Mis on miinimum?"),
-  list(goal = 2, level = 1, task = "Mis on maksimum?"),
-  list(goal = 2, level = 1, task = "Mis on ulatus?"),
-  list(goal = 2, level = 2, task = "Esita näide aritmeetilise keskmise kohta!"),
-  list(goal = 2, level = 2, task = "Esita näide mediaani kohta!"),
-  list(goal = 2, level = 2, task = "Esita näide moe kohta!"),
-  list(goal = 2, level = 2, task = "Esita näide miinimumi kohta!"),
-  list(goal = 2, level = 2, task = "Esita näide maksimumi kohta!"),
-  list(goal = 2, level = 2, task = "Esita näide ulatuse kohta!"),
-  list(goal = 2, level = 3, task = "Õpetaja telefoniaadress on 56204556. Milline on nende numbrite aritmeetiline keskmine?"),
-  list(goal = 2, level = 3, task = "Õpetaja telefoniaadress on 56204556. Milline on nende numbrite mood?"),
-  list(goal = 2, level = 3, task = "Õpetaja telefoniaadress on 56204556. Milline on nende numbrite mediaan?"),
-  list(goal = 2, level = 3, task = "Õpetaja telefoniaadress on 56204556. Milline on nende numbrite miinimum?"),
-  list(goal = 2, level = 3, task = "Õpetaja telefoniaadress on 56204556. Milline on nende numbrite maksimum?"),
-  list(goal = 2, level = 3, task = "Õpetaja telefoniaadress on 56204556. Milline on nende numbrite ulatus?"),
-  list(goal = 2, level = 4, task = "Kahe rühma kontrolltöö punktisummad olid:\\leavevmode\\
+  \\end{itemize}"
+  ),
+  list(goal=2, level=1, task="Mis on aritmeetiline keskmine?"),
+  list(goal=2, level=1, task="Mis on mediaan?"),
+  list(goal=2, level=1, task="Mis on mood?"),
+  list(goal=2, level=1, task="Mis on miinimum?"),
+  list(goal=2, level=1, task="Mis on maksimum?"),
+  list(goal=2, level=1, task="Mis on ulatus?"),
+  list(goal=2, level=2, task="Esita näide aritmeetilise keskmise kohta!"),
+  list(goal=2, level=2, task="Esita näide mediaani kohta!"),
+  list(goal=2, level=2, task="Esita näide moe kohta!"),
+  list(goal=2, level=2, task="Esita näide miinimumi kohta!"),
+  list(goal=2, level=2, task="Esita näide maksimumi kohta!"),
+  list(goal=2, level=2, task="Esita näide ulatuse kohta!"),
+  list(
+    goal=2, 
+    level=3,
+    task="Õpetaja telefoniaadress on 56204556. Milline on nende numbrite aritmeetiline keskmine?"
+    ),
+  list(goal=2, level=3, task="Õpetaja telefoniaadress on 56204556. Milline on nende numbrite mood?"),
+  list(goal=2, level=3, task="Õpetaja telefoniaadress on 56204556. Milline on nende numbrite mediaan?"),
+  list(goal=2, level=3, task="Õpetaja telefoniaadress on 56204556. Milline on nende numbrite miinimum?"),
+  list(goal=2, level=3, task="Õpetaja telefoniaadress on 56204556. Milline on nende numbrite maksimum?"),
+  list(goal=2, level=3, task="Õpetaja telefoniaadress on 56204556. Milline on nende numbrite ulatus?"),
+  list(
+    goal=2,
+    level=4,
+    task="Kahe rühma kontrolltöö punktisummad olid:\\leavevmode\\
 - rühm A: 6, 7, 7, 8, 9,\\leavevmode\\
 - rühm B: 3, 5, 7, 9, 11.\\leavevmode\\
-Võrdle tulemusi ja analüüsi: kumb rühm oli ühtlasema tasemega?"),
-  list(goal = 2, level = 4, task = "Kahe rühma kontrolltöö punktisummad olid:\\leavevmode\\
+Võrdle tulemusi ja analüüsi: kumb rühm oli ühtlasema tasemega?"
+  ),
+  list(
+    goal=2,
+    level=4,
+    task="Kahe rühma kontrolltöö punktisummad olid:\\leavevmode\\
 - rühm A: 6, 7, 7, 8, 9,\\leavevmode\\
 - rühm B: 3, 5, 7, 9, 11.\\leavevmode\\
-Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
-  list(goal = 3, level = 1, task = "Mis on tulpdiagramm?"),
-  list(goal = 3, level = 1, task = "Mis on sektordiagramm?"),
-  list(goal = 3, level = 1, task = "Mis on joondiagramm?"),
-  list(goal = 3, level = 1, task = "Mis on punktdiagramm?"),
-  list(goal = 3, level = 3, task = "Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Vaata sektordiagrammi joonist \\@ref(fig:tasks-sector-diagram) ja märgi, kui palju on metsamaad:\\leavevmode\\
+Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"
+  ),
+  list(goal=3, level=1, task="Mis on tulpdiagramm?"),
+  list(goal=3, level=1, task="Mis on sektordiagramm?"),
+  list(goal=3, level=1, task="Mis on joondiagramm?"),
+  list(goal=3, level=1, task="Mis on punktdiagramm?"),
+  list(
+    goal=3,
+    level=2,
+    task="Selgita tabelit \\@ref(tab:tasks-tables-x-y)."
+  ),
+  list(
+    goal=3,
+    level=2,
+    task="Milliseid sõidukeid on parklas kõige rohkem (joonis \\@ref(fig:tasks-figures-bar-diagram))?"
+  ),
+  list(
+    goal=3,
+    level=3,
+    task="Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Vaata sektordiagrammi joonist \\@ref(fig:tasks-sector-diagram) ja märgi, kui palju on metsamaad:\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] $\\qty{80}{\\percent}$.
     \\item[\\Square] $\\qty{55}{\\percent}$.
     \\item[\\Square] $\\qty{47}{\\percent}$.
     \\item[\\Square] $\\qty{22}{\\percent}$.
-  \\end{itemize}"),
-  list(goal = 3, level = 3, task = "Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Vaata sektordiagrammi joonist \\@ref(fig:tasks-sector-diagram) ja märgi, kui palju on karjamaad:\\leavevmode\\
+  \\end{itemize}"
+  ),
+  list(
+    goal=3, 
+    level=3,
+    task="Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Vaata sektordiagrammi joonist \\@ref(fig:tasks-sector-diagram) ja märgi, kui palju on karjamaad:\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] $\\qty{34}{\\percent}$.
     \\item[\\Square] $\\qty{15}{\\percent}$.
     \\item[\\Square] $\\qty{17}{\\percent}$.
     \\item[\\Square] $\\qty{6}{\\percent}$.
-  \\end{itemize}"),
-  list(goal = 3, level = 3, task = "Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Vaata sektordiagrammi joonist \\@ref(fig:tasks-sector-diagram) ja märgi, kui palju on elamumaad:\\leavevmode\\
+  \\end{itemize}"
+  ),
+  list(
+    goal=3,
+    level=3,
+    task="Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Vaata sektordiagrammi joonist \\@ref(fig:tasks-sector-diagram) ja märgi, kui palju on elamumaad:\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] $\\qty{9}{\\percent}$.
     \\item[\\Square] $\\qty{5}{\\percent}$.
     \\item[\\Square] $\\qty{2}{\\percent}$.
-  \\end{itemize}"),
-  list(goal = 3, level = 3, task = "Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Vaata sektordiagrammi joonist \\@ref(fig:tasks-sector-diagram) ja märgi, kui palju on põllumaad:\\leavevmode\\
+  \\end{itemize}"
+  ),
+  list(
+    goal=3,
+    level=3,
+    task="Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Vaata sektordiagrammi joonist \\@ref(fig:tasks-sector-diagram) ja märgi, kui palju on põllumaad:\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] $\\qty{25}{\\percent}$.
     \\item[\\Square] $\\qty{10}{\\percent}$.
-  \\end{itemize}"),
-  list(goal = 3, level = 4, task = "Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Kirjuta sektordiagrammile joonisel \\@ref(fig:tasks-sector-diagram) erinevate maatükkide suurused protsentides!"),
+  \\end{itemize}"
+  ),
+  list(
+    goal=3,
+    level=4,
+    task="Roosioksa talu pererahval on põllumaad \\qty{10}{\\hectare}, karjamaad \\qty{6}{\\hectare}, metsamaad \\qty{22}{\\hectare} ja elamumaad \\qty{2}{\\hectare}. Kirjuta sektordiagrammile joonisel \\@ref(fig:tasks-sector-diagram) erinevate maatükkide suurused protsentides!"
+  ),
+  list(
+    goal=4,
+    level=1,
+    task="Kuidas on prantsuse keeles sada?"
+  ),
+  list(
+    goal=4,
+    level=1,
+    task="Kuidas on prantsuse keeles tuhat?"
+  ),
+  list(
+    goal=4,
+    level=1,
+    task="Kirjuta arv, milles on 53 sajandikku!"
+  ),
+  list(
+    goal=4,
+    level=2,
+    task="Mis on protsent?"
+  ),
+  list(
+    goal=4,
+    level=2,
+    task="Mis on promill?"
+  ),
+  list(
+    goal=4,
+    level=2,
+    task="Mis on protsendipunkt?"
+  ),
   list(
     goal = 5,
-    level = 3,
+    level = 2,
     task = "Märgi kõik arvud, millega on võrdne \\num{0,4}:\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] $\\qty{40}{\\percent}$.
@@ -347,7 +463,7 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
   \\end{itemize}"),
   list(
     goal = 5,
-    level = 3,
+    level = 2,
     task = "Märgi kõik arvud, millega on võrdne \\num{0,75}:\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] $\\qty{75}{\\percent}$.
@@ -359,7 +475,7 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
   ),
   list(
     goal = 5,
-    level = 3,
+    level = 2,
     task = "Märgi kõik arvud, millega on võrdne $\\frac{1}{2}$:\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] $\\num{0,5}$.
@@ -369,10 +485,28 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
   ),
   list(
     goal=5,
-    level=3,
+    level=2,
     task="Täida tabel \\@ref(tab:tasks-tables-fractions)."
   ),
-  list(goal = 8, level = 3, task = "Et leida \\qty{10}{\\percent} arvust, jagan arvu:\\leavevmode\\
+  list(
+    goal=6,
+    level=2,
+    task="Täida tabel \\@ref(tab:tasks-tables-probability-1)."
+  ),
+  list(
+    goal=6,
+    level=2,
+    task="Täida tabel \\@ref(tab:tasks-tables-probability-2)."
+  ),
+  list(
+    goal=6,
+    level=2,
+    task="Täida tabel \\@ref(tab:tasks-tables-probability-3)."
+  ),
+  list(
+    goal=8,
+    level=3,
+    task="Et leida \\qty{10}{\\percent} arvust, jagan arvu:\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] $\\num{10}$'ga.
     \\item[\\Square] $\\num{5}$'ga.
@@ -412,9 +546,107 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
     \\item[\\Square] Maria ei saa osta, sest \\qty{59}{\\percent} kahekümnest eurost on rohkem kui $\\num{10}$ eurot.
   \\end{itemize}"),
   list(
+    goal=13,
+    level=1,
+    task="Mitu kümnendikku on arvus \\num{26,457}?"
+  ),
+  list(
+    goal=13,
+    level=1,
+    task="Mitu sajandikku on arvus \\num{26,457}?"
+  ),
+  list(
+    goal=13,
+    level=1,
+    task="Mitu sajalist on arvus \\num{26,457}?"
+  ),
+  list(
+    goal=13,
+    level=2,
+    task="Ümarda kümnendikeni \\num{26,457}."
+  ),
+  list(
+    goal=13,
+    level=2,
+    task="Ümarda sajandikeni \\num{26,457}."
+  ),
+  list(
+    goal=13,
+    level=2,
+    task="Ümarda sajalisteni \\num{26,457}."
+  ),
+  list(
+    goal=14,
+    level=1,
+    task="$4 \\cdot 4 = \\blank{16}.$"
+  ),
+  list(
     goal=14,
     level=2,
     task="Mida tähendab $4^2$?"
+  ),
+  list(
+    goal=14,
+    level=3,
+    task="$x^2 \\cdot x^3 = \\blank{x^5}.$"
+  ),
+  list(
+    goal=15,
+    level=2,
+    task="Mis on ruutjuur?"
+  ),
+  list(
+    goal=15,
+    level=2,
+    task="Esita näide ruutjuure kohta!"
+  ),
+  list(
+    goal=15,
+    level=2,
+    task="Mida tähendab tehe $\\sqrt{4}$?"
+  ),
+  list(
+    goal=15,
+    level=2,
+    task="Kui sa tead ruudu pindala, kuidas saad arvutada ruudu külje pikkuse?"
+  ),
+  list(
+    goal=16,
+    level=2,
+    task="$$a = \\sqrt{50} \\cdot \\sqrt{2} = \\blank{10}.$$
+    $$b = \\sqrt{25 \\cdot 4} = \\blank{10}.$$
+    $$a \\blank{=} b.$$"
+  ),
+  list(
+    goal=16,
+    level=2,
+    task="$$a = \\sqrt{5} \\cdot \\sqrt{5} = \\blank{5}.$$
+    $$b = \\sqrt{25} = \\blank{5}.$$
+    $$a \\blank{=} b.$$"
+  ),
+  list(
+    goal=16,
+    level=2,
+    task="$$a = \\sqrt{2} \\cdot \\sqrt{72} = \\blank{12}.$$
+    $$b = \\sqrt{12} = \\blank{2 \\cdot \\sqrt{3}}.$$
+    $$a \\blank{>} b.$$"
+  ),
+  list(
+    goal=16,
+    level=2,
+    task="$$a = \\sqrt{\\frac{400}{100}} = \\blank{2}.$$
+    $$b = \\frac{\\sqrt{400}}{\\sqrt{100}} = \\blank{2}.$$
+    $$a \\blank{=} b.$$"
+  ),
+  list(
+    goal=16,
+    level=2,
+    task="Arvuta täpne väärtus: $\\sqrt{2} \\times \\sqrt{32} = \\blank{8}.$"
+  ),
+  list(
+    goal=16,
+    level=2,
+    task="Arvuta täpne väärtus: $\\sqrt{121 \\times 64} = \\blank{88}.$"
   ),
   list(
     goal = 17,
@@ -458,8 +690,31 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
     "
   ),
   list(
+    goal=20,
+    level=1,
+    task="$4 \\times 3^2 \\times (-3) \\times 5 \\times (-5)=\\blank{2700}.$"
+  ),
+  list(
+    goal=20,
+    level=1,
+    task="$4 \\times 5^2 \\times (-5) \\times 3 \\times (-3)=\\blank{4500}.$"
+  ),
+  list(
+    goal=20,
+    level=1,
+    task="Avaldist $2x+3y-3x-5y$ nimetatakse
+    \\begin{itemize}
+      \\item[\\Square] $-x-2y$.
+      \\item[\\Square] hulkliikmeks.
+      \\item[\\Square] võrduseks.
+      \\item[\\Square] võrrandiks.
+      \\item[\\Square] üksliikmeks.
+    \\end{itemize}
+    "
+  ),
+  list(
     goal = 20,
-    level = 3,
+    level = 2,
     task = "Vali alljärgnevatest avaldistest üksliikme $4x^2 \\cdot (-xy) \\cdot (-y)$ normaalkuju:
     \\begin{itemize}
       \\item[\\Circle] $4x^3y^2.$
@@ -470,25 +725,17 @@ Võrdle tulemusi ja analüüsi: kumb rühm oli keskmiselt tugevam?"),
   ),
   list(
     goal = 20,
-    level = 3,
+    level = 2,
     task = "$2(a-b)-(3a+b)=$
     \\begin{itemize}
-      \\item[Square] $1a-1b.$
-      \\item[Square] $-1a-3b.$
+      \\item[\\Square] $1a-1b.$
+      \\item[\\Square] $-1a-3b.$
     \\end{itemize}"
   ),
   list(
     goal=20,
-    level=3,
-    task="Avaldist $2x+3y-3x-5y$ nimetatakse
-    \\begin{itemize}
-      \\item[\\Square] $-x-2y$.
-      \\item[\\Square] hulkliikmeks.
-      \\item[\\Square] võrduseks.
-      \\item[\\Square] võrrandiks.
-      \\item[\\Square] üksliikmeks.
-    \\end{itemize}
-    $2x+3y-3x-5y=\\blank{-}x-2{y}.$"
+    level=2,
+    task="$2x+3y-3x-5y=\\blank{-}x-2{y}.$"
   ),
   list(
     goal=20,
@@ -501,6 +748,14 @@ y = -2
       \\item[\\Square] -8.
       \\item[\\Square] 2.
     \\end{itemize}"
+  ),
+  list(
+    goal=20,
+    level=3,
+    task="$$\\begin{cases}
+x = -1 \\\\
+y = -2
+\\end{cases} \\rightarrow 2x+3y-3x-5y=\\blank{5}.$$"
   ),
   list(goal = 22, level = 3, task = "$-6 + 13+6-20-7=$\\leavevmode\\
   \\begin{itemize}
@@ -610,7 +865,41 @@ y = -2
     Arvuta kujundi pindala, kui  $m=\\frac{2}{7}\\, \\unit{\\centi\\m}$.
     Kujundi pindala on $S=\\blank{17}\\unit{\\square\\centi\\m}$."
   ),
-  list(goal = 25, level = 1, task = "Joonisel \\@ref(fig:tasks-lines-angles) on näidatud kahe sirge lõikamisel kolmanda sirgega tekkinud nurgad.\\leavevmode\\
+  list(
+    goal=25,
+    level=1,
+    task="$\\beta = \\blank{\\qty{96}{\\degree}}$ (joonis \\@ref(fig:tasks-lines-angles))."
+  ),
+  list(
+    goal=25,
+    level=1,
+    task="$\\alpha + \\beta = \\blank{\\pi}$ (joonis \\@ref(fig:tasks-lines-angles))."
+  ),
+  list(
+    goal=25,
+    level=1,
+    task="Joonisel \\@ref(fig:tasks-lines-angles) $\\alpha=$\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Square] \\qty{84}{\\degree}.
+      \\item[\\Square] \\qty{113}{\\degree}.
+      \\item[\\Square] \\qty{163}{\\degree}.
+      \\item[\\Square] \\qty{67}{\\degree}.
+    \\end{itemize}
+    "
+  ),
+  list(
+    goal=25,
+    level=1,
+    task="Joonisel \\@ref(fig:tasks-lines-angles) $\\beta=$\\leavevmode\\
+    \\begin{itemize}
+      \\item[\\Square] \\qty{96}{\\degree}.
+      \\item[\\Square] \\qty{67}{\\degree}.
+      \\item[\\Square] \\qty{113}{\\degree}.
+      \\item[\\Square] \\qty{84}{\\degree}.
+    \\end{itemize}
+    "
+  ),
+  list(goal = 25, level = 2, task = "Joonisel \\@ref(fig:tasks-lines-angles) on näidatud kahe sirge lõikamisel kolmanda sirgega tekkinud nurgad.\\leavevmode\\
     Nurgad \\qty{113}{\\degree} ja $\\alpha$ on\\leavevmode\\
     \\begin{itemize}
       \\item[\\Square] lähisnurgad.
@@ -619,13 +908,6 @@ y = -2
       \\item[\\Square] tippnurgad.
       \\item[\\Square] sirgnurgad.
       \\item[\\Square] \\qty{113}{\\degree}.
-    \\end{itemize}
-    Nurk $\\alpha=$\\leavevmode\\
-    \\begin{itemize}
-      \\item[\\Square] \\qty{84}{\\degree}.
-      \\item[\\Square] \\qty{113}{\\degree}.
-      \\item[\\Square] \\qty{163}{\\degree}.
-      \\item[\\Square] \\qty{67}{\\degree}.
     \\end{itemize}
     Nurgad \\qty{113}{\\degree} ja $\\beta$ on\\leavevmode\\
     \\begin{itemize}
@@ -636,15 +918,21 @@ y = -2
       \\item[\\Square] vastasnurgad.
       \\item[\\Square] \\qty{67}{\\degree}.
     \\end{itemize}
-    Nurk $\\beta=$\\leavevmode\\
-    \\begin{itemize}
-      \\item[\\Square] \\qty{96}{\\degree}.
-      \\item[\\Square] \\qty{67}{\\degree}.
-      \\item[\\Square] \\qty{113}{\\degree}.
-      \\item[\\Square] \\qty{84}{\\degree}.
-    \\end{itemize}
   "),
-  list(goal = 26, level = 4, task = "Kui kaks sirget $s$ ja $t$ on paralleelsed, siis\\leavevmode\\
+  list(
+    goal=25,
+    level=2,
+    task="Märgi joonisele \\@ref(fig:tasks-lines-side-angles) nurga $\\alpha$ põiknurk!"
+  ),
+  list(
+    goal=25,
+    level=2,
+    task="Märgi joonisele \\@ref(fig:tasks-lines-side-angles) nurga $\\beta$ põiknurk!"
+  ),
+  list(
+    goal=25,
+    level=2,
+    task="Kui kaks sirget $s$ ja $t$ on paralleelsed, siis\\leavevmode\\
   \\begin{itemize}
     \\item[\\Square] nende lõikamisel kolmanda sirgega $u$ tekivad võrdsed tippnurgad.
     \\item[\\Square] nende lõikamisel kolmanda sirgega $u$ tekivad võrdsed põiknurgad.
@@ -656,7 +944,10 @@ y = -2
     \\item[\\Square] @ref(fig:tasks-lines-skewed-angles).
     \\item[\\Square] @ref(fig:tasks-lines-side-angles).
   \\end{itemize}"),
-  list(goal = 26, level = 4, task = "
+  list(
+    goal=25,
+    level=2,
+    task = "
   \\begin{itemize}
     \\item[\\Square] Kui kahe sirge $s$ ja $t$ lõikamisel kolmanda sirgega $u$ tekkivate kõrvunurkade summa on \\qty{180}{\\degree},
     \\item[\\Square] Kui kahe sirge $s$ ja $t$ lõikamisel kolmanda sirgega $u$ tekkivate lähisnurkade summa on \\qty{180}{\\degree},
@@ -669,13 +960,43 @@ y = -2
     \\item[\\Square] @ref(fig:tasks-lines-side-angles).
   \\end{itemize}"),
   list(
+    goal=26,
+    level=2,
+    task="Joonisel \\@ref(fig:tasks-lines-skewed-angles) $\\alpha = \\beta$. Põhjenda, miks seetõttu $s || t$."
+  ),
+  list(
+    goal=26,
+    level=2,
+    task="Joonisel \\@ref(fig:tasks-lines-side-angles) $\\alpha + \\beta = \\pi$. Põhjenda, miks seetõttu $s || t$."
+  ),
+  list(
+    goal=26,
+    level=3,
+    task="Joonisel \\@ref(fig:tasks-figures-parallel-lines) on $a || b$ ning lõigud $KE$ ja $KD$ on sirgete $b$
+ ja $c$
+ lõikumisel tekkinud nurkade poolitajad. \\leavevmode\\
+\\leavevmode\\
+Lõik $DE=\\qty{9,6}{\\centi\\m}$. Arvuta lõigu $KP$
+ pikkus."
+  ),
+  list(
+    goal=26,
+    level=3,
+    task="Joonisel \\@ref(fig:tasks-figures-parallel-lines) on $a || b$ ning lõigud $KE$ ja $KD$ on sirgete $b$
+ ja $c$
+ lõikumisel tekkinud nurkade poolitajad. \\leavevmode\\
+\\leavevmode\\
+Lõik $KP=\\qty{9,6}{\\centi\\m}$. Arvuta lõigu $DE$
+ pikkus."
+  ),
+  list(
     goal=28,
     level=3,
     task="Märgi joonisele \\@ref(fig:tasks-figures-triangles-circles), kus on kolmnurga küljepoolitajad, nurgapoolitajad, külgede keskristsirged, punkt $C$ siseringjoone keskpunktina, ümberringjoone keskpunktina, mediaanide lõikepunktina!"
   ),
   list(
     goal=29,
-    level=1,
+    level=2,
     task="Joonisel \\@ref(fig:tasks-figures-circle-central-border-angle) on ringjoon keskpunktiga $O$.\\leavevmode\\
     $\\angle CAB$ on\\leavevmode\\
     \\begin{itemize}
@@ -689,7 +1010,7 @@ y = -2
   ),
   list(
     goal=29,
-    level=1,
+    level=2,
     task="Joonisel \\@ref(fig:tasks-figures-circle-central-2-border-angle) on ringjoon, mille keskpunkt asetseb punktis $C$.\\leavevmode\\
     Arvuta nurkade $KNL$ ja $KML$ suurus, kui $\\angle KCL=\\ang{28}$.\\leavevmode\\
     $\\angle KNL=\\blank{\\ang{14}}, \\angle KML=\\blank{\\ang{14}}$."
@@ -706,8 +1027,13 @@ y = -2
     \\end{itemize}"
   ),
   list(
+    goal=34,
+    level=1,
+    task="Mis on võrrand?"
+  ),
+  list(
     goal = 34,
-    level = 1,
+    level = 2,
     task = "Vali võrrandiga $x-5=9$ samaväärne võrrand:
   \\begin{itemize}
     \\item[\\Circle] $2x-10=19$.
@@ -717,14 +1043,59 @@ y = -2
   \\end{itemize}"),
   list(
     goal = 34,
-    level = 1,
-    task = "Vai võrrandiga $\\frac{2}{x} = \\frac{7}{3}$ samaväärne võrrand:
+    level = 2,
+    task = "Vali võrrandiga $\\frac{2}{x} = \\frac{7}{3}$ samaväärne võrrand:
   \\begin{itemize}
     \\item[\\Circle] $\\frac{3}{x} = \\frac{2}{7}$.
     \\item[\\Circle] $\\frac{x}{3} = \\frac{7}{2}$.
     \\item[\\Circle] $2x=7 \\cdot 3$.
     \\item[\\Circle] $2 \\cdot 3=7x$.
   \\end{itemize}"),
+  list(
+    goal=35,
+    level=2,
+    task="Täida tabel \\@ref(tab:tasks-tables-proportionality)."
+  ),
+  list(
+    goal=35,
+    level=2,
+    task="Täisnurkse kolmnurga teravnurkade suuruste $\\alpha$ ja $\\beta$ vaheline seos valemina: $\\blank{\\alpha = \\frac{pi}{2} - \\beta.}$ See seos \\Circle on \\Circle ei ole võrdeline."
+  ),
+  list(
+    goal=35,
+    level=2,
+    task="Kui riide ühe meetri hind on \\qty{9,7}{\\euro}, siis pikkuse $m$ ja maksumuse $R$ vaheline seos on valemina: $\\blank{R = (\\qty{9,7}{\\euro}) \\cdot m.}$ See seos \\Circle on \\Circle ei ole võrdeline."
+  ),
+  list(
+    goal=35,
+    level=2,
+    task="Kuubi pindala $S$ ja serva pikkuse $a$ vaheline seos on valemina: $\\blank{S = 6 \\cdot a^2.}$ See seos \\Circle on \\Circle ei ole võrdeline."
+  ),
+  list(
+    goal=35,
+    level=3,
+    task="Kui traadi maksumus on \\qty{213}{\\euro}, siis traadi pikkuse $m$ ja hinna $h$ vaheline seos on valemina: $\\blank{m = \\frac{\\qty{213}{\\euro}}{h}.}$ See seos \\Circle on \\Circle ei ole võrdeline."
+  ),
+  list(
+    goal=35,
+    level=3,
+    task="Tabelis \\@ref(tab:tasks-tables-proportions-1) $y = a \\cdot x \\rightarrow a = \\blank{-3}$. Täida tabel!"
+  ),
+  list(
+    goal=35,
+    level=3,
+    task="Tabelis \\@ref(tab:tasks-tables-proportions-2) $y = a \\cdot x \\rightarrow a = \\blank{1,1}$. Täida tabel!"
+  ),
+  list(
+    goal=35,
+    level=3,
+    task="Tabelis \\@ref(tab:tasks-tables-proportions-3) $y = a \\cdot x \\rightarrow a = \\blank{\\frac{1}{7}}$. Täida tabel!"
+  ),
+  list(
+    goal=35,
+    level=3,
+    task="Kui üks kuupmeeter mulda kaalub \\qty{1,5}{\\tonne}, mulla maht kuupmeetrites on $V$ ja mass tonnides $m$, siis $m = \\blank{\\qty{1,5}{\\tonne} \\cdot V}$. Täida tabel \\@ref(tab:tasks-tables-soil)."
+  ),
   list(
     goal=36,
     level=2,
@@ -1390,7 +1761,29 @@ tasks <- c(
 # print(tasks[probleemsed]) # kuvab täpse probleemi koha
 # print(" lõpp proble ")
 
-dataframe_tasks <- do.call(rbind, lapply(tasks, as.data.frame, stringsAsFactors = FALSE))
+goals_to_keep <- c(
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  13,
+  14,
+  15,
+  16,
+  20,
+  25,
+  26,
+  29,
+  34,
+  35,
+  36
+)
+
+filtered <- tasks[sapply(tasks, function(x) x$goal %in% goals_to_keep)]
+
+dataframe_tasks <- do.call(rbind, lapply(filtered, as.data.frame, stringsAsFactors = FALSE))
 number_goals <- length(goals)
 
 librarian::shelf(c(
@@ -1780,6 +2173,338 @@ table
 
 ```
 
+```{r label="tasks-tables-proportionality", echo=FALSE}
+relations <- c(
+  "$\\frac{y}{2 \\cdot m}=7 \\cdot x.$",
+  "$y = 0,56 \\cdot x.$",
+  "$y = \\frac{23}{x}.$",
+  "$y = -m \\cdot n \\cdot x.$",
+  "$y = 4 \\cdot x + 1.$",
+  "$\\frac{y}{m} = 2 \\cdot x.$",
+  "$y = -\\frac{x}{c \\cdot m}.$",
+  "$\\frac{5}{y} = \\frac{x}{m}.$"
+)
+
+number_of_relations = length(relations)
+is_proportional <- rep("\\Square", number_of_relations)
+factor_of_proportion <- rep("$\\blank{14 \\cdot m}$", number_of_relations)
+
+data <- data.frame(
+  relations,
+  is_proportional,
+  factor_of_proportion
+)
+
+colnames(data) <- c(
+  "Võrdus",
+  "$y \\propto x$",
+  "Võrdetegur"
+)
+
+table <- print_table(
+  table = data,
+  caption = "Võrdeliste seoste mõistmine ja tundmine."
+)
+
+table
+
+```
+
+```{r label="tasks-tables-proportions-1", echo=FALSE}
+data <- data.frame(
+  c( # 1
+  	"-3", # x
+  	"\\blank{9}" # y
+  ),
+  c( # 2
+  	"-2", # x
+  	"6" # y
+  ),
+  c( # 3
+  	"0", # x
+  	"\\blank{0}" # y
+  ),
+  c( # 4
+  	"1", # x
+  	"\\blank{-6}" # y
+  ),
+  c( # 5
+  	"2", # x
+  	"\\blank{-6}" # y
+  ),
+  c( # 6
+  	"6", # x
+  	"\\blank{-18}" # y
+  )
+)
+
+data_frame <- data
+
+rownames(data_frame) <- c(
+  "$x$",
+  "$y$"
+)
+
+colnames(data_frame) <- c(1:length(data_frame))
+
+table <- print_table(
+  table = data_frame,
+  caption = "Võrdeline seos 1.",
+  do_i_transpose = TRUE
+)
+
+table
+
+```
+
+```{r label="tasks-tables-proportions-2", echo=FALSE}
+data <- data.frame(
+  c( # 1
+  	"-4,5", # x
+  	"\\blank{-4,95}" # y
+  ),
+  c( # 2
+  	"-1,4", # x
+  	"\\blank{-1,54}" # y
+  ),
+  c( # 3
+  	"5,8", # x
+  	"6,38" # y
+  ),
+  c( # 4
+  	"6,2", # x
+  	"\\blank{6,82}" # y
+  ),
+  c( # 5
+  	"9", # x
+  	"\\blank{9,9}" # y
+  ),
+  c( # 6
+  	"12,4", # x
+  	"\\blank{13,64}" # y
+  )
+)
+
+data_frame <- data
+
+rownames(data_frame) <- c(
+  "$x$",
+  "$y$"
+)
+
+colnames(data_frame) <- c(1:length(data_frame))
+
+table <- print_table(
+  table = data_frame,
+  caption = "Võrdeline seos 2.",
+  do_i_transpose = TRUE
+)
+
+table
+
+```
+
+```{r label="tasks-tables-proportions-3", echo=FALSE}
+data <- data.frame(
+  c( # 1
+  	"$-2\\frac{1}{3}$", # x
+  	"$\\blank{-\\frac{1}{6}}$" # y
+  ),
+  c( # 2
+  	"-1", # x
+  	"$\\blank{-\\frac{1}{6}}$" # y
+  ),
+  c( # 3
+  	"0", # x
+  	"0" # y
+  ),
+  c( # 4
+  	"$1\\frac{1}{6}$", # x
+  	"$\\frac{1}{6}$" # y
+  ),
+  c( # 5
+  	"2", # x
+  	"$\\blank{\\frac{1}{3}}$" # y
+  ),
+  c( # 6
+  	"8", # x
+  	"$\\blank{1\\frac{1}{7}}$" # y
+  )
+)
+
+data_frame <- data
+
+rownames(data_frame) <- c(
+  "$x$",
+  "$y$"
+)
+
+colnames(data_frame) <- c(1:length(data_frame))
+
+table <- print_table(
+  table = data_frame,
+  caption = "Võrdeline seos 3.",
+  do_i_transpose = TRUE
+)
+
+table
+
+```
+
+```{r label="tasks-tables-soil", echo=FALSE}
+V <- c(
+  0.3,
+  1.5,
+  2.1,
+  3.6,
+  10
+)
+
+m <- rep("\\blank{0,45}", length(V))
+
+data <- data.frame(
+  V,
+  m
+)
+
+data_frame <- t(data)
+
+rownames(data_frame) <- c(
+  "$\\frac{V}{\\mathrm{m^3}}$",
+  "$\\frac{m}{\\mathrm{t}}$"
+)
+
+table <- print_table(
+  table = data_frame,
+  caption = "Mulla massi sõltuvus ruumalast.",
+  do_i_transpose = TRUE
+)
+
+table
+
+```
+
+```{r label="tasks-tables-probability-1", echo=FALSE}
+event <- c(
+  "Punase pliiatsi võtmine karbist, milles kõik pliiatsid on rohelised.",
+  "Pildi saamine mündi viskamisel.",
+  "Punase pliiatsi võtmine karbist, milles kõik pliiatsid on punased.",
+  "Mündi viskamisel münt langeb ühele oma küljele (kull või kiri).",
+  "Punase pliiatsi võtmine karbist, milles on kümme punast ja üks roheline pliiats."
+)
+
+type_of_event <- rep("\\blank{juhuslik}", length(event))
+
+data <- data.frame(
+  event,
+  type_of_event
+)
+
+data_frame <- (data)
+
+colnames(data_frame) <- c(
+  "Sündmus",
+  "Tüüp"
+)
+
+table <- print_table(
+  table = data_frame,
+  caption = "Märgi tabelisse iga sündmuse kohta, kas see on juhuslik, võimatu või kindel."
+) %>%
+  landscape()
+
+table
+
+```
+
+```{r label="tasks-tables-probability-2", echo=FALSE}
+event <- c(
+  "Täringu veeretamisel seitsme silma tulek.",
+  "Visatakse korraga 
+kümnesendilist ja 
+\\num{20}-sendilist münti. Ühel mündil tuleb kiri ja teisel vapp.",
+  "Kastis on viis sinist palli ja kümme kollast palli. Juhuslikult valitakse pall, see osutub siniseks.",
+  "Loterii peavõidu saamine.",
+  "Üles visatud pall kukkub maha."
+)
+
+type_of_event <- rep("\\blank{juhuslik}", length(event))
+
+data <- data.frame(
+  event,
+  type_of_event
+)
+
+data_frame <- (data)
+
+colnames(data_frame) <- c(
+  "Sündmus",
+  "Tüüp"
+)
+
+table <- print_table(
+  table = data_frame,
+  caption = "Märgi tabelisse iga sündmuse kohta, kas see on juhuslik, võimatu või kindel."
+) %>%
+  landscape()
+
+table
+
+```
+
+
+```{r label="tasks-tables-probability-3", echo=FALSE}
+data <- data.frame(
+  c( # 1
+  	"kahe silma tulek täringu veeretamisel", # A
+  	"viie silma tulek täringu veeretamisel", # B
+  	"\\Square"
+  ),
+  c( # 2
+  	"kirja tulek mündi viskamisel", # A
+  	"kulli tulek mündi viskamisel", # B
+  	"\\Square"
+  ),
+  c( # 3
+  	"kokku kuue silma saamine kahe täringu veeretamisel", # A
+  	" kokku seitsme silma saamine kahe täringu veeretamisel", # B
+  	"\\Square"
+  ),
+  c( # 4
+  	"kaheksa musta kuuli ja üheksa valge kuuli seast juhuslikult võetud kuul on must", # A
+  	"kaheksa musta kuuli ja üheksa valge kuuli seast juhuslikult võetud kuul on valge", # B
+  	"\\Square"
+  ),
+  c( # 5
+  	"kahe kulli tulek kahe mündi viskamisel", # A
+  	"kirja-kulli tulek kahe mündi viskamisel", # B
+  	"\\Square"
+  )
+)
+
+data_frame <- data
+
+rownames(data_frame) <- c(
+  "$A$",
+  "$B$",
+  "$\\mathrm{P}(A) = \\mathrm{P}(B)$"
+)
+
+colnames(data_frame) <- c(1:length(data_frame))
+
+table <- print_table(
+  table = data_frame,
+  caption = "Sündmused $A$ ja $B$ ning nende võrdvõimalikkus.",
+  do_i_transpose = TRUE
+) %>%
+  column_spec(1, width="16em") %>%
+  column_spec(2, width="16em") %>%
+  landscape()
+
+table
+
+```
+
 \clearpage
 
 ## Joonised
@@ -1956,5 +2681,15 @@ include_external_graphics("rmd/matemaatika/L_ik_8.PNG")
 
 ```{r label = "tasks-figures-unit-squares", echo=FALSE, fig.cap = "Ühikruudud."}
 include_external_graphics("rmd/matemaatika/yhikruut_1.PNG")
+
+```
+
+```{r label = "tasks-figures-parallel-lines", echo=FALSE, fig.cap = "Paralleelsed sirged."}
+include_external_graphics("rmd/matemaatika/2889-11938157045a3d2fd2242773.37413219.png")
+
+```
+
+```{r label = "tasks-figures-bar-diagram", echo=FALSE, fig.cap = "Tulpdiagramm."}
+include_external_graphics("rmd/matemaatika/tulpdiagramm.png")
 
 ```
